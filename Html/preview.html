@@ -121,11 +121,115 @@
                 >
                   <div class="d-flex p-5 align-items-center">
                     <div>
-                      <img
-                        src="../img/button.png"
-                        style="width: 36px; height: 36px"
-                      />
+                      <button
+                        type="button"
+                        class="btn border-0 shadow-none"
+                        style="outline: none"
+                        data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop"
+                      >
+                        <img
+                          src="../img/button.png"
+                          style="width: 36px; height: 36px"
+                        />
+                      </button>
+
+                      <!-- Modal -->
+                      <div
+                        class="modal fade modal-lg "
+                        id="staticBackdrop"
+                        data-bs-backdrop="static"
+                        data-bs-keyboard="false"
+                        tabindex="-1"
+                        aria-labelledby="staticBackdropLabel"
+                        aria-hidden="true"
+                      >
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1
+                                class="modal-title fs-5"
+                                id="staticBackdropLabel"
+                              >
+                                Create milestone
+                              </h1>
+                              <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              ></button>
+                            </div>
+                            <div class="modal-body">
+                              <div class="">
+                                <div class="mb-3">
+                                  <label
+                                    for="exampleFormControlTextarea1"
+                                    class="form-label"
+                                    >GIG Description</label
+                                  >
+                                  <textarea
+                                    class="form-control"
+                                    id="exampleFormControlTextarea1"
+                                    rows="3"
+                                  ></textarea>
+                                </div>
+                              </div>
+                              <form>
+                                <div class="row">
+                                  <div class="form-group col-12">
+                                    <label for="inputGIG's" class="mb-2"
+                                      >Amount’s</label
+                                    >
+                                    <select
+                                      id="inputState"
+                                      class="form-control shadow-none"
+                                    >
+                                      <option selected>₦500.00</option>
+                                      <option>...</option>
+                                    </select>
+                                  </div>
+                                </div>
+                                <div class="row mt-4">
+                                  <div class="form-group col-md-6">
+                                    <label for="inputGIG's" class="mb-2"
+                                      >Start date
+                                    </label>
+                                    <select
+                                      id="inputState"
+                                      class="form-control shadow-none"
+                                    >
+                                      <option selected>New project</option>
+                                      <option>...</option>
+                                    </select>
+                                  </div>
+                                  <div class="form-group col-md-6">
+                                    <label for="inputgig's" class="mb-2"
+                                      >End date</label
+                                    >
+                                    <select
+                                      id="inputState"
+                                      class="form-control shadow-none"
+                                    >
+                                      <option selected>
+                                        One week - Four weeks
+                                      </option>
+                                      <option>...</option>
+                                    </select>
+                                  </div>
+                                </div>
+                              </form>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-primary">
+                                Create milestone
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
+
                     <div class="ms-2 mb-0 pt-4 previewColl">
                       <div>
                         <h3 class="infoTxt">Create milestone</h3>
