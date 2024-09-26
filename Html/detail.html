@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../Css/style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.js"></script>
+
+    <title>New PRODEV</title>
+  </head>
+  <body>
+    <nav class="navbar bg-primary">
+      <div class="container-fluid">
+        <span class="navbar-brand mb-0 h1">Navbar</span>
+      </div>
+    </nav>
+    <div class="container header mt-5 p-5 mb-5">
+      <div>
+        <a href="./page2.html" class="backButton">
+          <i class="bi bi-chevron-left"></i>
+          Back
+        </a>
+      </div>
+      <hr />
+      <div class="container mt-2 mb-5">
+        <div class="col-12 col-md-6 mb-3 mb-md-0">
+          <h2 class="subHeader">Enter details</h2>
+          <p class="subText">Enter the details about this GIG.</p>
+        </div>
+
+        <div class="">
+          <form>
+            <div class="row">
+              <div class="form-group col-md-6">
+                <label for="inputGIG's" class="mb-2">Type of GIG’s</label>
+                <select id="inputState" class="form-control shadow-none">
+                  <option selected>Web development</option>
+                  <option>...</option>
+                </select>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputgig's" class="mb-2">Technology & Skills</label>
+                <select id="inputState" class="form-control shadow-none">
+                  <option selected>
+                    <button>rree</button> <button>rree</button>
+                    <button>rree</button> <button>rree</button>
+                  </option>
+                  <option>...</option>
+                </select>
+              </div>
+            </div>
+            <div class="row mt-4">
+              <div class="form-group col-md-6">
+                <label for="inputGIG's" class="mb-2">Project type </label>
+                <select id="inputState" class="form-control shadow-none">
+                  <option selected>New project</option>
+                  <option>...</option>
+                </select>
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputgig's" class="mb-2">Duration of the GIG</label>
+                <select id="inputState" class="form-control shadow-none">
+                  <option selected>One week - Four weeks</option>
+                  <option>...</option>
+                </select>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <hr />
+      <div class="container mt-4">
+        <div class="col-12 col-md-6 mb-3 mb-md-0">
+          <h3 class="subTxt">Describe GIG’s</h3>
+        </div>
+        <div class="container mb-5">
+          <div id="summernote"></div>
+        </div>
+      </div>
+      <hr />
+
+      <div class="container mt-5">
+        <div class="col-12 mb-3 mb-md-0">
+          <h4 class="subTxt">Budget for the GiG</h4>
+          <form>
+            <div class="row">
+              <div class="form-group">
+                <select id="inputState" class="form-control shadow-none">
+                  <option selected>₦1,000,000</option>
+                  <option>...</option>
+                </select>
+              </div>
+            </div>
+          </form>
+          <p class="pTxt">
+            Minimum amount you can create for your budget is ₦60,000
+          </p>
+        </div>
+      </div>
+      <div class="container mt-5 mb-5">
+        <div class="card shadow bg-white rounded">
+          <div class="d-flex justify-content-between align-items-center p-3">
+            <div>
+              <div class="card-title headTxt">
+                Let talent create the milestone
+              </div>
+              <div class="card-text cardTxt">
+                Let talent create the milestone
+              </div>
+            </div>
+            <div class="form-check form-switch">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                role="switch"
+                id="flexSwitchCheckDefault"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container mb-5">
+        <div class="card rounded" style="background-color: #b8d2ee">
+          <div class="d-flex p-3 align-items-center">
+            <div>
+              <img
+                src="../img/Information.png"
+                style="width: 20px; height: 20px"
+              />
+            </div>
+            <div class="ms-2">
+              <h6 class="mb-0 infoTxt">
+                Kindly note that you will be required to make a commitment fee
+                before publishing a GIG, this is to ensure the authenticity of
+                all GIG’s published on ProDevs.
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row justify-content-between align-items-center">
+          <!-- Previous Button -->
+          <div class="col-6 justify-content-start">
+            <button href="#" class="prevBtn">Previous</button>
+          </div>
+
+          <!-- Next Button -->
+          <div class="col-6 d-flex justify-content-end">
+            <button
+              type="button"
+              class="prevBtn"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Continue
+            </button>
+
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content p-2">
+                  <div class="d-flex justify-content-between p-3">
+                    <div>
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">
+                        Commitment fee
+                      </h1>
+                    </div>
+                    <div>
+                      <button
+                        type="button"
+                        class="btn-close shadow-none"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                  </div>
+                  <div class="modal-body">
+                    You are required to make a small commitment fee before you
+                    can interact with any of the talent on ProDevs, this fee is
+                    to ensure that you are committed to the process.
+                  </div>
+                  <div class="p-2 d-flex justify-content-evenly">
+                    <div>
+                      <button
+                        type="button"
+                        class="Btn-detail"
+                        data-bs-dismiss="modal"
+                      >
+                        Cancel
+                      </button>
+                    </div>
+                    <div>
+                      <a href="./fee.html" style="text-decoration: none">
+                        <button type="button" class="Btn-detail">
+                          Make a commitment fee
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      $("#summernote").summernote({
+        placeholder:
+          "Introduction:<br> We are looking for a skilled UI/UX Designer to lead the redesign of our job platform, Singular. The project involves creating a payment portal that facilitates recurring payments to contractors using a structure that supports Agile Scrum methodologies. The platform redesign will be implemented using Flutter and Airtable. <br> Deliverables: <br> Design and develop a user-friendly payment portal interface. <br> Ensure the interface integrates seamlessly with Agile Scrum frameworks. <br> Collaborate with developers to implement designs in Flutter and Airtable. <br> Test user interface for usability and fix any issues that arise.",
+        tabsize: 2,
+        height: 200,
+        toolbar: [
+          // ["style", ["style"]],
+          ["font", ["bold", "underline", "clear"]],
+          // ["color", ["color"]],
+          ["para", ["ul", "ol", "paragraph"]],
+          // ["table", ["table"]],
+          ["insert", ["link", "picture", "video"]],
+        ],
+      });
+    </script>
+    <script src="../Js/script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
