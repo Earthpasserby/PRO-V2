@@ -411,8 +411,8 @@ label {
 
 .previewheader h1 {
   font-family: proxima-nova, sans-serif;
-  font-size: 26px;
-  font-weight: 700;
+  font-size: 16px;
+  font-weight: 400;
   line-height: 34px;
   text-align: left;
   color: #ffffff;
@@ -422,7 +422,7 @@ label {
   font-family: proxima-nova, sans-serif;
   font-size: 16px;
   font-weight: 400;
-  line-height: 34px;
+  line-height: 20px;
   text-align: left;
   color: #ffffff;
 }
@@ -434,4 +434,21 @@ label {
   line-height: 34px;
   text-align: left;
   color: #ffffff;
+}
+.previewGIG h6 {
+  font-family: proxima-nova, sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20px;
+  text-align: left;
+  color: #7aaee9;
+}
+
+.previewGIG h2 {
+  font-family: proxima-nova, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+  color: #e8f2fc;
 }
