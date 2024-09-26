@@ -452,3 +452,43 @@ label {
   text-align: left;
   color: #e8f2fc;
 }
+.previewCol h2 {
+  font-family: proxima-nova, sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 34px;
+  text-align: left;
+  color: #08121d;
+}
+.previewCol p {
+  font-family: proxima-nova, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  color: #9da6af;
+}
+.previewCol h3 {
+  font-family: proxima-nova, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  color: #08121d;
+}
+.previewColl h3 {
+  font-family: proxima-nova, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  color: #08121d;
+}
+.previewColl p {
+  font-family: proxima-nova, sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 12px;
+  text-align: left;
+  color: #9da6af;
+}
