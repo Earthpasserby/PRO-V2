@@ -525,5 +525,63 @@ label {
 .statusBtn {
   padding: 6px 14px 6px 14px;
   border-radius: 38px;
-  background-color: #EBF7EC;
+  background-color: #ebf7ec;
+}
+
+.statusBtn2 {
+  background-color: #f7f2eb;
+  padding: 6px 14px 6px 14px;
+  border-radius: 38px;
+}
+
+.statusBtn3 {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #0967d2;
+  color: #0967d2;
+  font-family: proxima-nova, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.49px;
+  text-decoration: none;
+  background-color: #fff;
+}
+.statusBtn3:hover {
+  background-color: #0967d2;
+  color: #ffffff;
+}
+
+.mile {
+  height: 100%;
+  padding: 32px;
+  gap: 20px;
+  border-radius: 10px;
+  border: 0.5px;
+  display: flex;
+  flex-direction: column;
+}
+.previewHeader,
+.previewheader {
+  flex-grow: 1;
+}
+
+/** NotificationPage styling**/
+.tom-margin {
+  margin-bottom: 20px;
+}
+.tabHeader {
+  font-family: proxima-nova, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: left;
+  color: #08121d;
+}
+.tabP {
+  font-family: proxima-nova, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+  text-align: left;
+  color: #67737e;
 }
