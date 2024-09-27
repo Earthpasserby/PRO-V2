@@ -492,3 +492,38 @@ label {
   text-align: left;
   color: #9da6af;
 }
+
+/** milestonePage styling**/
+.custom-margin {
+  margin-right: 180px;
+}
+.mileHeader h3 {
+  font-family: proxima-nova, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+  color: #08121d;
+}
+.mileHeader span {
+  font-family: proxima-nova, sans-serif;
+  font-size: 10px;
+  font-weight: 300;
+  line-height: 12px;
+  text-align: left;
+  color: #67737e;
+}
+
+.mileHeader h6 {
+  font-family: proxima-nova, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+  color: #08121d;
+}
+.statusBtn {
+  padding: 6px 14px 6px 14px;
+  border-radius: 38px;
+  background-color: #EBF7EC;
+}
