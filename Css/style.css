@@ -620,3 +620,28 @@ label {
   text-align: left;
   color: #0967d2;
 }
+.Experience span {
+  font-family: proxima-nova, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+  color: #9da6af;
+}
+.Experience h6 {
+  font-family: proxima-nova, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+  color: #08121d;
+}
+.verifyBtn {
+  color: #0967d2;
+  background-color: #e8f2fc;
+  border-radius: 10px;
+  size: 10px;
+  font-weight: 400;
+  font-family: proxima-nova, sans-serif;
+  padding: 6px 14px 6px 14px;
+}
