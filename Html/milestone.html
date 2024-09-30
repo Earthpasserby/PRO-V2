@@ -22,7 +22,7 @@
         <span class="navbar-brand mb-0 h1">Navbar</span>
       </div>
     </nav>
-    <div class="container header mt-5 p-5 mb-5">
+    <div class="gig__page__header">
       <div>
         <a href="./detail.html" class="backButton">
           <i class="bi bi-chevron-left"></i>
@@ -30,21 +30,17 @@
         </a>
       </div>
       <hr />
-      <div class="container">
+      <div class="">
         <div class="page feePage">
-          <h2>Preview and create milestone</h2>
+          <h2 style="margin-bottom: 3px">Preview and create milestone</h2>
           <p>Enter the details about this GIG.</p>
         </div>
       </div>
-      <div class="container">
-        <div class="row">
+      <div class="">
+        <div class="milestone__grid">
           <div
-            class="col-12 col-md-6 mb-5 mile"
-            style="
-              background-color: #0967d2;
-              padding: 32px;
-              border-radius: 10px;
-            "
+            class="mb-5 mile__summary"
+            style="background-color: #0967d2; border-radius: 10px"
           >
             <div class="previewHeader">
               <h1>
@@ -110,8 +106,10 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6 previewCol">
-            <div class="d-flex justify-content-between previewGIG">
+          <div class="previewCol">
+            <div
+              class="d-flex flex-column flex-md-row justify-content-between previewGIG"
+            >
               <div>
                 <h2>Breakdown milestones</h2>
                 <p>Breakdown your GIG into actionable points.</p>
@@ -129,9 +127,10 @@
             </div>
 
             <div>
-              <div class="container mb-5">
+              <div class="mb-4">
                 <div
-                  class="card shadow-lg rounded border-0 p-3 mt-3"
+                  style="box-shadow: 0px 6px 20px 0px #09305e0f"
+                  class="card rounded border-0 mt-3 mile__summ__card"
                   style="background-color: #fff; border-radius: 10px"
                 >
                   <div class="mileHeader">
@@ -141,8 +140,8 @@
                     </h3>
                   </div>
                   <hr />
-                  <div class="d-flex justify-content-start mileHeader">
-                    <div class="custom-margin">
+                  <div class="d-flex justify-content-between mileHeader">
+                    <div class="">
                       <span>Amount</span>
                       <h6>GH₵ 50.00</h6>
                     </div>
@@ -154,8 +153,8 @@
                     </div>
                   </div>
                   <hr />
-                  <div class="d-flex justify-content-start mileHeader">
-                    <div class="custom-margin">
+                  <div class="d-flex justify-content-between mileHeader">
+                    <div class="">
                       <span>Start date</span>
                       <h6>11/11/2011</h6>
                     </div>
@@ -163,212 +162,6 @@
                       <span>End date</span>
                       <h6>11/11/2011</h6>
                     </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div class="container mb-5">
-                <div
-                  class="card shadow-lg rounded border-0 p-3 mt-3"
-                  style="background-color: #fff; border-radius: 10px"
-                >
-                  <div class="d-flex justify-content-between">
-                    <div class="mileHeader">
-                      <h3>Design the about us page of the paralex website.</h3>
-                    </div>
-                    <div>
-                      <button
-                        type="button"
-                        class="shadow-none border-0 bg-white"
-                      >
-                        <i class="bi bi-three-dots-vertical"></i>
-                      </button>
-                    </div>
-                  </div>
-                  <hr />
-                  <div class="d-flex justify-content-start mileHeader">
-                    <div class="custom-margin">
-                      <span>Amount</span>
-                      <h6>GH₵ 50.00</h6>
-                    </div>
-                    <div>
-                      <span>Status</span>
-                      <h6 class="statusBtn2" style="color: #d27409">
-                        Not yet paid for
-                      </h6>
-                    </div>
-                  </div>
-                  <hr />
-                  <div class="d-flex justify-content-start mileHeader">
-                    <div class="custom-margin">
-                      <span>Start date</span>
-                      <h6>11/11/2011</h6>
-                    </div>
-                    <div>
-                      <span>End date</span>
-                      <h6>11/11/2011</h6>
-                    </div>
-                  </div>
-                  <div class="d-grid mt-2">
-                    <button class="statusBtn3" type="button">
-                      Make payment
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div class="container mb-5">
-                <div
-                  class="card shadow-lg rounded border-0 p-3 mt-3"
-                  style="background-color: #fff; border-radius: 10px"
-                >
-                  <div class="d-flex justify-content-between">
-                    <div class="mileHeader">
-                      <h3>
-                        Design the contact us page of the paralex website.
-                      </h3>
-                    </div>
-                    <div>
-                      <button
-                        type="button"
-                        class="shadow-none border-0 bg-white"
-                      >
-                        <i class="bi bi-three-dots-vertical"></i>
-                      </button>
-                    </div>
-                  </div>
-                  <hr />
-                  <div class="d-flex justify-content-start mileHeader">
-                    <div class="custom-margin">
-                      <span>Amount</span>
-                      <h6>GH₵ 50.00</h6>
-                    </div>
-                    <div>
-                      <span>Status</span>
-                      <h6 class="statusBtn2" style="color: #d27409">
-                        Not yet paid for
-                      </h6>
-                    </div>
-                  </div>
-                  <hr />
-                  <div class="d-flex justify-content-start mileHeader">
-                    <div class="custom-margin">
-                      <span>Start date</span>
-                      <h6>11/11/2011</h6>
-                    </div>
-                    <div>
-                      <span>End date</span>
-                      <h6>11/11/2011</h6>
-                    </div>
-                  </div>
-                  <div class="d-grid mt-2">
-                    <button class="statusBtn3" type="button">
-                      Make payment
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div class="container mb-5">
-                <div
-                  class="card shadow-lg rounded border-0 p-3 mt-3"
-                  style="background-color: #fff; border-radius: 10px"
-                >
-                  <div class="d-flex justify-content-between">
-                    <div class="mileHeader">
-                      <h3>Design the terms and conditions of the page.</h3>
-                    </div>
-                    <div>
-                      <button
-                        type="button"
-                        class="shadow-none border-0 bg-white"
-                      >
-                        <i class="bi bi-three-dots-vertical"></i>
-                      </button>
-                    </div>
-                  </div>
-                  <hr />
-                  <div class="d-flex justify-content-start mileHeader">
-                    <div class="custom-margin">
-                      <span>Amount</span>
-                      <h6>GH₵ 50.00</h6>
-                    </div>
-                    <div>
-                      <span>Status</span>
-                      <h6 class="statusBtn2" style="color: #d27409">
-                        Not yet paid for
-                      </h6>
-                    </div>
-                  </div>
-                  <hr />
-                  <div class="d-flex justify-content-start mileHeader">
-                    <div class="custom-margin">
-                      <span>Start date</span>
-                      <h6>11/11/2011</h6>
-                    </div>
-                    <div>
-                      <span>End date</span>
-                      <h6>11/11/2011</h6>
-                    </div>
-                  </div>
-                  <div class="d-grid mt-2">
-                    <button class="statusBtn3" type="button">
-                      Make payment
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div class="container mb-5">
-                <div
-                  class="card shadow-lg rounded border-0 p-3 mt-3"
-                  style="background-color: #fff; border-radius: 10px"
-                >
-                  <div class="d-flex justify-content-between">
-                    <div class="mileHeader">
-                      <h3>Design the privacy policy of the page.</h3>
-                    </div>
-                    <div>
-                      <button
-                        type="button"
-                        class="shadow-none border-0 bg-white"
-                      >
-                        <i class="bi bi-three-dots-vertical"></i>
-                      </button>
-                    </div>
-                  </div>
-                  <hr />
-                  <div class="d-flex justify-content-start mileHeader">
-                    <div class="custom-margin">
-                      <span>Amount</span>
-                      <h6>GH₵ 50.00</h6>
-                    </div>
-                    <div>
-                      <span>Status</span>
-                      <h6 class="statusBtn2" style="color: #d27409">
-                        Not yet paid for
-                      </h6>
-                    </div>
-                  </div>
-                  <hr />
-                  <div class="d-flex justify-content-start mileHeader">
-                    <div class="custom-margin">
-                      <span>Start date</span>
-                      <h6>11/11/2011</h6>
-                    </div>
-                    <div>
-                      <span>End date</span>
-                      <h6>11/11/2011</h6>
-                    </div>
-                  </div>
-                  <div class="d-grid mt-2">
-                    <button class="statusBtn3" type="button">
-                      Make payment
-                    </button>
                   </div>
                 </div>
               </div>
@@ -377,7 +170,7 @@
         </div>
       </div>
 
-      <div class="container mt-5">
+      <div style="margin-top: 20px">
         <div class="row justify-content-between align-items-center g-4">
           <!-- Previous Button -->
           <div class="col-6 justify-content-start">
@@ -388,7 +181,7 @@
 
           <!-- Next Button -->
           <div class="col-6 d-flex justify-content-end">
-            <a href="./NotificationGigs.html" style="text-decoration: none">
+            <a href="./detail.html" style="text-decoration: none">
               <button class="prevBtn" type="button">Publish GIG</button>
             </a>
           </div>
