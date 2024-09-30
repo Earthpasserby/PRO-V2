@@ -22,7 +22,7 @@
         <span class="navbar-brand mb-0 h1">Navbar</span>
       </div>
     </nav>
-    <div class="container header mt-5 p-5 mb-5">
+    <div class="gig__page__header">
       <div>
         <a href="./detail.html" class="backButton">
           <i class="bi bi-chevron-left"></i>
@@ -30,21 +30,17 @@
         </a>
       </div>
       <hr />
-      <div class="container">
+      <div class="">
         <div class="page feePage">
           <h2>Preview and create milestone</h2>
           <p>Enter the details about this GIG.</p>
         </div>
       </div>
-      <div class="container">
-        <div class="row">
+      <div class="">
+        <div class="milestone__grid">
           <div
-            class="col-12 col-md-6 mb-5"
-            style="
-              background-color: #0967d2;
-              padding: 32px;
-              border-radius: 10px;
-            "
+            class="mb-5 mile__summary"
+            style="background-color: #0967d2; border-radius: 10px"
           >
             <div class="previewHeader">
               <h1>
@@ -110,16 +106,20 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6  previewCol">
-            <h2>Breakdown milestones</h2>
+          <div class="previewCol">
+            <h2 style="margin-bottom: 2px">Breakdown milestones</h2>
             <p>Breakdown your GIG into actionable points.</p>
             <div>
-              <div class="container mb-5">
+              <div class="mb-5 mt-4">
                 <div
                   class="card rounded h-100 border-0"
-                  style="background-color: #b8d2ee; border-radius: 10px"
+                  style="
+                    background-color: #e8f2fc;
+                    border-radius: 10px;
+                    width: 100%;
+                  "
                 >
-                  <div class="d-flex p-5 align-items-center">
+                  <div class="d-flex align-items-center create__mile">
                     <div>
                       <button
                         type="button"
@@ -136,7 +136,7 @@
 
                       <!-- Modal -->
                       <div
-                        class="modal fade modal-lg p-3"
+                        class="modal fade modal-lg"
                         id="staticBackdrop"
                         data-bs-backdrop="static"
                         data-bs-keyboard="false"
@@ -145,7 +145,7 @@
                         aria-hidden="true"
                       >
                         <div class="modal-dialog">
-                          <div class="modal-content">
+                          <div class="modal-content create__mile__modal__cont">
                             <div class="modal-header">
                               <h1
                                 class="modal-title fs-5"
@@ -184,7 +184,7 @@
                                     >
                                     <select
                                       id="inputState"
-                                      class="form-control shadow-none"
+                                      class="form-control shadow-none mile__modal__form__input"
                                     >
                                       <option selected>₦500.00</option>
                                       <option>...</option>
@@ -199,7 +199,7 @@
                                     <div class="input-group mb-3">
                                       <input
                                         type="date"
-                                        class="form-control"
+                                        class="form-control mile__modal__form__input"
                                         placeholder=""
                                         aria-label="Example text with two button addons"
                                         aria-describedby="button-addon3"
@@ -213,7 +213,7 @@
                                     <div class="input-group mb-3">
                                       <input
                                         type="date"
-                                        class="form-control"
+                                        class="form-control mile__modal__form__input"
                                         placeholder=""
                                         aria-label="Example text with two button addons"
                                         aria-describedby="button-addon3"
@@ -224,7 +224,16 @@
                               </form>
                             </div>
                             <div class="modal-footer">
-                              <button type="button" class="btn btn-primary">
+                              <button
+                                style="
+                                  height: 48px;
+                                  width: 167px;
+                                  text-align: center;
+                                  border-radius: 8px;
+                                "
+                                type="button"
+                                class="btn btn-primary mt-3"
+                              >
                                 Create milestone
                               </button>
                             </div>
@@ -233,13 +242,13 @@
                       </div>
                     </div>
 
-                    <div class="ms-2 mb-0 pt-4 previewColl">
-                      <div>
-                        <h3 class="infoTxt">Create milestone</h3>
-                        <p class="">
-                          Create a new milestone based on your GIG.
-                        </p>
-                      </div>
+                    <div class="previewColl ms-2">
+                      <h3 style="margin-bottom: 4px" class="infoTxt">
+                        Create milestone
+                      </h3>
+                      <p style="margin-bottom: 0" class="">
+                        Create a new milestone based on your GIG.
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -249,7 +258,7 @@
         </div>
       </div>
 
-      <div class="container mt-5">
+      <div class="mt-5">
         <div class="row justify-content-between align-items-center g-4">
           <!-- Previous Button -->
           <div class="col-6 justify-content-start">
@@ -261,7 +270,7 @@
           <!-- Next Button -->
           <div class="col-6 d-flex justify-content-end">
             <a href="./detail.html" style="text-decoration: none">
-              <button class="prevBtn" type="button">proceed</button>
+              <button class="prevBtn" type="button">Proceed</button>
             </a>
           </div>
         </div>

@@ -1,10 +1,217 @@
 body {
-  background-color: #b8d2ee;
+  background-color: #e9eef5;
+  font-family: "Proxima Nova", sans-serif;
 }
 
-.header {
+@layer base {
+  @font-face {
+    font-family: "Proxima Nova";
+    src: url("/fonts/Mark-Simonson-Proxima-Nova-Thin-Italic.otf")
+      format("opentype");
+    font-weight: 100;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: "Proxima Nova";
+    src: url("/fonts/Mark-Simonson-Proxima-Nova-Thin.otf") format("opentype");
+    font-weight: 100;
+  }
+
+  @font-face {
+    font-family: "Proxima Nova";
+    src: url("/fonts/Mark-Simonson-Proxima-Nova-Light-Italic.otf")
+      format("opentype");
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: "Proxima Nova";
+    src: url("/fonts/Mark-Simonson-Proxima-Nova-Light.otf") format("opentype");
+    font-weight: 400;
+  }
+
+  @font-face {
+    font-family: "Proxima Nova";
+    src: url("/fonts/Mark-Simonson-Proxima-Nova-Regular-Italic.otf")
+      format("opentype");
+    font-weight: 500;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: "Proxima Nova";
+    src: url("/fonts/Mark-Simonson-Proxima-Nova-Regular.otf") format("opentype");
+    font-weight: 500;
+  }
+
+  @font-face {
+    font-family: "Proxima Nova";
+    src: url("/fonts/Mark-Simonson-Proxima-Nova-Semibold-Italic.otf")
+      format("opentype");
+    font-weight: 600;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: "Proxima Nova";
+    src: url("/fonts/Mark-Simonson-Proxima-Nova-Semibold.otf")
+      format("opentype");
+    font-weight: 600;
+  }
+
+  @font-face {
+    font-family: "Proxima Nova";
+    src: url("/fonts/Mark-Simonson-Proxima-Nova-Bold-Italic.otf")
+      format("opentype");
+    font-weight: 700;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: "Proxima Nova";
+    src: url("/fonts/Mark-Simonson-Proxima-Nova-Bold.otf") format("opentype");
+    font-weight: 700;
+  }
+
+  @font-face {
+    font-family: "Proxima Nova";
+    src: url("/fonts/Mark-Simonson-Proxima-Nova-Extrabold-Italic.otf")
+      format("opentype");
+    font-weight: 800;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: "Proxima Nova";
+    src: url("/fonts/Mark-Simonson-Proxima-Nova-Extrabold.otf")
+      format("opentype");
+    font-weight: 800;
+  }
+
+  @font-face {
+    font-family: "Proxima Nova";
+    src: url("/fonts/Mark-Simonson-Proxima-Nova-Black-Italic.otf")
+      format("opentype");
+    font-weight: 900;
+    font-style: italic;
+  }
+  @font-face {
+    font-family: "Proxima Nova";
+    src: url("/fonts/Mark-Simonson-Proxima-Nova-Black.otf") format("opentype");
+    font-weight: 900;
+  }
+}
+
+.gig__page__header {
   background-color: #ffffff;
   border-radius: 10px;
+  width: 90%;
+  max-width: 1320px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 35px;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+.speak__btn,
+.create__btn__cont {
+  width: 48.5%;
+}
+
+.create__btn {
+  width: 100%;
+}
+.card__hr {
+  background: #e9eaf2;
+  height: 0.5px;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.card__shadow {
+  box-shadow: 0px 6px 21.9px 0px #040a330d;
+  border: 0.5px solid #e9eaf2;
+}
+
+.gig__page__card {
+  padding: 20px 16px;
+  border-radius: 0.375rem;
+  height: 100%;
+}
+.gig__card__link {
+  border: 1px solid #0967d2;
+  border-radius: 8px;
+  height: 50px;
+  width: 152px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.free__call__btn {
+  background: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  height: 50px;
+  width: 100%;
+  color: white;
+  margin-top: 20px;
+  max-width: 350px;
+  cursor: pointer;
+}
+
+.milestone__grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  margin-top: 25px;
+}
+
+@media screen and (min-width: 768px) {
+  .create__btn {
+    width: 131px;
+  }
+  .speak__btn {
+    width: 142px;
+  }
+  .create__btn__cont {
+    width: fit-content;
+  }
+  .gig__page__header {
+    padding: 30px;
+    margin-top: 40px;
+  }
+  .gig__page__card {
+    padding: 30px 20px;
+  }
+  .gig__page__header {
+    width: 94%;
+  }
+  .card__hr2 {
+    margin: 30px 0;
+  }
+  .free__call__btn {
+    width: 233px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .gig__page__card {
+    padding: 30px;
+  }
+  .gig__page__card {
+    border-radius: 10px !important;
+  }
+  .milestone__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
+  }
 }
 .btn-blue {
   padding: 10px;
@@ -12,7 +219,7 @@ body {
   border-radius: 8px;
   background: #0967d2;
   border: none;
-  font-family: proxima-nova, sans-serif;
+
   font-size: 16px;
   font-weight: 600;
   line-height: 19.49px;
@@ -24,7 +231,7 @@ body {
   gap: 23px;
   border-radius: 8px;
   border: 1px solid #0967d2;
-  font-family: proxima-nova, sans-serif;
+
   font-size: 16px;
   font-weight: 600;
   line-height: 19.49px;
@@ -33,15 +240,14 @@ body {
   background: none;
 }
 .text-title {
-  font-family: proxima-nova, sans-serif;
   font-size: 20px;
   font-weight: 700;
   line-height: 24.36px;
   text-align: left;
   color: #08121d;
+  margin-bottom: 5px;
 }
 .text-text {
-  font-family: proxima-nova, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 19.49px;
@@ -53,8 +259,12 @@ body {
   padding: 25px;
   border-radius: 10px;
 }
+@media screen and (min-width: 768px) {
+  .last-header {
+    padding: 30px;
+  }
+}
 .last-header h3 {
-  font-family: proxima-nova, sans-serif;
   font-size: 24px;
   font-weight: 700;
   line-height: 29.23px;
@@ -62,10 +272,9 @@ body {
   color: #fff;
 }
 .last-header p {
-  font-family: proxima-nova, sans-serif;
   font-size: 16px;
   font-weight: 400;
-  line-height: 19.49px;
+  line-height: 22px;
   text-align: left;
   color: #b8d2ee;
 }
@@ -74,7 +283,7 @@ body {
   border-radius: 8px;
   border: 1px solid #0967d2;
   color: #0967d2;
-  font-family: proxima-nova, sans-serif;
+
   font-size: 16px;
   font-weight: 400;
   line-height: 19.49px;
@@ -86,7 +295,7 @@ body {
   border-radius: 8px;
   border: 1px solid #fff;
   color: #fff;
-  font-family: proxima-nova, sans-serif;
+
   font-size: 16px;
   font-weight: 400;
   line-height: 19.49px;
@@ -95,7 +304,6 @@ body {
   background: none;
 }
 .card-title {
-  font-family: proxima-nova, sans-serif;
   font-size: 24px;
   font-weight: 700;
   line-height: 29.23px;
@@ -103,24 +311,32 @@ body {
   color: #08121d;
 }
 .card-body {
-  font-family: proxima-nova, sans-serif;
+  height: 100%;
   font-size: 16px;
   font-weight: 400;
   line-height: 19.49px;
   text-align: left;
   color: #67737e;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-direction: column;
+  gap: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .card-body {
+    gap: 25px;
+  }
 }
 .card-text {
-  font-family: proxima-nova, sans-serif;
   font-size: 16px;
   font-weight: 400;
-  line-height: 19.49px;
+  line-height: 22px;
   text-align: left;
   color: #67737e;
-  margin-bottom: 30px;
+  margin-top: 8px;
 }
 .subHeader {
-  font-family: proxima-nova, sans-serif;
   font-size: 20px;
   font-weight: 700;
   line-height: 24.36px;
@@ -128,7 +344,6 @@ body {
   color: #08121d;
 }
 .subText {
-  font-family: proxima-nova, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 19.49px;
@@ -212,18 +427,18 @@ hr:after {
 /** Page2 styling**/
 
 .page h2 {
-  font-family: proxima-nova, sans-serif;
   font-size: 24px;
   font-weight: 700;
-  line-height: 19px;
+  line-height: 30px;
   text-align: left;
   color: #08121d;
+  margin-bottom: 4px;
 }
 .page p {
-  font-family: proxima-nova, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 19px;
+  margin-bottom: 0;
   text-align: left;
   color: #67737e;
 }
@@ -246,12 +461,12 @@ hr:after {
   background-color: #d27409;
   border-radius: 50%;
   display: inline-block;
+  margin-right: 10px;
 }
 .pageList {
-  margin-bottom: 100px;
+  margin-bottom: 60px;
 }
 .pageList h6 {
-  font-family: proxima-nova, sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
@@ -259,7 +474,6 @@ hr:after {
   color: #373d43;
 }
 .pageList p {
-  font-family: proxima-nova, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -268,7 +482,7 @@ hr:after {
 .backButton {
   text-decoration: none;
   color: #08121d;
-  font-family: proxima-nova, sans-serif;
+
   font-size: 16px;
   font-weight: 400;
   line-height: 19.49px;
@@ -277,7 +491,7 @@ hr:after {
   padding: 10px;
   text-align: center;
   border-radius: 8px;
-  font-family: proxima-nova, sans-serif;
+
   font-size: 16px;
   font-weight: 400;
   line-height: 19.49px;
@@ -296,7 +510,6 @@ hr:after {
 /** detailPage styling**/
 
 label {
-  font-family: proxima-nova, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -304,7 +517,6 @@ label {
   color: #373d43;
 }
 .subTxt {
-  font-family: proxima-nova, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -312,7 +524,6 @@ label {
   color: #373d43;
 }
 .pTxt {
-  font-family: proxima-nova, sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
@@ -320,7 +531,6 @@ label {
   color: #9da6af;
 }
 .headTxt {
-  font-family: proxima-nova, sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 30px;
@@ -328,7 +538,6 @@ label {
   color: #08121d;
 }
 .cardTxt {
-  font-family: proxima-nova, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -336,8 +545,7 @@ label {
   color: #67737e;
 }
 .infoTxt {
-  font-family: proxima-nova, sans-serif;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 400;
   line-height: 16px;
   text-align: left;
@@ -347,7 +555,7 @@ label {
   padding: 10px;
   text-align: center;
   border-radius: 8px;
-  font-family: proxima-nova, sans-serif;
+
   font-size: 16px;
   font-weight: 400;
   line-height: 19.49px;
@@ -364,15 +572,25 @@ label {
 /** feePage styling**/
 
 .feePage h2 {
-  font-family: proxima-nova, sans-serif;
-  font-size: 34px;
+  font-size: 26px;
   font-weight: 700;
-  line-height: 40px;
+  line-height: 30px;
   text-align: left;
   color: #08121d;
 }
+.mile__summary {
+  padding: 20px 16px;
+}
+@media screen and (min-width: 768px) {
+  .feePage h2 {
+    font-size: 34px;
+    line-height: 40px;
+  }
+  .mile__summary {
+    padding: 32px;
+  }
+}
 .fClarity p {
-  font-family: proxima-nova, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -381,7 +599,6 @@ label {
 }
 
 .fClarity span i {
-  font-family: proxima-nova, sans-serif;
   /* font-size: 16px; */
   font-weight: 400;
   /* line-height: 20px; */
@@ -392,7 +609,6 @@ label {
 /** previewage styling**/
 
 .previewHeader h1 {
-  font-family: proxima-nova, sans-serif;
   font-size: 26px;
   font-weight: 700;
   line-height: 34px;
@@ -401,43 +617,40 @@ label {
 }
 
 .previewHeader p {
-  font-family: proxima-nova, sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 20px;
   text-align: left;
   color: #b8d2ee;
+  margin-bottom: 8px;
 }
 
 .previewheader h1 {
-  font-family: proxima-nova, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 34px;
   text-align: left;
   color: #ffffff;
+  margin-bottom: 5px;
 }
 
 .previewheader p {
-  font-family: proxima-nova, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   text-align: left;
-  color: #ffffff;
+  color: #b8d2ee;
 }
 
 .previewheader ul li {
-  font-family: proxima-nova, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 34px;
   text-align: left;
-  color: #ffffff;
+  color: #b8d2ee;
 }
 .previewGIG h6 {
-  font-family: proxima-nova, sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 300;
   line-height: 20px;
   text-align: left;
@@ -445,15 +658,13 @@ label {
 }
 
 .previewGIG h2 {
-  font-family: proxima-nova, sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 26px;
+  line-height: 20px;
   text-align: left;
   color: #e8f2fc;
 }
 .previewCol h2 {
-  font-family: proxima-nova, sans-serif;
   font-size: 26px;
   font-weight: 700;
   line-height: 34px;
@@ -461,7 +672,6 @@ label {
   color: #08121d;
 }
 .previewCol p {
-  font-family: proxima-nova, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -469,7 +679,6 @@ label {
   color: #9da6af;
 }
 .previewCol h3 {
-  font-family: proxima-nova, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -477,7 +686,6 @@ label {
   color: #08121d;
 }
 .previewColl h3 {
-  font-family: proxima-nova, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -485,12 +693,48 @@ label {
   color: #08121d;
 }
 .previewColl p {
-  font-family: proxima-nova, sans-serif;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 400;
-  line-height: 12px;
+  line-height: 14px;
   text-align: left;
   color: #9da6af;
+}
+.mile__summ__card {
+  padding: 20px 16px;
+}
+.create__mile{
+  padding: 50px 20px;
+}
+.create__mile__modal__cont{
+  padding: 10px;
+}
+
+.mile__modal__form__input{
+  height: 48px;
+}
+.details__form input, .details__form select{
+  height: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .previewGIG h6 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .previewGIG h2 {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .mile__summ__card {
+    padding: 25px;
+  }
+  .create__mile{
+    padding: 70px 40px;
+  }
+  .create__mile__modal__cont{
+    padding: 20px;
+  }
 }
 
 /** milestonePage styling**/
@@ -498,7 +742,6 @@ label {
   margin-right: 180px;
 }
 .mileHeader h3 {
-  font-family: proxima-nova, sans-serif;
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
@@ -506,16 +749,14 @@ label {
   color: #08121d;
 }
 .mileHeader span {
-  font-family: proxima-nova, sans-serif;
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 300;
-  line-height: 12px;
+  line-height: 14px;
   text-align: left;
   color: #67737e;
 }
 
 .mileHeader h6 {
-  font-family: proxima-nova, sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
@@ -525,5 +766,5 @@ label {
 .statusBtn {
   padding: 6px 14px 6px 14px;
   border-radius: 38px;
-  background-color: #EBF7EC;
+  background-color: #ebf7ec;
 }
