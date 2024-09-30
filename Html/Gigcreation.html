@@ -173,9 +173,7 @@
             </div>
             <!-- Right side (Button) -->
             <div class="col-12 col-md-4 text-md-end text-center mt-3 mt-md-0">
-                <a href="./Gigcreation.html" class="button"
-                          >Select this talent</a
-                        >
+              <a href="./Gigcreation.html" class="button">Select this talent</a>
             </div>
           </div>
 
@@ -207,344 +205,347 @@
             </div>
           </div>
 
-          <div class="row mt-5 start mb-3">
-            <div class="col-md-12">
-              <div class="row Experience gap-0">
-                <div class="col-md-2">
-                  <span>Experience level</span>
-                  <h6 class="mt-4">Intermediate</h6>
-                </div>
-                <div class="col-md-2">
-                  <span>Engineering level</span>
-                  <h6 class="mt-4">Engineer 3</h6>
-                </div>
-                <div class="col-md-2">
-                  <span>Test taken</span>
-                  <h6 class="mt-4">No</h6>
-                </div>
-                <div class="col-md-6">
-                  <span>Vetted</span>
-                  <h6 class="mt-4 Klev">
-                    Yes (By Clever Dike - 23/04/2024 - 16:52:07)
-                  </h6>
-                </div>
+          <div class="container mt-5">
+            <!-- Toggle Buttons -->
+            <div class="d-flex justify-content-between">
+              <div>
+                <span>Recommendations</span>
+              </div>
+              <div class="d-flex justify-content-center mb-4 gap-4">
+                <button
+                  class="border-0 mx-2 bg-transparent"
+                  data-bs-target="#testimonialCarousel"
+                  data-bs-slide="prev"
+                >
+                  <i class="bi bi-chevron-left"></i>
+                </button>
+                <button
+                  class="border-0 mx-2 bg-transparent"
+                  data-bs-target="#testimonialCarousel"
+                  data-bs-slide="next"
+                >
+                  <i class="bi bi-chevron-right"></i>
+                </button>
               </div>
             </div>
-          </div>
 
-          <div class="row mt-5 start">
-            <div class="col-md-9">
-              <div class="row">
-                <div class="col-md-8 Experience">
-                  <span>links</span>
-                  <div class="d-flex gap-4 flex-wrap">
-                    <h6 class="mt-4">
-                      Linkedin:
-                      <a
-                        href="www.linkedin/karim-satiya"
-                        style="text-wrap: nowrap; text-decoration-line: none"
-                        >www.linkedin/karim-satiya</a
-                      >
-                    </h6>
-                    <h6 class="mt-4">
-                      Portfolio:
-                      <a
-                        href="www.linkedin/karim-satiya"
-                        style="text-wrap: nowrap; text-decoration-line: none"
-                        >www.linkedin/karim-satiya</a
-                      >
-                    </h6>
-                  </div>
-                </div>
-
-                <div class="col-md-4 Experience">
-                  <span>Resume</span>
-                  <h6 class="mt-4">
-                    <a
-                      href="www.linkedin/karim-satiya"
-                      style="text-wrap: nowrap; text-decoration-line: none"
-                      >Download</a
-                    >
-                  </h6>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="row mt-5 start">
-            <div class="col-12 col-md-4">
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="d-flex justify-content-between">
-                    <span>CV</span>
-                    <span>5</span>
-                  </div>
-                </div>
-              </div>
-              <div class="mt-2">
-                <input
-                  type="range"
-                  min="1"
-                  max="100"
-                  value="50"
-                  class="custom-slider w-100"
-                />
-              </div>
-            </div>
-            <div class="col-12 col-md-4">
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="d-flex justify-content-between">
-                    <span>CV</span>
-                    <span>5</span>
-                  </div>
-                </div>
-              </div>
-              <div class="mt-2">
-                <input
-                  type="range"
-                  min="1"
-                  max="100"
-                  value="50"
-                  class="custom-slider w-100"
-                />
-              </div>
-            </div>
-            <div class="col-12 col-md-4">
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="d-flex justify-content-between">
-                    <span>CV</span>
-                    <span>5</span>
-                  </div>
-                </div>
-              </div>
-              <div class="mt-2">
-                <input
-                  type="range"
-                  min="1"
-                  max="100"
-                  value="50"
-                  class="custom-slider w-100"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="container mt-5">
-        <!-- Toggle Buttons -->
-        <div class="d-flex justify-content-between">
-          <div>
-            <span>Recommendations</span>
-          </div>
-          <div class="d-flex justify-content-center mb-4 gap-4">
-            <button
-              class="border-0  mx-2"
-              data-bs-target="#testimonialCarousel"
-              data-bs-slide="prev"
+            <!-- Testimonial Carousel -->
+            <div
+              id="testimonialCarousel"
+              class="carousel slide"
+              data-bs-ride="carousel"
             >
-              <i class="bi bi-chevron-left"></i>
-            </button>
-            <button
-              class="border-0 mx-2"
-              data-bs-target="#testimonialCarousel"
-              data-bs-slide="next"
-            >
-              <i class="bi bi-chevron-right"></i>
-            </button>
-          </div>
-        </div>
+              <div class="carousel-inner">
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="testimonial-card p-3 mb-4">
+                        <!-- Profile Info Section -->
+                        <div class="row">
+                          <!-- Left side (Profile Picture & Name) -->
+                          <div
+                            class="col-12 col-md-8 d-flex justify-content-start align-items-center"
+                          >
+                            <img
+                              src="../img/Avatar.png"
+                              alt="Profile Picture"
+                              class="img-fluid rounded-circle"
+                              style="width: 40px; height: 40px"
+                            />
+                            <div class="ms-3">
+                              <h5 class="mb-0">Sanusi Ganiyu</h5>
+                            </div>
+                          </div>
 
-        <!-- Testimonial Carousel -->
-        <div
-          id="testimonialCarousel"
-          class="carousel slide"
-          data-bs-ride="carousel"
-        >
-          <div class="carousel-inner">
-            <!-- Slide 1 -->
-            <div class="carousel-item active">
-              <div class="row">
-                <div class="col-md-4">
-                  <div class="testimonial-card p-3 mb-4">
-                    <!-- Profile Info Section -->
-                    <div class="row">
-                      <!-- Left side (Profile Picture & Name) -->
-                      <div
-                        class="col-12 col-md-8 d-flex justify-content-start align-items-center"
-                      >
-                        <img
-                          src="../img/Avatar.png"
-                          alt="Profile Picture"
-                          class="img-fluid rounded-circle"
-                          style="width: 40px; height: 40px"
-                        />
-                        <div class="ms-3">
-                          <h5 class="mb-0">Sanusi Ganiyu</h5>
+                          <!-- Right side (Date) -->
+                          <div
+                            class="col-12 col-md-4 text-md-end text-center mt-2 mt-md-3"
+                          >
+                            <span>26/9/2024</span>
+                          </div>
+                        </div>
+
+                        <!-- Rating Section -->
+                        <div class="d-flex justify-content-start mt-3">
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <i class="bi bi-star text-muted"></i>
+                          <!-- Empty star for unfilled rating -->
+                        </div>
+
+                        <!-- Testimonial Text -->
+                        <div class="mt-3" style="text-align: justify">
+                          <h6>
+                            Chinedu is an exceptional designer who I have had
+                            the privilege to work with. We had a particular
+                            expectation on a project in mind, and he met and
+                            even surpassed those expectations. I would recommend
+                            him on any project.
+                          </h6>
                         </div>
                       </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="testimonial-card p-3 mb-4">
+                        <!-- Profile Info Section -->
+                        <div class="row">
+                          <!-- Left side (Profile Picture & Name) -->
+                          <div
+                            class="col-12 col-md-8 d-flex justify-content-start align-items-center"
+                          >
+                            <img
+                              src="../img/Avatar.png"
+                              alt="Profile Picture"
+                              class="img-fluid rounded-circle"
+                              style="width: 40px; height: 40px"
+                            />
+                            <div class="ms-3">
+                              <h5 class="mb-0">Sanusi Ganiyu</h5>
+                            </div>
+                          </div>
 
-                      <!-- Right side (Date) -->
-                      <div
-                        class="col-12 col-md-4 text-md-end text-center mt-2 mt-md-3"
-                      >
-                        <span>26/9/2024</span>
+                          <!-- Right side (Date) -->
+                          <div
+                            class="col-12 col-md-4 text-md-end text-center mt-2 mt-md-3"
+                          >
+                            <span>26/9/2024</span>
+                          </div>
+                        </div>
+
+                        <!-- Rating Section -->
+                        <div class="d-flex justify-content-start mt-3">
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <i class="bi bi-star text-muted"></i>
+                          <!-- Empty star for unfilled rating -->
+                        </div>
+
+                        <!-- Testimonial Text -->
+                        <div class="mt-3" style="text-align: justify">
+                          <h6>
+                            Chinedu is an exceptional designer who I have had
+                            the privilege to work with. We had a particular
+                            expectation on a project in mind, and he met and
+                            even surpassed those expectations. I would recommend
+                            him on any project.
+                          </h6>
+                        </div>
                       </div>
                     </div>
 
-                    <!-- Rating Section -->
-                    <div class="d-flex justify-content-start mt-3">
-                      <i class="bi bi-star-fill text-warning"></i>
-                      <i class="bi bi-star-fill text-warning"></i>
-                      <i class="bi bi-star-fill text-warning"></i>
-                      <i class="bi bi-star-fill text-warning"></i>
-                      <i class="bi bi-star text-muted"></i>
-                      <!-- Empty star for unfilled rating -->
-                    </div>
+                    <div class="col-md-4">
+                      <div class="testimonial-card p-3 mb-4">
+                        <!-- Profile Info Section -->
+                        <div class="row">
+                          <!-- Left side (Profile Picture & Name) -->
+                          <div
+                            class="col-12 col-md-8 d-flex justify-content-start align-items-center"
+                          >
+                            <img
+                              src="../img/Avatar.png"
+                              alt="Profile Picture"
+                              class="img-fluid rounded-circle"
+                              style="width: 40px; height: 40px"
+                            />
+                            <div class="ms-3">
+                              <h5 class="mb-0">Sanusi Ganiyu</h5>
+                            </div>
+                          </div>
 
-                    <!-- Testimonial Text -->
-                    <div class="mt-3" style="text-align: justify">
-                      <h6>
-                        Chinedu is an exceptional designer who I have had the
-                        privilege to work with. We had a particular expectation
-                        on a project in mind, and he met and even surpassed
-                        those expectations. I would recommend him on any
-                        project.
-                      </h6>
+                          <!-- Right side (Date) -->
+                          <div
+                            class="col-12 col-md-4 text-md-end text-center mt-2 mt-md-3"
+                          >
+                            <span>26/9/2024</span>
+                          </div>
+                        </div>
+
+                        <!-- Rating Section -->
+                        <div class="d-flex justify-content-start mt-3">
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <i class="bi bi-star text-muted"></i>
+                          <!-- Empty star for unfilled rating -->
+                        </div>
+
+                        <!-- Testimonial Text -->
+                        <div class="mt-3" style="text-align: justify">
+                          <h6>
+                            Chinedu is an exceptional designer who I have had
+                            the privilege to work with. We had a particular
+                            expectation on a project in mind, and he met and
+                            even surpassed those expectations. I would recommend
+                            him on any project.
+                          </h6>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-md-4">
-                  <div class="testimonial-card p-3 mb-4">
-                    <!-- Profile Info Section -->
-                    <div class="row">
-                      <!-- Left side (Profile Picture & Name) -->
-                      <div
-                        class="col-12 col-md-8 d-flex justify-content-start align-items-center"
-                      >
-                        <img
-                          src="../img/Avatar.png"
-                          alt="Profile Picture"
-                          class="img-fluid rounded-circle"
-                          style="width: 40px; height: 40px"
-                        />
-                        <div class="ms-3">
-                          <h5 class="mb-0">Sanusi Ganiyu</h5>
+
+                <!-- Slide 2 -->
+
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <div class="testimonial-card p-3 mb-4">
+                        <!-- Profile Info Section -->
+                        <div class="row">
+                          <!-- Left side (Profile Picture & Name) -->
+                          <div
+                            class="col-12 col-md-8 d-flex justify-content-start align-items-center"
+                          >
+                            <img
+                              src="../img/Avatar.png"
+                              alt="Profile Picture"
+                              class="img-fluid rounded-circle"
+                              style="width: 40px; height: 40px"
+                            />
+                            <div class="ms-3">
+                              <h5 class="mb-0">Sanusi Ganiyu</h5>
+                            </div>
+                          </div>
+
+                          <!-- Right side (Date) -->
+                          <div
+                            class="col-12 col-md-4 text-md-end text-center mt-2 mt-md-3"
+                          >
+                            <span>26/9/2024</span>
+                          </div>
+                        </div>
+
+                        <!-- Rating Section -->
+                        <div class="d-flex justify-content-start mt-3">
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <i class="bi bi-star text-muted"></i>
+                          <!-- Empty star for unfilled rating -->
+                        </div>
+
+                        <!-- Testimonial Text -->
+                        <div class="mt-3" style="text-align: justify">
+                          <h6>
+                            Chinedu is an exceptional designer who I have had
+                            the privilege to work with. We had a particular
+                            expectation on a project in mind, and he met and
+                            even surpassed those expectations. I would recommend
+                            him on any project.
+                          </h6>
                         </div>
                       </div>
-
-                      <!-- Right side (Date) -->
-                      <div
-                        class="col-12 col-md-4 text-md-end text-center mt-2 mt-md-0"
-                      >
-                        <span>26/9/2024</span>
-                      </div>
                     </div>
+                    <div class="col-md-4">
+                      <div class="testimonial-card p-3 mb-4">
+                        <!-- Profile Info Section -->
+                        <div class="row">
+                          <!-- Left side (Profile Picture & Name) -->
+                          <div
+                            class="col-12 col-md-8 d-flex justify-content-start align-items-center"
+                          >
+                            <img
+                              src="../img/Avatar.png"
+                              alt="Profile Picture"
+                              class="img-fluid rounded-circle"
+                              style="width: 40px; height: 40px"
+                            />
+                            <div class="ms-3">
+                              <h5 class="mb-0">Sanusi Ganiyu</h5>
+                            </div>
+                          </div>
 
-                    <!-- Rating Section -->
-                    <div class="d-flex justify-content-start mt-3">
-                      <i class="bi bi-star-fill text-warning"></i>
-                      <i class="bi bi-star-fill text-warning"></i>
-                      <i class="bi bi-star-fill text-warning"></i>
-                      <i class="bi bi-star-fill text-warning"></i>
-                      <i class="bi bi-star text-muted"></i>
-                      <!-- Empty star for unfilled rating -->
-                    </div>
+                          <!-- Right side (Date) -->
+                          <div
+                            class="col-12 col-md-4 text-md-end text-center mt-2 mt-md-3"
+                          >
+                            <span>26/9/2024</span>
+                          </div>
+                        </div>
 
-                    <!-- Testimonial Text -->
-                    <div class="mt-3" style="text-align: justify">
-                      <h6>
-                        Chinedu is an exceptional designer who I have had the
-                        privilege to work with. We had a particular expectation
-                        on a project in mind, and he met and even surpassed
-                        those expectations. I would recommend him on any
-                        project.
-                      </h6>
-                    </div>
-                  </div>
-                </div>
+                        <!-- Rating Section -->
+                        <div class="d-flex justify-content-start mt-3">
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <i class="bi bi-star text-muted"></i>
+                          <!-- Empty star for unfilled rating -->
+                        </div>
 
-                <div class="col-md-4">
-                  <div class="testimonial-card p-3 mb-4">
-                    <!-- Profile Info Section -->
-                    <div class="row">
-                      <!-- Left side (Profile Picture & Name) -->
-                      <div
-                        class="col-12 col-md-8 d-flex justify-content-start align-items-center"
-                      >
-                        <img
-                          src="../img/Avatar.png"
-                          alt="Profile Picture"
-                          class="img-fluid rounded-circle"
-                          style="width: 40px; height: 40px"
-                        />
-                        <div class="ms-3">
-                          <h5 class="mb-0">Sanusi Ganiyu</h5>
+                        <!-- Testimonial Text -->
+                        <div class="mt-3" style="text-align: justify">
+                          <h6>
+                            Chinedu is an exceptional designer who I have had
+                            the privilege to work with. We had a particular
+                            expectation on a project in mind, and he met and
+                            even surpassed those expectations. I would recommend
+                            him on any project.
+                          </h6>
                         </div>
                       </div>
+                    </div>
 
-                      <!-- Right side (Date) -->
-                      <div
-                        class="col-12 col-md-4 text-md-end text-center mt-2 mt-md-0"
-                      >
-                        <span>26/9/2024</span>
+                    <div class="col-md-4">
+                      <div class="testimonial-card p-3 mb-4">
+                        <!-- Profile Info Section -->
+                        <div class="row">
+                          <!-- Left side (Profile Picture & Name) -->
+                          <div
+                            class="col-12 col-md-8 d-flex justify-content-start align-items-center"
+                          >
+                            <img
+                              src="../img/Avatar.png"
+                              alt="Profile Picture"
+                              class="img-fluid rounded-circle"
+                              style="width: 40px; height: 40px"
+                            />
+                            <div class="ms-3">
+                              <h5 class="mb-0">Sanusi Ganiyu</h5>
+                            </div>
+                          </div>
+
+                          <!-- Right side (Date) -->
+                          <div
+                            class="col-12 col-md-4 text-md-end text-center mt-2 mt-md-3"
+                          >
+                            <span>26/9/2024</span>
+                          </div>
+                        </div>
+
+                        <!-- Rating Section -->
+                        <div class="d-flex justify-content-start mt-3">
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <i class="bi bi-star-fill text-warning"></i>
+                          <i class="bi bi-star text-muted"></i>
+                          <!-- Empty star for unfilled rating -->
+                        </div>
+
+                        <!-- Testimonial Text -->
+                        <div class="mt-3" style="text-align: justify">
+                          <h6>
+                            Chinedu is an exceptional designer who I have had
+                            the privilege to work with. We had a particular
+                            expectation on a project in mind, and he met and
+                            even surpassed those expectations. I would recommend
+                            him on any project.
+                          </h6>
+                        </div>
                       </div>
-                    </div>
-
-                    <!-- Rating Section -->
-                    <div class="d-flex justify-content-start mt-3">
-                      <i class="bi bi-star-fill text-warning"></i>
-                      <i class="bi bi-star-fill text-warning"></i>
-                      <i class="bi bi-star-fill text-warning"></i>
-                      <i class="bi bi-star-fill text-warning"></i>
-                      <i class="bi bi-star text-muted"></i>
-                      <!-- Empty star for unfilled rating -->
-                    </div>
-
-                    <!-- Testimonial Text -->
-                    <div class="mt-3" style="text-align: justify">
-                      <h6>
-                        Chinedu is an exceptional designer who I have had the
-                        privilege to work with. We had a particular expectation
-                        on a project in mind, and he met and even surpassed
-                        those expectations. I would recommend him on any
-                        project.
-                      </h6>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-
-            <!-- Slide 2 -->
-            <!-- <div class="carousel-item">
-              <div class="row">
-                <div class="col-md-4">
-                  <div class="testimonial-card">
-                    <p>"Testimonial 4 content goes here."</p>
-                    <h5>Person 4</h5>
-                    <p>Position 4</p>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="testimonial-card">
-                    <p>"Testimonial 5 content goes here."</p>
-                    <h5>Person 5</h5>
-                    <p>Position 5</p>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="testimonial-card">
-                    <p>"Testimonial 6 content goes here."</p>
-                    <h5>Person 6</h5>
-                    <p>Position 6</p>
-                  </div>
-                </div>
-              </div>
-            </div> -->
-
-            <!-- Slide 3 (Additional slides as needed) -->
           </div>
         </div>
       </div>
@@ -552,7 +553,6 @@
     <script>
       var myCarousel = document.querySelector("#testimonialCarousel");
       var carousel = new bootstrap.Carousel(myCarousel, {
-        interval: 5000, // Auto-slide every 5 seconds (optional)
         wrap: true,
       });
     </script>
