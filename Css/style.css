@@ -645,3 +645,35 @@ label {
   font-family: proxima-nova, sans-serif;
   padding: 6px 14px 6px 14px;
 }
+
+
+
+/* Hide the default appearance of the slider */
+.custom-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 245.33px;
+  height: 10px;
+  background: linear-gradient(to right, #d27409, #f7f2eb, #f7f2eb);
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+}
+
+/* Removing the pointer (thumb) */
+.custom-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 0; /* Set width to 0 to hide */
+  height: 0; /* Set height to 0 to hide */
+  background: transparent; /* Make it transparent */
+  cursor: pointer;
+}
+
+.custom-slider::-moz-range-thumb {
+  appearance: none;
+  width: 0;
+  height: 0;
+  background: transparent;
+  cursor: pointer;
+}
