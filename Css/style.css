@@ -774,14 +774,17 @@ label {
 .start {
   margin-inline-start: 45px ;
 }
+.Klev{
+  white-space: nowrap;
+}
+
+
+}
 
 .Klev {
-  text-wrap: nowrap;
+  white-space: normal;
 }
 
-
-
-}
 
 /** NotificationPage styling**/
 
@@ -835,7 +838,6 @@ label {
   border-radius: 10px;
   size: 10px;
   font-weight: 400;
-  font-family: proxima-nova, sans-serif;
   padding: 6px 14px 6px 14px;
 }
 
@@ -869,11 +871,34 @@ label {
   cursor: pointer;
 }
 
-.Klev {
-  text-wrap: wrap;
-  font-size: 12px;
-  font-weight: 300;
-  line-height: 20px;
-  color: red;
+
+.testimonial-card {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-bottom: 20px;
 }
 
+.testimonial-card h5 {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.testimonial-card p {
+  color: #6c757d;
+}
+
+.carousel-item {
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-inner {
+  display: flex;
+  align-items: center;
+}
+
+.carousel-item .row {
+  justify-content: center;
+}
