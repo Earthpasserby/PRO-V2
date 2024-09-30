@@ -736,56 +736,51 @@ label {
   .create__mile__modal__cont {
     padding: 20px;
   }
-  .tabP {
+
+  /** milestonePage styling**/
+  .custom-margin {
+    margin-right: 180px;
+  }
+  .mileHeader h3 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    color: #08121d;
+  }
+  .mileHeader span {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 14px;
+    text-align: left;
+    color: #67737e;
+  }
+
+  .mileHeader h6 {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
+    color: #08121d;
+  }
+  .statusBtn {
+    padding: 6px 14px 6px 14px;
+    border-radius: 38px;
+    background-color: #ebf7ec;
+  }
+}
+
+@media screen and (min-width: 768px) {
+.start {
+  margin-inline-start: 45px ;
+}
+
+.Klev {
   text-wrap: nowrap;
-  font-size: 12px;
-  font-weight: 300;
-  line-height: 20px;
-  text-align: left;
-}
-.hP{
-   text-wrap: nowrap;
-  font-size: 12px;
-  font-weight: 300;
-  line-height: 20px;
 }
 
-.M-start{
-  margin-inline-start: 0 Important;
-}
 
-}
 
-/** milestonePage styling**/
-.custom-margin {
-  margin-right: 180px;
-}
-.mileHeader h3 {
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 24px;
-  text-align: left;
-  color: #08121d;
-}
-.mileHeader span {
-  font-size: 12px;
-  font-weight: 300;
-  line-height: 14px;
-  text-align: left;
-  color: #67737e;
-}
-
-.mileHeader h6 {
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 16px;
-  text-align: left;
-  color: #08121d;
-}
-.statusBtn {
-  padding: 6px 14px 6px 14px;
-  border-radius: 38px;
-  background-color: #ebf7ec;
 }
 
 /** NotificationPage styling**/
@@ -797,7 +792,6 @@ label {
   color: #e8f2fc;
 }
 .giG h5 {
-  font-family: proxima-nova, sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
@@ -805,7 +799,6 @@ label {
   color: #fff;
 }
 .giG P {
-  font-family: proxima-nova, sans-serif;
   font-size: 12px;
   font-weight: 300;
   line-height: 20px;
@@ -816,7 +809,6 @@ label {
   border: 1px solid #f1f5fa;
   padding: 6px 14px 6px 14px;
   border-radius: 38px;
-  font-family: proxima-nova, sans-serif;
   font-size: 10px;
   font-weight: 400;
   line-height: 12px;
@@ -824,7 +816,6 @@ label {
   color: #0967d2;
 }
 .Experience span {
-  font-family: proxima-nova, sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
@@ -832,7 +823,6 @@ label {
   color: #9da6af;
 }
 .Experience h6 {
-  font-family: proxima-nova, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;
@@ -879,19 +869,11 @@ label {
   cursor: pointer;
 }
 
- .tabP {
+.Klev {
   text-wrap: wrap;
   font-size: 12px;
   font-weight: 300;
   line-height: 20px;
+  color: red;
 }
 
-.hP{
-   text-wrap: wrap;
-  font-size: 12px;
-  font-weight: 300;
-  line-height: 20px;
-}
-.M-start{
-  margin-inline-start: 40px;
-}
