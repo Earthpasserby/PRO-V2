@@ -783,7 +783,7 @@ label {
   white-space: normal;
 }
 
-/** NotificationPage styling**/
+/** NotificationPage/Gigcreation styling**/
 
 .giG span {
   color: #7aaee9;
@@ -878,7 +878,27 @@ label {
   /* width: 418px; */
   height: 138px;
 }
-
+.cardTestmony {
+  height: 172px;
+  padding: 24px;
+  gap: 10px;
+  border-radius: 10px;
+  border: 1px;
+  background-color: #f8fbff;
+}
+.cardTestmony h6 {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+  color: #9da6af;
+}
+.cardTestmony p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+}
 .testimonial-card h6 {
   font-size: 12px;
   font-weight: 400;
@@ -901,4 +921,18 @@ label {
 
 .carousel-item .row {
   justify-content: center;
+}
+/* Gigs style */
+
+.navTabs {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  color: #9da6af;
+}
+.navTabs:hover {
+  color: #08121d;
+  border-bottom:2px solid #0967d2;
+  padding: 5px;
 }
