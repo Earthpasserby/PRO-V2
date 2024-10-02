@@ -52,14 +52,14 @@
             <div class="row gap-3 gap-md-0">
               <div class="form-group col-md-6">
                 <label for="inputGIG's" class="mb-2">Type of GIG’s</label>
-                <select id="inputState" class="form-control shadow-none">
+                <select id="inputState" class="form-select shadow-none">
                   <option selected>Web development</option>
                   <option>...</option>
                 </select>
               </div>
               <div class="form-group col-md-6">
                 <label for="inputgig's" class="mb-2">Technology & Skills</label>
-                <select id="inputState" class="form-control shadow-none">
+                <select id="inputState" class="form-select shadow-none">
                   <option selected>
                     <button>rree</button> <button>rree</button>
                     <button>rree</button> <button>rree</button>
@@ -71,14 +71,14 @@
             <div class="row mt-3 gap-3 gap-md-0">
               <div class="form-group col-md-6">
                 <label for="inputGIG's" class="mb-2">Project type </label>
-                <select id="inputState" class="form-control shadow-none">
+                <select id="inputState" class="form-select shadow-none">
                   <option selected>New project</option>
                   <option>...</option>
                 </select>
               </div>
               <div class="form-group col-md-6">
                 <label for="inputgig's" class="mb-2">Duration of the GIG</label>
-                <select id="inputState" class="form-control shadow-none">
+                <select id="inputState" class="form-select shadow-none">
                   <option selected>One week - Four weeks</option>
                   <option>...</option>
                 </select>
@@ -92,7 +92,7 @@
         <div class="col-12 col-md-6 mb-3 mb-md-0">
           <h3 class="subTxt">Describe GIG’s</h3>
         </div>
-        <div class="mb-5">
+        <div style="margin-bottom: 25px">
           <div id="summernote"></div>
         </div>
       </div>
@@ -104,34 +104,36 @@
           <form class="details__form">
             <div class="row">
               <div class="form-group">
-                <select id="inputState" class="form-control shadow-none">
+                <select id="inputState" class="form-select shadow-none">
                   <option selected>₦1,000,000</option>
                   <option>...</option>
                 </select>
               </div>
             </div>
           </form>
-          <p class="pTxt mt-1">
+          <p class="pTxt " style="margin-top: 6px;">
             Minimum amount you can create for your budget is ₦60,000
           </p>
         </div>
       </div>
-      <div style="margin: 32px 0" class="">
+      <div style="margin: 25px 0" class="">
         <div
           style="box-shadow: 0px 6px 20px 0px #09305e0f"
           class="card bg-white rounded"
         >
-          <div class="d-flex justify-content-between align-items-center p-3">
+          <div class="toggle__cont p-3">
             <div>
-              <div class="card-title headTxt">
-                Let talent create the milestone
+              <div class="card-title toggleTxt">
+                Let talent create the milestone/deliverables
               </div>
-              <div class="card-text cardTxt">
-                Let talent create the milestone
+              <div style="margin-top: 5px" class="card-text cardTxt">
+                By toggling, the talent will help define the
+                milestone/deliverables for this project.
               </div>
             </div>
-            <div class="form-check form-switch">
+            <div  class="form-check form-switch">
               <input
+              style="width: 40px; height: 20px;"
                 class="form-check-input"
                 type="checkbox"
                 role="switch"
@@ -143,7 +145,7 @@
       </div>
       <div class="mb-5">
         <div class="card rounded" style="background-color: #b8d2ee">
-          <div class="d-flex p-3 align-items-center">
+          <div class="d-flex p-3 align-items-start align-items-md-center">
             <div>
               <img
                 src="../img/Information.png"
@@ -161,18 +163,19 @@
         </div>
       </div>
 
-      <div class="">
-        <div class="row justify-content-between align-items-center">
+      <hr />
+      <div class="mt-1">
+        <div class="btm__nav__cont">
           <!-- Previous Button -->
-          <div class="col-6 justify-content-start">
+          <div class="prevBtn__cont">
             <button href="#" class="prevBtn">Previous</button>
           </div>
 
           <!-- Next Button -->
-          <div class="col-6 d-flex justify-content-end">
+          <div class="nxtBtn__cont">
             <button
               type="button"
-              class="prevBtn"
+              class="nxtBtn"
               data-bs-toggle="modal"
               data-bs-target="#exampleModal"
             >
