@@ -521,6 +521,19 @@ hr:after {
   background: transparent;
 }
 
+.nxtBtn:disabled {
+  background-color: #7aaee9;
+  color: #1a77e0;
+  cursor: not-allowed;
+}
+
+.milestone__form input,
+.milestone__form select,
+.milestone__form textarea {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
 .prevBtn:hover {
   background-color: #e9eaf2;
 }
@@ -587,7 +600,7 @@ label {
   font-weight: 400;
   line-height: 28px;
   text-align: left;
-  color: #08121D;
+  color: #08121d;
   margin-bottom: 0;
 }
 .toggle__cont {
@@ -712,7 +725,7 @@ label {
 .previewheader ul li {
   font-size: 16px;
   font-weight: 400;
-  line-height: 34px;
+  line-height: 24px;
   text-align: left;
   color: #b8d2ee;
 }
@@ -722,6 +735,15 @@ label {
   line-height: 20px;
   text-align: left;
   color: #7aaee9;
+}
+
+.gig__duration {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: left;
+  color: #7aaee9;
+  margin: 0 0 8px;
 }
 
 .previewGIG h2 {
@@ -771,6 +793,7 @@ label {
 }
 .create__mile {
   padding: 50px 20px;
+  cursor: pointer;
 }
 .create__mile__modal__cont {
   padding: 10px;
@@ -799,7 +822,7 @@ label {
     padding: 25px;
   }
   .create__mile {
-    padding: 70px 40px;
+    padding: 50px 40px;
   }
   .create__mile__modal__cont {
     padding: 20px;
@@ -835,6 +858,12 @@ label {
     padding: 6px 14px 6px 14px;
     border-radius: 38px;
     background-color: #ebf7ec;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .create__mile {
+    padding: 80px 50px;
   }
 }
 
