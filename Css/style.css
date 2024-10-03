@@ -534,6 +534,42 @@ hr:after {
   outline: none !important;
 }
 
+.create__mile__btn {
+  text-align: center;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 19.49px;
+  color: #0967d2;
+  outline: none;
+  background: transparent;
+  border: 0.5px solid #0967d2;
+  height: 40px;
+  width: 100%;
+}
+
+.milestone__search {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 45px;
+  padding: 0 12px;
+  border: 0.5px solid #dee2e6;
+  border-radius: 15px;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.milestone__search input {
+  border: none;
+  outline: none;
+  padding: 5px;
+}
+
+.milestone__search img {
+  width: 22px;
+  height: 22px;
+}
 .prevBtn:hover {
   background-color: #e9eaf2;
 }
@@ -549,7 +585,105 @@ hr:after {
   gap: 10px;
 }
 
-@media screen and (min-width: 700px) {
+.milestone__card {
+  box-shadow: 0px 6px 20px 0px #09305e0f;
+  border: 0.5px solid #f1f5fa;
+  border-radius: 10px;
+  background-color: white;
+  padding: 15px;
+}
+
+.milestone__title__cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 20px;
+}
+
+.milestone__title__cont h5 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.milestone__title__cont img {
+  width: 24px;
+  height: 24px;
+}
+
+.milestone__more {
+  background: transparent;
+  outline: none;
+  border: none;
+}
+
+.milestone__card hr {
+  background: #f1f5fa !important;
+  height: 1px;
+  width: 100%;
+  margin: 15px 0 !important;
+}
+
+.mile__info__cont {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.mile__info__text p {
+  color: #67737e !important;
+  font-size: 14px !important;
+  font-weight: 300 !important;
+  line-height: 20px !important;
+  text-align: left;
+  margin: 0 !important;
+}
+
+.mile__info__text h3 {
+  font-size: 12px;
+  font-weight: 500 !important;
+  line-height: 16px;
+  text-align: left;
+  color: #08121d;
+  margin: 7px 0 0;
+}
+
+.milestone__status {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #d27409;
+  margin: 7px 0 0;
+  width: fit-content;
+  background: #f7f2eb;
+  border-radius: 50px;
+  padding: 7px 16px;
+}
+
+.milestone__drop__menu li {
+  padding: 12px 16px !important;
+}
+.milestone__drop__menu li a {
+  color: #67737e;
+  text-decoration: none;
+  font-weight: 500;
+}
+.delete__milestone__cont {
+  background: #f8fbff;
+}
+.delete__milestone {
+  border: none;
+  outline: none;
+  color: #0967d2;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+}
+
+@media screen and (min-width: 768px) {
   .btm__nav__cont {
     display: flex;
     justify-content: space-between;
@@ -561,6 +695,16 @@ hr:after {
   }
   .pageList {
     margin-bottom: 80px;
+  }
+  .create__mile__btn {
+    width: 145px;
+  }
+  .milestone__card {
+    padding: 20px;
+  }
+  .milestone__title__cont h5 {
+    font-size: 20px;
+    line-height: 26px;
   }
 }
 
@@ -796,7 +940,7 @@ label {
   cursor: pointer;
 }
 .create__mile__modal__cont {
-  padding: 10px;
+  padding: 5px;
 }
 
 .mile__modal__form__input {
@@ -808,10 +952,254 @@ label {
   border-radius: 8px;
 }
 
+.commitment__modal__title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 19px;
+}
+.commitment__modal__subHeading {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+  color: #67737e;
+  margin: 5px 0 0;
+}
+
+.commitment__pathway__cont {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 20px;
+  margin-top: 25px;
+}
+
+.pay__milestone {
+  background: #d27409;
+  padding: 20px;
+  border-radius: 10px;
+  border: 0.5px solid #e09743;
+  align-self: start;
+  box-shadow: 0px 6px 20px 0px #09305e0f;
+}
+
+.pay__commitment {
+  background: #0967d2;
+  padding: 20px;
+  border-radius: 10px;
+  border: 0.5px solid #1a77e0;
+  align-self: start;
+  box-shadow: 0px 6px 20px 0px #09305e0f;
+}
+
+.pay__mile__title__cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap-reverse;
+}
+
+.pay__mile__title__cont h2,
+.pay__commitment h2 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 26px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.pay__mile__title__cont p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  color: #d27409;
+  border-radius: 50px;
+  padding: 7px 14px;
+  background: #f7f2eb;
+  margin: 0;
+}
+
+.pay__mile__p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #edd5b9;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.pay__mile__pay {
+  height: 48px;
+  border: 0.5px solid #ffffff;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: white;
+  background: transparent;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.pay__commit__subHeading {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-top: 10px;
+  margin-bottom: 0;
+  color: #b8d2ee;
+}
+
+.pay__commit__amount__cont {
+  border-top: #1a77e0 0.5px solid;
+  border-bottom: #1a77e0 0.5px solid;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 20px 0;
+  margin: 20px 0 0;
+}
+
+.pay__commit__amount__cont p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7aaee9;
+}
+
+.pay__commit__amount__cont span {
+  color: #b8d2ee;
+  margin: 0;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.pay__commit__note {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  background: #fffaeb;
+  border-radius: 7px;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+.pay__commit__note p {
+  color: #a27c1a;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 14px;
+  margin: 0;
+}
+
+.pay__commit__button {
+  height: 48px;
+  border: 0.5px solid #ffffff;
+  text-align: center;
+  border-radius: 8px;
+
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: white;
+  background: transparent;
+  width: 100%;
+  margin-top: 20px;
+}
+.payment__title__cont__h2 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  color: #67737e;
+}
+
+.milestone__select__cont {
+  margin-top: 20px;
+}
+
+.milestone__select__cont label {
+  color: #373d43;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.milestone__select__cont select {
+  height: 50px;
+  border-radius: 8px;
+}
+
+.payment__modal__amt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 20px 0;
+  margin: 30px 0 0;
+  border-top: 0.5px solid #e9eaf2;
+  border-bottom: 0.5px solid #e9eaf2;
+}
+
+.payment__modal__amt p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #67737e;
+  margin: 0;
+}
+.payment__modal__amt span {
+  font-size: 16px;
+  line-height: 24px;
+  color: #373d43;
+  font-weight: 700;
+  margin: 0;
+}
+.payment__modal__nxt__cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+.payment__modal__other {
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  line-height: 24px;
+  color: #0967d2;
+}
+.payment__modal__pay {
+  border: none;
+  outline: none;
+  background: #0967d2;
+  padding: 0;
+  margin: 0;
+  height: 50px;
+  width: 200px;
+  border-radius: 8px;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #fff;
+}
+
 @media screen and (min-width: 768px) {
   .previewGIG h6 {
     font-size: 16px;
     line-height: 20px;
+  }
+  .commitment__pathway__cont {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .pay__mile__pay {
+    margin-top: 50px;
   }
 
   .previewGIG h2 {
