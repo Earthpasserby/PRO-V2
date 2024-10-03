@@ -23,11 +23,14 @@
       </div>
     </nav>
 
-    <div class="container gig__page__header mt-5 p-3 mb-5">
-      <div class="p-3">
-        <div class="row justify-content-around align-items-center">
+    <div class="gig__page__header">
+      <div class="">
+        <div
+          style="margin: 0"
+          class="row justify-content-around align-items-center"
+        >
           <!-- Greeting Column -->
-          <div style="padding: 0" class="col-12 col-md-6 mb-3 mb-md-0">
+          <div style="padding: 0" class="col-12 col-md-6 gig__title__margin">
             <h3 class="text-title">Hello William Nwogbo!</h3>
             <p style="margin-bottom: 0" class="text-text">
               Welcome, let us assist you.
@@ -35,184 +38,138 @@
           </div>
           <!-- Button Group Column -->
           <div
-            class="col-12 col-md-6 d-flex flex-column flex-md-row align-items-start align-items-md-center gap-2 ms-md-auto justify-content-md-end"
+            style="padding: 0"
+            class="col-12 col-md-6 d-flex flex-row align-items-start align-items-md-center justify-content-between gap-2 ms-md-auto justify-content-md-end"
           >
-            <button type="button" class="btn-blue mb-2 mb-md-0">
+            <button
+              style="height: 50px; text-align: center; border-radius: 8px"
+              type="button"
+              class="btn-blue speak__btn__gigs"
+            >
               Speak with us
             </button>
           </div>
         </div>
-        <hr />
-        <ul class="nav mb-3" id="pills-tab" role="tablist">
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link active navTabs"
-              id="pills-home-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#pills-home"
-              type="button"
-              role="tab"
-              aria-controls="pills-home"
-              aria-selected="true"
-            >
-              Home
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link navTabs" 
-              id="pills-profile-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#pills-profile"
-              type="button"
-              role="tab"
-              aria-controls="pills-profile"
-              aria-selected="false"
-            >
-              Your GIG's
-            </button>
-          </li>
-          <li class="nav-item" role="presentation">
-            <button
-              class="nav-link navTabs"
-              id="pills-contact-tab"
-              data-bs-toggle="pill"
-              data-bs-target="#pills-contact"
-              type="button"
-              role="tab"
-              aria-controls="pills-contact"
-              aria-selected="false"
-            >
-              Your hiring request
-            </button>
-          </li>
-        </ul>
-        <div class="tab-content" id="pills-tabContent">
-          <div
-            class="tab-pane fade show active"
-            id="pills-home"
-            role="tabpanel"
-            aria-labelledby="pills-home-tab"
-            tabindex="0"
-          >
-            ...
+        <hr class="gigs__card__hr" />
+        <div class="gig__tab__wrapper">
+          <div class="gig__tab__cont">
+            <div class="gigs__tab">Home</div>
+            <div class="gigs__tab active__gigs__tab">Your GIGs</div>
+            <div class="gigs__tab">Your hiring request</div>
           </div>
-          <div
-            class="tab-pane fade"
-            id="pills-profile"
-            role="tabpanel"
-            aria-labelledby="pills-profile-tab"
-            tabindex="0"
-          >
-            <div class="row">
-              <div>
-                <div class="container mb-5">
-                  <div class="card shadow-lg rounded border-0 p-4 mt-3">
-                    <div class="d-flex justify-content-between flex-wrap">
-                      <div class="mileHeader">
-                        <h3>
-                          I need a product designer who is an expert in UX
-                          Research and Visual Design
-                        </h3>
-                        <p>Design</p>
-                      </div>
-                      <div>
-                        <h6
-                          style="
-                            color: #0967d2;
-                            background-color: #e8f2fc;
-                            border-radius: 38px;
-                            padding: 6px 14px 6px 14px;
-                          "
-                        >
-                          ongoing
-                        </h6>
-                      </div>
-                    </div>
-                    <hr />
-                    <div class="row justify-content-around mileHeader">
-                      <div class="col-12 col-md-2 tom-margin">
-                        <span>Project type</span>
-                        <h6>New project</h6>
-                      </div>
-                      <div class="col-12 col-md-2 tom-margin">
-                        <span>GIG Duration</span>
-                        <h6>One week - Four Weeks</h6>
-                      </div>
-                      <div class="col-12 col-md-2 tom-margin">
-                        <span>GIG total budget</span>
-                        <h6>₦1,000,000</h6>
-                      </div>
-                      <div class="col-12 col-md-2 tom-margin">
-                        <span>Milestones paid for</span>
-                        <h6>1/2</h6>
-                      </div>
-                      <div class="col-12 col-md-2 tom-margin">
-                        <span>Milestones completed</span>
-                        <h6>0/10</h6>
-                      </div>
-                      <div class="col-12 col-md-2 mt-3">
-                        <a href="./Gigcreation.html" class="button"
-                          >View GIG's</a
-                        >
-                      </div>
-                    </div>
-                    <hr />
-                    <div class="container">
-                      <div class="row justify-content-between mileHeader">
-                        <!-- First Column (Recruiter) -->
-                        <div class="col-12 col-md-6 mb-3 mb-md-0">
-                          <span>Assigned recruiter</span>
-                          <div class="d-flex align-items-center">
-                            <img
-                              src="../img/Avatar.png"
-                              alt="Recruiter"
-                              style="width: 40px; height: 40px"
-                              class="img-fluid rounded-circle"
-                            />
-                            <div class="ms-3">
-                              <h5 class="mb-1 tabHeader">
-                                Agnes Felicia Daniel’s
-                              </h5>
-                              <p class="mb-0 tabP">
-                                This recruiter will help you manage any dispute
-                                during the course of the project.
-                              </p>
-                            </div>
-                          </div>
-                        </div>
+          <button class="gigs__create__a__gig">Create a GIG</button>
+        </div>
 
-                        <!-- Second Column (Start Conversation) -->
-                        <div
-                          class="col-12 col-md-6 d-flex justify-content-md-end align-items-center"
-                        >
-                          <div class="d-flex align-items-center">
-                            <i
-                              class="bi bi-chat-dots"
-                              style="color: #0967d2; font-size: 1.5rem"
-                            ></i>
-                            <div class="ms-2">
-                              <span style="color: #0967d2"
-                                >Start conversation</span
-                              >
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+        <div class="gigs__tabs__content">
+          <div class="gigs__talent__card">
+            <div class="gigs__talent__card__title">
+              <h2>
+                I need a product designer who is an expert in UX Research and
+                Visual Design
+              </h2>
+              <span>Pending</span>
+            </div>
+            <p class="gigs__type">Design</p>
+            <div class="gigs__info__wrapper">
+              <div class="gigs__info__cont">
+                <h3>Project type</h3>
+                <h4>New project</h4>
+              </div>
+              <div class="gigs__info__cont">
+                <h3>GIG Duration</h3>
+                <h4>5/5/2023 - 5/5/2024</h4>
+              </div>
+              <div class="gigs__info__cont">
+                <h3>GIG total budget</h3>
+                <h4>₦1,000,000</h4>
+              </div>
+              <div class="gigs__info__cont">
+                <h3>GIG total budget</h3>
+                <h4>₦1,000,000</h4>
+              </div>
+              <div class="gigs__info__cont">
+                <h3>Milestones paid for</h3>
+                <h4>1/20</h4>
+              </div>
+              <div class="gigs__info__cont">
+                <h3>Milestones completed</h3>
+                <h4>0/10</h4>
+              </div>
+              <button class="gigs__view__talents">View talents</button>
+            </div>
+            <div class="gigs__manager__wrapper">
+              <div class="gigs__manager__cont">
+                <h4>GIG’s manager</h4>
+                <div class="gigs__manager__info__cont">
+                  <img src="../img/Avatar.png" alt="avatar" />
+                  <div class="gig__manager__desc">
+                    <h2>Agnes Felicia Daniel’s</h2>
+                    <p>
+                      This manager will help you manage any dispute during the
+                      course of the project.
+                    </p>
                   </div>
                 </div>
               </div>
+              <button class="gigs__speak__manager">
+                Speak with GIG’s manager
+              </button>
             </div>
           </div>
-          <div
-            class="tab-pane fade"
-            id="pills-contact"
-            role="tabpanel"
-            aria-labelledby="pills-contact-tab"
-            tabindex="0"
-          >
-            ...
+          <div class="gigs__talent__card">
+            <div class="gigs__talent__card__title">
+              <h2>
+                I need a product designer who is an expert in UX Research and
+                Visual Design
+              </h2>
+              <span>Pending</span>
+            </div>
+            <p class="gigs__type">Design</p>
+            <div class="gigs__info__wrapper">
+              <div class="gigs__info__cont">
+                <h3>Project type</h3>
+                <h4>New project</h4>
+              </div>
+              <div class="gigs__info__cont">
+                <h3>GIG Duration</h3>
+                <h4>5/5/2023 - 5/5/2024</h4>
+              </div>
+              <div class="gigs__info__cont">
+                <h3>GIG total budget</h3>
+                <h4>₦1,000,000</h4>
+              </div>
+              <div class="gigs__info__cont">
+                <h3>GIG total budget</h3>
+                <h4>₦1,000,000</h4>
+              </div>
+              <div class="gigs__info__cont">
+                <h3>Milestones paid for</h3>
+                <h4>1/20</h4>
+              </div>
+              <div class="gigs__info__cont">
+                <h3>Milestones completed</h3>
+                <h4>0/10</h4>
+              </div>
+              <button class="gigs__view__talents">View talents</button>
+            </div>
+            <div class="gigs__manager__wrapper">
+              <div class="gigs__manager__cont">
+                <h4>GIG’s manager</h4>
+                <div class="gigs__manager__info__cont">
+                  <img src="../img/Avatar.png" alt="avatar" />
+                  <div class="gig__manager__desc">
+                    <h2>Agnes Felicia Daniel’s</h2>
+                    <p>
+                      This manager will help you manage any dispute during the
+                      course of the project.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <button class="gigs__speak__manager">
+                Speak with GIG’s manager
+              </button>
+            </div>
           </div>
         </div>
       </div>

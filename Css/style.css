@@ -120,6 +120,10 @@ body {
   width: 48.5%;
 }
 
+.speak__btn__gigs {
+  width: 100%;
+}
+
 .create__btn {
   width: 100%;
 }
@@ -128,6 +132,12 @@ body {
   height: 0.5px;
   width: 100%;
   margin: 20px 0;
+}
+.gigs__card__hr {
+  background: #e9eaf2;
+  height: 0.5px;
+  width: 100%;
+  margin: 10px 0;
 }
 
 .card__shadow {
@@ -177,7 +187,8 @@ body {
   .create__btn {
     width: 131px;
   }
-  .speak__btn {
+  .speak__btn,
+  .speak__btn__gigs {
     width: 142px;
   }
   .create__btn__cont {
@@ -195,6 +206,9 @@ body {
   }
   .card__hr2 {
     margin: 30px 0;
+  }
+  .gigs__card__hr {
+    margin: 20px 0;
   }
   .free__call__btn {
     width: 233px;
@@ -590,7 +604,7 @@ hr:after {
   border: 0.5px solid #f1f5fa;
   border-radius: 10px;
   background-color: white;
-  padding: 15px;
+  padding: 16px;
 }
 
 .milestone__title__cont {
@@ -683,7 +697,211 @@ hr:after {
   background: transparent;
 }
 
+.gig__tab__wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: start;
+  justify-content: start;
+  gap: 6px;
+}
+
+.gig__title__margin {
+  margin-bottom: 12px;
+}
+
+.gig__tab__cont {
+  display: flex;
+  justify-content: start;
+  width: 100%;
+  gap: 5px;
+}
+.gigs__tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  padding: 0 10px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #9da6af;
+  border-bottom: 0.5px solid #fff;
+}
+
+.active__gigs__tab {
+  color: #08121d;
+  border-bottom: 0.5px solid #0967d2;
+}
+
+.gigs__create__a__gig {
+  width: 100%;
+  height: 48px;
+  outline: none;
+  border-radius: 8px;
+  background: transparent;
+  border: 0.5px solid #0967d2;
+  color: #0967d2;
+  font-size: 16px;
+}
+
+.gigs__tabs__content {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.gigs__talent__card {
+  padding: 16px;
+  border: 0.5px solid #e9eaf2;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 0px 6px 20px 0px #09305e0f;
+}
+.gigs__talent__card__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-wrap: wrap-reverse;
+  gap: 10px;
+}
+.gigs__talent__card__title h2 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #08121d;
+  margin: 0;
+}
+.gigs__talent__card__title span {
+  background: #f7f2eb;
+  color: #d27409;
+  font-size: 12px;
+  line-height: 12px;
+  border-radius: 50px;
+  padding: 7px 14px;
+}
+
+.gigs__type {
+  color: #373d43;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+  margin: 5px 0 0;
+}
+
+.gigs__info__wrapper {
+  border-top: 1px solid #f1f5fa;
+  border-bottom: 1px solid #f1f5fa;
+  padding: 20px 0;
+  margin: 25px 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+.gigs__info__cont h3 {
+  color: #67737e;
+  font-size: 13px;
+  line-height: 16px;
+  margin: 0;
+}
+.gigs__info__cont h4 {
+  color: #08121d;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+  margin: 6px 0 0;
+}
+.gigs__view__talents {
+  border: 0.5px solid #0967d2;
+  color: #0967d2;
+  height: 36px;
+  width: 85px;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 12px;
+  line-height: 13px;
+  background: transparent;
+}
+.gigs__manager__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 16px;
+}
+.gigs__manager__cont h4 {
+  color: #7aaee9;
+  font-size: 12px;
+  line-height: 14px;
+  margin: 0;
+}
+.gigs__manager__info__cont {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 12px;
+  gap: 8px;
+}
+.gigs__manager__info__cont img {
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+}
+.gig__manager__desc h2 {
+  color: #08121d;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  margin: 0;
+}
+.gig__manager__desc p {
+  margin: 4px 0 0;
+  color: #67737e;
+  font-size: 14px;
+  line-height: 19px;
+}
+.gigs__speak__manager {
+  border: 0.5px solid #0967d2;
+  color: #0967d2;
+  height: 36px;
+  width: 100%;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 12px;
+  line-height: 13px;
+  background: transparent;
+}
 @media screen and (min-width: 768px) {
+  .gigs__info__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+  }
+  .gigs__manager__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+  .gigs__speak__manager {
+    width: 159px;
+  }
+  .gigs__talent__card {
+    padding: 28px;
+  }
+  .gig__title__margin {
+    margin-bottom: 0px;
+  }
+
+  .gig__tab__wrapper {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+  .gigs__create__a__gig {
+    width: 167px;
+  }
+
   .btm__nav__cont {
     display: flex;
     justify-content: space-between;
@@ -705,6 +923,16 @@ hr:after {
   .milestone__title__cont h5 {
     font-size: 20px;
     line-height: 26px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .gigs__info__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
   }
 }
 
