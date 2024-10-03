@@ -106,12 +106,12 @@ body {
 .gig__page__header {
   background-color: #ffffff;
   border-radius: 10px;
-  width: 90%;
+  width: 95%;
   max-width: 1320px;
   margin-right: auto;
   margin-left: auto;
   margin-top: 35px;
-  padding: 20px;
+  padding: 20px 16px;
   margin-bottom: 40px;
 }
 
@@ -807,7 +807,7 @@ hr:after {
 .gigs__profile__info__wrapper {
   border: none;
   padding: 20px 0;
-  margin: 25px 0 0;
+  margin: 10px 0 10px;
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 20px;
@@ -850,6 +850,17 @@ hr:after {
   justify-content: start;
   flex-wrap: wrap;
   gap: 16px;
+}
+.gigs__profile__manager__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  flex-wrap: wrap;
+  gap: 16px;
+  background: #0f6fdd;
+  border: 0.5px solid #1176e9;
+  border-radius: 10px;
+  padding: 16px;
 }
 .gigs__manager__cont h4 {
   color: #7aaee9;
@@ -905,20 +916,358 @@ hr:after {
   line-height: 13px;
   background: transparent;
 }
+.gigs__btm__btn__cont {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 20px;
+}
+.gigs__view__details {
+  border: 0.5px solid #ffffff;
+  color: #ffffff;
+  height: 36px;
+  width: 100%;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 12px;
+  line-height: 13px;
+  background: transparent;
+}
+.gigs__pay__milestone {
+  border: 0.5px solid #ffffff;
+  background: #ffffff;
+  color: #0967d2;
+  height: 36px;
+  width: 100%;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 12px;
+  line-height: 13px;
+}
+
+.talent__gigs__profile__card {
+  border: 0.5px solid #f1f5fa;
+  box-shadow: 0px 6px 20px 0px #09305e0f;
+  background: #ffffff;
+  padding: 16px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-items: start;
+  gap: 10px;
+}
+.talent__gigs__profile__card__img {
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+}
+.talent__gigs__profile__title__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 14px;
+}
+.talent__gigs__profile__title__cont {
+  display: flex;
+  gap: 8px;
+  justify-content: start;
+  align-items: center;
+}
+.talent__gigs__profile__title__cont h2 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #0967d2;
+  margin: 0;
+}
+.talent__chat__btn {
+  background: #0967d2;
+  height: 36px;
+  width: 82px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  margin-left: 12px;
+}
+.talent__chat__btn p {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  margin: 0;
+}
+.talent__select__btn {
+  border: 0.5px solid #0967d2;
+  outline: none;
+  border-radius: 8px;
+  width: 100%;
+  text-align: center;
+  height: 36px;
+  font-size: 12px;
+  line-height: 16px;
+  color: #0967d2;
+  background: transparent;
+}
+
+.talent__location {
+  color: #373d43;
+  font-size: 14px;
+  line-height: 19px;
+  margin: 10px 0 0;
+}
+
+.talent__desc__p {
+  color: #67737e;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 14px 0 16px;
+}
+.talent__skills__wrapper h4 {
+  color: #9da6af;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0;
+}
+.talent__skills__cont {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 8px;
+}
+.talent__skills__cont p {
+  border: 0.5px solid #67737e;
+  padding: 6.5px 16px;
+  border-radius: 50px;
+  margin: 0;
+  color: #67737e;
+  font-size: 12px;
+  line-height: 14px;
+}
+.talent__recommend__cont {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.talent__btn__controls__cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+.talent__btn__controls__cont button {
+  left: auto;
+  top: auto;
+  right: auto;
+  bottom: auto;
+}
+.talent__recommend__cont h4 {
+  color: #9da6af;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.talent__recommend__cont button {
+  background: transparent;
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+.talent__recom__card {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 16px;
+  border: 1px solid #f1f5fa;
+  /* box-shadow: 0px 6px 20px 0px #09305e0f; */
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 10px;
+  height: 240px;
+}
+
+.recom__avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+.recom__name__cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.recom__name__cont h2 {
+  color: #08121d;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  margin: 0;
+}
+.recom__name__cont p {
+  color: #67737e;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  margin: 0;
+}
+.recom__statement {
+  color: #67737e;
+  font-size: 13px;
+  line-height: 20px;
+  margin: 10px 0 0;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+}
+
+.swiper {
+  width: 100%;
+  height: fit-content;
+  max-width: 100%;
+}
+
+.talent__btn__controls__cont button::after {
+  content: "" !important;
+}
+.talent__gigs__profile__info__cont {
+  width: 100%;
+}
+.recruiter__comment__cont {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 20px;
+}
+.confirm__talent__modal__btn__cont {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 30px;
+}
+.confirm__talent__modal__btn__cont button {
+  border: none;
+  outline: none;
+  margin: 0;
+  height: 48px;
+  text-align: center;
+  font-size: 14px;
+  width: 100%;
+  border-radius: 8px;
+}
+.confirm__talent__no {
+  background: transparent;
+  color: #0967d2;
+}
+.confirm__talent__no:hover {
+  background: #e9eaf2;
+}
+.confirm__talent__yes {
+  color: white;
+  background: #0967d2;
+}
+.recruit__comment__card {
+  padding: 16px;
+  border: 0.5px solid #e8f2fc;
+  background: #f8fbff;
+  border-radius: 10px;
+}
+.recruit__comment__card h5 {
+  color: #9da6af;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  margin: 0;
+}
+.recruit__comment__card p,
+.recruit__comment__card span {
+  color: #08121d;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 10px 0;
+}
+
+.recruit__comment__card span {
+  color: #0967d2;
+  margin: 0;
+}
+
 @media screen and (min-width: 768px) {
+  .talent__gigs__profile__card {
+    padding: 28px;
+    display: flex;
+    flex-direction: row;
+    justify-items: start;
+    align-items: start;
+    gap: 16px;
+  }
+  .confirm__talent__modal__btn__cont button {
+    font-size: 16px;
+  }
+  .recruit__comment__card {
+    padding: 24px;
+  }
+  .recruiter__comment__cont {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  /* swiper js will break without class below */
+  .talent__gigs__profile__info__cont {
+    width: calc(100% - 61px);
+  }
+  .talent__select__btn {
+    width: 117px;
+  }
+  .talent__gigs__profile__title__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
   .gigs__info__wrapper,
   .gigs__profile__info__wrapper {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 25px;
   }
-  .gigs__manager__wrapper {
+  .gigs__btm__btn__cont {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 15px;
+  }
+  .gigs__view__details {
+    width: 117px;
+  }
+  .gigs__pay__milestone {
+    width: 121px;
+  }
+  .gigs__manager__wrapper,
+  .gigs__profile__manager__wrapper {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     gap: 20px;
   }
-  .gigs__speak__manager, .gigs__profile__speak__manager {
+  .gigs__profile__manager__wrapper {
+    border-radius: 14px;
+    padding: 20px;
+  }
+
+  .gigs__speak__manager,
+  .gigs__profile__speak__manager {
     width: 169px;
   }
   .gigs__talent__card,
@@ -971,7 +1320,7 @@ hr:after {
     flex-wrap: wrap;
     gap: 20px;
   }
-  .gigs__profile__info__wrapper{
+  .gigs__profile__info__wrapper {
     display: grid;
     grid-template-columns: repeat(5, minmax(0, 1fr));
     gap: 20px;
@@ -1665,7 +2014,7 @@ label {
   color: #6c757d;
 }
 
-.carousel-item {
+/* .carousel-item {
   transition: transform 0.5s ease-in-out;
 }
 
@@ -1676,7 +2025,7 @@ label {
 
 .carousel-item .row {
   justify-content: center;
-}
+} */
 /* Gigs style */
 
 .navTabs {

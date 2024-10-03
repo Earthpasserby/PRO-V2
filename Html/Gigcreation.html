@@ -14,6 +14,10 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../Css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <title>New PRODEV</title>
   </head>
   <body>
@@ -22,6 +26,7 @@
         <span class="navbar-brand mb-0 h1">Navbar</span>
       </div>
     </nav>
+
     <div class="gig__page__header">
       <div>
         <a href="/index.html" class="backButton">
@@ -32,13 +37,13 @@
       <hr />
       <div class="gigs__talent__profile__card">
         <div class="gigs__talent__card__title">
-          <h2 style="color: #FFFFFF">
-            I need a product designer who is an expert in UX Research and
-            Visual Design
+          <h2 style="color: #ffffff">
+            I need a product designer who is an expert in UX Research and Visual
+            Design
           </h2>
           <span>Pending</span>
         </div>
-        <p class="gigs__type" style="color: #B8D2EE;">Design</p>
+        <p class="gigs__type" style="color: #b8d2ee">Design</p>
         <div class="gigs__profile__info__wrapper">
           <div class="gigs__profile__info__cont">
             <h3>Project type</h3>
@@ -52,7 +57,7 @@
             <h3>GIG total budget</h3>
             <h4>₦1,000,000</h4>
           </div>
-         
+
           <div class="gigs__profile__info__cont">
             <h3>Milestones paid for</h3>
             <h4>1/20</h4>
@@ -61,16 +66,15 @@
             <h3>Milestones completed</h3>
             <h4>0/10</h4>
           </div>
-          
         </div>
-        <div class="gigs__manager__wrapper">
+        <div class="gigs__profile__manager__wrapper">
           <div class="gigs__manager__cont">
-            <h4 style="color: #B8D2EE;">GIG’s manager</h4>
+            <h4 style="color: #b8d2ee">GIG’s manager</h4>
             <div class="gigs__manager__info__cont">
               <img src="../img/Avatar.png" alt="avatar" />
               <div class="gig__manager__desc">
-                <h2 style="color: #FFFFFF;">Agnes Felicia Daniel’s</h2>
-                <p style="color: #7AAEE9;">
+                <h2 style="color: #ffffff">Agnes Felicia Daniel’s</h2>
+                <p style="color: #7aaee9">
                   This manager will help you manage any dispute during the
                   course of the project.
                 </p>
@@ -81,9 +85,359 @@
             Speak with GIG’s manager
           </button>
         </div>
+        <div class="gigs__btm__btn__cont">
+          <button class="gigs__view__details">View Gig details</button>
+          <button class="gigs__pay__milestone">Pay for milestone</button>
+        </div>
       </div>
+      <hr class="card__hr" />
+      <div class="talent__gigs__profile__card">
+        <img
+          src="../img/Avatar.png"
+          alt="avatar"
+          class="talent__gigs__profile__card__img"
+          style="align-self: start"
+        />
+        <div class="talent__gigs__profile__info__cont">
+          <div class="talent__gigs__profile__title__wrapper">
+            <div class="talent__gigs__profile__title__cont">
+              <h2>Karima S.</h2>
+              <img
+                src="../img/verify-tag.svg"
+                alt="verified"
+                class="talent__verified__tag"
+              />
+              <button class="talent__chat__btn">
+                <img src="../img/bubble-chat.svg" alt="chat" />
+                <p>Chat</p>
+              </button>
+            </div>
+            <button
+              class="talent__select__btn"
+              data-bs-toggle="modal"
+              data-bs-target="#confirmTalent"
+            >
+              Select this talent
+            </button>
 
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="confirmTalent"
+              tabindex="-1"
+              aria-labelledby="confirmTalentLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1
+                      class="modal-title"
+                      style="color: #08121d; font-size: 20px; font-weight: 700"
+                      id="confirmTalentLabel"
+                    >
+                      Select this talent
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <p
+                      style="
+                        font-size: 16px;
+                        line-height: 24px;
+                        color: #373d43;
+                        margin: 0;
+                      "
+                    >
+                      You are about to select this this talent to commence this
+                      GIG, kindly ensure you are comfortable with this talent
+                      before you commence. Are you sure you want to select this
+                      talent?
+                    </p>
+                    <div class="confirm__talent__modal__btn__cont">
+                      <button
+                        type="button"
+                        class="confirm__talent__no"
+                        data-bs-dismiss="modal"
+                      >
+                        Cancel
+                      </button>
+                      <button
+                        class="confirm__talent__yes"
+                        type="button"
+                        class="btn btn-primary"
+                      >
+                        Yes, select this talent
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="talent__location">
+            <span>Product Designer</span>&nbsp;&nbsp;
+            <span>Lagos, Nigeria</span>
+          </p>
+          <p class="talent__desc__p">
+            Innovative Product Designer with 4 years of experience driving
+            design consistency, user satisfaction, and revenue growth through
+            successful product launches. Proven track record in implementing new
+            design systems, conducting user research and usability testing, and
+            collaborating with cross...
+          </p>
+          <div class="talent__skills__wrapper">
+            <h4>Skills</h4>
+            <div class="talent__skills__cont">
+              <p>Figma</p>
+              <p>Prototype</p>
+              <p>Wireframe</p>
+              <p>Wireframe</p>
+              <p>Wireframe</p>
+              <p>Wireframe</p>
+            </div>
+          </div>
+          <div style="width: 100%">
+            <div class="talent__review__wrapper mt-4">
+              <div class="talent__recommend__cont">
+                <h4>Recommendations</h4>
+                <div class="talent__btn__controls__cont">
+                  <button style="position: relative" class="swiper-button-prev">
+                    <img
+                      src="../img/Left-arrow.svg"
+                      alt="previous"
+                      id="prev1"
+                    />
+                  </button>
+                  <button style="position: relative" class="swiper-button-next">
+                    <img src="../img/Right-arrow.svg" alt="next" id="next1" />
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- I added a fixed height to the carousel items to keep the slides equal i also added a text clamp to the paragraph, i.e the review so that the text does not overflow -->
+            <!-- NOTE if you have multiple carousels in the code give the container and navigation buttons a unique header like it's done below and check the script tag at the end of the page for the implementation -->
+            <div
+              class="swiper mySwiper"
+              style="margin-top: 20px"
+              id="carousel1"
+            >
+              <div
+                id="slides-wrap"
+                class="swiper-wrapper"
+                style="height: max-content !important"
+              >
+                <div class="swiper-slide">
+                  <div class="talent__recom__card">
+                    <img
+                      src="../img/Image.png"
+                      alt="avatar"
+                      class="recom__avatar"
+                    />
+                    <div class="recom__text__cont">
+                      <div class="recom__name__cont">
+                        <h2>Sanusi Ganiyu</h2>
+                        <p>26/9/2024</p>
+                      </div>
+                      <div class="recom__rating__cont">
+                        <img src="../img/full-star.svg" alt="star" />
+                        <img src="../img/full-star.svg" alt="star" />
+                        <img src="../img/full-star.svg" alt="star" />
+                        <img src="../img/full-star.svg" alt="star" />
+                        <img src="../img/blank-star.svg" alt="star" />
+                      </div>
+                      <p class="recom__statement">
+                        Chinedu is an exceptional designer who I have had the
+                        privilege to work with, we had a particular expectation
+                        on a project in mind and he met and even surpassed those
+                        expectations. I would recommend him on any project.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="talent__recom__card">
+                    <img
+                      src="../img/Image.png"
+                      alt="avatar"
+                      class="recom__avatar"
+                    />
+                    <div class="recom__text__cont">
+                      <div class="recom__name__cont">
+                        <h2>Sanusi Ganiyu</h2>
+                        <p>26/9/2024</p>
+                      </div>
+                      <div class="recom__rating__cont">
+                        <img src="../img/full-star.svg" alt="star" />
+                        <img src="../img/full-star.svg" alt="star" />
+                        <img src="../img/full-star.svg" alt="star" />
+                        <img src="../img/full-star.svg" alt="star" />
+                        <img src="../img/blank-star.svg" alt="star" />
+                      </div>
+                      <p class="recom__statement">
+                        Chinedu is an exceptional designer who I have had the
+                        privilege to work with, we had a particular expectation
+                        on a project in mind and he met and even surpassed those
+                        expectations. I would recommend him on any project.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="talent__recom__card">
+                    <img
+                      src="../img/Image.png"
+                      alt="avatar"
+                      class="recom__avatar"
+                    />
+                    <div class="recom__text__cont">
+                      <div class="recom__name__cont">
+                        <h2>Dammy Ganiyu</h2>
+                        <p>26/9/2024</p>
+                      </div>
+                      <div class="recom__rating__cont">
+                        <img src="../img/full-star.svg" alt="star" />
+                        <img src="../img/full-star.svg" alt="star" />
+                        <img src="../img/full-star.svg" alt="star" />
+                        <img src="../img/full-star.svg" alt="star" />
+                        <img src="../img/blank-star.svg" alt="star" />
+                      </div>
+                      <p class="recom__statement">
+                        Chinedu is an exceptional designer who I have had the
+                        privilege to work with, we had a particular expectation
+                        on a project in mind and he met and even surpassed those
+                        expectations. I would recommend him on any project.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="talent__recom__card">
+                    <img
+                      src="../img/Image.png"
+                      alt="avatar"
+                      class="recom__avatar"
+                    />
+                    <div class="recom__text__cont">
+                      <div class="recom__name__cont">
+                        <h2>Sanusi Ganiyu</h2>
+                        <p>26/9/2024</p>
+                      </div>
+                      <div class="recom__rating__cont">
+                        <img src="../img/full-star.svg" alt="star" />
+                        <img src="../img/full-star.svg" alt="star" />
+                        <img src="../img/full-star.svg" alt="star" />
+                        <img src="../img/full-star.svg" alt="star" />
+                        <img src="../img/blank-star.svg" alt="star" />
+                      </div>
+                      <p class="recom__statement">
+                        Chinedu is an exceptional designer who I have had the
+                        privilege to work with, we had a particular expectation
+                        on a project in mind and he met and even surpassed those
+                        expectations. I would recommend him on any project.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr class="card__hr" />
+          <div class="recruiter__comment__cont mt-4">
+            <div class="recruit__comment__card">
+              <h5>Recruiters comment</h5>
+              <p>
+                Karim has 9 -10 years of experience building basic diagram and
+                translating Figma design into real usable product, he has
+                demonstrated a genuine level of understanding and great
+                efficiency in execution...
+              </p>
+              <span> Read more</span>
+            </div>
+            <div class="recruit__comment__card">
+              <h5>Recruiters comment</h5>
+              <p>
+                Karim has 9 -10 years of experience building basic diagram and
+                translating Figma design into real usable product, he has
+                demonstrated a genuine level of understanding and great
+                efficiency in execution...
+              </p>
+              <span> Read more</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="card__hr" />
+    </div>
     <script src="../Js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      // Initialize first carousel
+      const swiper1 = new Swiper("#carousel1", {
+        loop: true,
+        allowTouchMove: true,
+        speed: 500,
+        autoplay: {
+          delay: 6000,
+          disableOnInteraction: true,
+        },
+        slidesPerView: 1,
+        spaceBetween: 20,
+        // Responsive breakpoints
+        breakpoints: {
+          // when window width is >= 700px
+          800: {
+            slidesPerView: 2,
+            spaceBetween: 16,
+          },
+          // when window width is >= 1200px
+          1200: {
+            slidesPerView: 3,
+            spaceBetween: 16,
+          },
+        },
+        navigation: {
+          nextEl: "#next1",
+          prevEl: "#prev1",
+        },
+      });
+
+      // Initialize second carousel
+      const swiper2 = new Swiper("#carousel2", {
+        loop: true,
+        allowTouchMove: true,
+        speed: 500,
+        autoplay: {
+          delay: 6000,
+          disableOnInteraction: true,
+        },
+        slidesPerView: 1,
+        spaceBetween: 20,
+        // Responsive breakpoints
+        breakpoints: {
+          // when window width is >= 700px
+          800: {
+            slidesPerView: 2,
+            spaceBetween: 16,
+          },
+          // when window width is >= 1200px
+          1200: {
+            slidesPerView: 3,
+            spaceBetween: 16,
+          },
+        },
+        navigation: {
+          nextEl: "#next2",
+          prevEl: "#prev2",
+        },
+      });
+    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
