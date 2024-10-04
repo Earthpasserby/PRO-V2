@@ -836,12 +836,12 @@ hr:after {
 .gigs__view__talents {
   border: 0.5px solid #0967d2;
   color: #0967d2;
-  height: 36px;
-  width: 85px;
+  height: 38px;
+  width: 95px;
   text-align: center;
   border-radius: 8px;
-  font-size: 12px;
-  line-height: 13px;
+  font-size: 13px;
+  line-height: 14px;
   background: transparent;
 }
 .gigs__manager__wrapper {
@@ -897,23 +897,23 @@ hr:after {
 .gigs__speak__manager {
   border: 0.5px solid #0967d2;
   color: #0967d2;
-  height: 36px;
+  height: 38px;
   width: 100%;
   text-align: center;
   border-radius: 8px;
-  font-size: 12px;
-  line-height: 13px;
+  font-size: 13px;
+  line-height: 14px;
   background: transparent;
 }
 .gigs__profile__speak__manager {
   border: 0.5px solid #ffffff;
   color: #ffffff;
-  height: 36px;
+  height: 38px;
   width: 100%;
   text-align: center;
   border-radius: 8px;
-  font-size: 12px;
-  line-height: 13px;
+  font-size: 13px;
+  line-height: 14px;
   background: transparent;
 }
 .gigs__btm__btn__cont {
@@ -925,24 +925,24 @@ hr:after {
 .gigs__view__details {
   border: 0.5px solid #ffffff;
   color: #ffffff;
-  height: 36px;
+  height: 38px;
   width: 100%;
   text-align: center;
   border-radius: 8px;
-  font-size: 12px;
-  line-height: 13px;
+  font-size: 13px;
+  line-height: 14px;
   background: transparent;
 }
 .gigs__pay__milestone {
   border: 0.5px solid #ffffff;
   background: #ffffff;
   color: #0967d2;
-  height: 36px;
+  height: 38px;
   width: 100%;
   text-align: center;
   border-radius: 8px;
-  font-size: 12px;
-  line-height: 13px;
+  font-size: 13px;
+  line-height: 14px;
 }
 
 .talent__gigs__profile__card {
@@ -1006,9 +1006,9 @@ hr:after {
   border-radius: 8px;
   width: 100%;
   text-align: center;
-  height: 36px;
-  font-size: 12px;
-  line-height: 16px;
+  height: 38px;
+  font-size: 13px;
+  line-height: 14px;
   color: #0967d2;
   background: transparent;
 }
@@ -1228,7 +1228,7 @@ hr:after {
     width: calc(100% - 61px);
   }
   .talent__select__btn {
-    width: 117px;
+    width: 127px;
   }
   .talent__gigs__profile__title__wrapper {
     display: flex;
@@ -1249,10 +1249,10 @@ hr:after {
     gap: 15px;
   }
   .gigs__view__details {
-    width: 117px;
+    width: 127px;
   }
   .gigs__pay__milestone {
-    width: 121px;
+    width: 131px;
   }
   .gigs__manager__wrapper,
   .gigs__profile__manager__wrapper {
@@ -1268,7 +1268,7 @@ hr:after {
 
   .gigs__speak__manager,
   .gigs__profile__speak__manager {
-    width: 169px;
+    width: 179px;
   }
   .gigs__talent__card,
   .gigs__talent__profile__card {
