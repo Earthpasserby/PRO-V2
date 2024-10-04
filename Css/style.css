@@ -778,9 +778,17 @@ hr:after {
   color: #08121d;
   margin: 0;
 }
-.gigs__talent__card__title span {
+.gigs__pending__tag {
   background: #f7f2eb;
   color: #d27409;
+  font-size: 12px;
+  line-height: 12px;
+  border-radius: 50px;
+  padding: 7px 14px;
+}
+.gigs__ongoing__tag {
+  background: #e8f2fc;
+  color: #0967d2;
   font-size: 12px;
   line-height: 12px;
   border-radius: 50px;
