@@ -964,6 +964,14 @@ hr:after {
   justify-items: start;
   gap: 10px;
 }
+.gigs__list__card {
+  border: 0.5px solid #f1f5fa;
+  box-shadow: 0px 6px 20px 0px #09305e0f;
+  background: #ffffff;
+  padding: 16px;
+  border-radius: 10px;
+  gap: 10px;
+}
 .talent__gigs__profile__card__img {
   width: 45px;
   height: 45px;
@@ -1213,13 +1221,127 @@ hr:after {
   margin: 0;
 }
 
+.gigs__list__title__cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.gigs__list__avatar__cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+.gigs__list__avatar__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 10px;
+  width: 100%;
+}
+
+.milestone__disclaimer__cont {
+  border: 0.5px solid #b8d2ee;
+  background: #e8f2fc;
+  border-radius: 10px;
+  padding: 16px;
+}
+
+.disclam__title__cont {
+  width: 100%;
+  text-align: left;
+  padding-bottom: 12px;
+  margin-bottom: 12px;
+  border-bottom: 0.5px solid #b8d2ee;
+}
+.disclam__title__cont h5 {
+  color: #67737e;
+  font-size: 16px;
+  line-height: 20px;
+  font-size: 400;
+  margin: 0;
+}
+
+.mile__diclaimer__ul {
+  margin-left: 16px;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 0;
+}
+.mile__diclaimer__ul li {
+  color: #67737e;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.mile__diclaimer__ul li span {
+  font-weight: 700;
+  color: #08121d;
+}
+.mile__diclaimer__ul li::marker {
+  color: #d27409;
+  font-size: 1.6em;
+}
+.disclaimer__terms {
+  color: #9da6af;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  margin: 12px 0 0;
+}
+
+.disclaimer__terms a {
+  color: #0967d2;
+}
+.disclaimer__continue {
+  width: 100%;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 0.5px solid #e9eaf2;
+  display: flex;
+  justify-content: end;
+}
+.disclaimer__continue button {
+  font-size: 16px;
+  color: #ffffff;
+  background: #0967d2;
+  border-radius: 8px;
+  height: 50px;
+  width: 165px;
+  border: none;
+  outline: none;
+}
 @media screen and (min-width: 768px) {
+  .mile__diclaimer__ul {
+    margin-left: 24px;
+  }
+  .milestone__disclaimer__cont {
+    border: 0.5px solid #b8d2ee;
+    background: #e8f2fc;
+    border-radius: 12px;
+    padding: 24px;
+  }
   .talent__gigs__profile__card {
     padding: 28px;
     display: flex;
     flex-direction: row;
     justify-items: start;
     align-items: start;
+    gap: 16px;
+  }
+  .gigs__list__avatar__cont {
+    width: fit-content;
+  }
+  .gigs__list__avatar__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
     gap: 16px;
   }
   .confirm__talent__modal__btn__cont button {
@@ -1734,7 +1856,7 @@ label {
   color: white;
   background: transparent;
   width: 100%;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 .payment__title__cont__h2 {
   font-size: 16px;
@@ -1814,6 +1936,21 @@ label {
   text-align: center;
   color: #fff;
 }
+.commit__fee__cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.commit__fee__cont h3,
+.commit__fee__cont h4 {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  color: white;
+  margin: 0;
+}
 
 @media screen and (min-width: 768px) {
   .previewGIG h6 {
@@ -1822,7 +1959,7 @@ label {
   }
   .commitment__pathway__cont {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
   .pay__mile__pay {

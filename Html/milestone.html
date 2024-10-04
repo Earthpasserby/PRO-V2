@@ -351,11 +351,107 @@
             <button
               class="nxtBtn"
               data-bs-toggle="modal"
-              data-bs-target="#commitmentModal"
+              data-bs-target="#disclaimerModal"
               type="button"
             >
               Publish GIG
             </button>
+            <div
+              class="modal fade"
+              id="disclaimerModal"
+              tabindex="-1"
+              aria-labelledby="disclaimerModalLabel"
+              aria-hidden="true"
+            >
+              <div
+                style="
+                  max-width: 857px !important;
+                  width: 95% !important;
+                  margin: 0px auto;
+                "
+                class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+              >
+                <div
+                  style="margin-top: 20px"
+                  class="modal-content create__mile__modal__cont"
+                >
+                  <div class="modal-header">
+                    <h1
+                      style="
+                        color: #08121d;
+                        font-size: 16px;
+                        line-height: 20px;
+                        font-weight: 500;
+                      "
+                      class="modal-title"
+                      id="disclaimerModalLabel"
+                    >
+                      Disclaimer
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <div
+                      class="milestone__disclaimer__cont"
+                      style="margin-top: 5px"
+                    >
+                      <div class="disclam__title__cont">
+                        <h5>Payment and Terms</h5>
+                      </div>
+                      <ul class="mile__diclaimer__ul">
+                        <li>
+                          <span>Commitment fee: </span>Clients are required to
+                          pay a 30% commitment fee to secure their project. This
+                          fee is fully refundable if no suitable talent is
+                          selected. However, once a talent is chosen and the
+                          project begins, the commitment fee becomes
+                          non-refundable and can be applied towards the first
+                          project milestone.
+                        </li>
+                        <li>
+                          <span>Talent Payment: </span>Once a talent is selected
+                          and an agreement is confirmed, payments are made
+                          through the platform's secure wallet system. Clients
+                          should never pay talents directly outside the
+                          platform.
+                        </li>
+                        <li>
+                          <span>Milestone Payments: </span>Payments are
+                          typically made in milestones based on agreed-upon
+                          project deliverables.
+                        </li>
+                        <li>
+                          <span>Platform Violations: </span>Attempting to
+                          conduct business outside the platform is a violation
+                          of our terms of service and may result in penalties or
+                          loss of funds.
+                        </li>
+                        <li>
+                          <span>Talent Replacement: </span>ProDevs is not
+                          responsible for replacing talents who fail to deliver
+                          on their commitments. Clients should address any
+                          issues directly with the selected talent within the
+                          platform.
+                        </li>
+                      </ul>
+                    </div>
+                    <p class="disclaimer__terms">
+                      By using our platform, you agree to these <a href=""
+                        >Terms of use</a
+                      >
+                    </p>
+                    <div id="acceptDisclaimer" class="disclaimer__continue">
+                      <button>Continue</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div
               class="modal fade"
               id="commitmentModal"
@@ -365,7 +461,7 @@
             >
               <div
                 style="
-                  max-width: 857px !important;
+                  max-width: 807px !important;
                   width: 95% !important;
                   margin: 0px auto;
                 "
@@ -396,7 +492,7 @@
                     ></button>
                   </div>
                   <div class="modal-body">
-                    <h2 class="commitment__modal__title">
+                    <h2 class="commitment__modal__title mt-1">
                       Congratulations, your GIG is almost live.
                     </h2>
                     <p class="commitment__modal__subHeading">
@@ -405,7 +501,7 @@
                       this is to ensure that you are committed to the process.
                     </p>
                     <div class="commitment__pathway__cont">
-                      <div class="pay__milestone">
+                      <!-- <div class="pay__milestone">
                         <div class="pay__mile__title__cont">
                           <h2>Pay for a milestone</h2>
                           <p class="pay__mile__badge">Favourite option</p>
@@ -417,26 +513,25 @@
                         <button class="pay__mile__pay">
                           Pay for a milestone
                         </button>
-                      </div>
+                      </div> -->
                       <div class="pay__commitment">
                         <h2>Pay a commitment fee</h2>
-                        <p class="pay__commit__subHeading">
+                        <!-- <p class="pay__commit__subHeading">
                           Pay a commitment fee to ensure you have access to the
                           talents on ProDevs.
-                        </p>
+                        </p> -->
 
                         <div class="pay__commit__amount__cont">
-                          <p>Amount to pay:</p>
-                          <span>₦5,000</span>
+                          <p>Total budget:</p>
+                          <span>₦1,000,000,00</span>
                         </div>
-
-                        <div class="pay__commit__note">
-                          <img src="../img/info-i.svg" alt="note" />
-                          <p>
-                            Kindly note that paying a commitment fee doesn’t
-                            translate to paying for a GIG.
-                          </p>
+                        <div class="commit__fee__cont">
+                          <h3>Commitment fee:</h3>
+                          <h4>₦300,000</h4>
                         </div>
+                        <span class="gigs__pending__tag"
+                          >Commitment fee is 30% of your total budget</span
+                        >
                         <button id="payCommitFee" class="pay__commit__button">
                           Pay commitment fee
                         </button>
@@ -523,6 +618,42 @@
         </div>
       </div>
     </div>
+    <script>
+      document
+        .getElementById("acceptDisclaimer")
+        .addEventListener("click", function () {
+          // Close the first modal
+          // var firstModal = new bootstrap.Modal(
+          //   document.getElementById("commitmentModal")
+          // );
+          // firstModal.hide();
+
+          // // Open the second modal after the first modal is hidden
+          // var secondModal = new bootstrap.Modal(
+          //   document.getElementById("milePaymentModal")
+          // );
+          // secondModal.show();
+
+          var firstModalEl = document.getElementById("disclaimerModal");
+          var firstModal = bootstrap.Modal.getInstance(firstModalEl); // Get the instance of the first modal
+
+          // Close the first modal
+          firstModal.hide();
+
+          // Listen for when the first modal is completely hidden
+          firstModalEl.addEventListener(
+            "hidden.bs.modal",
+            function () {
+              // Once hidden, open the second modal
+              var secondModal = new bootstrap.Modal(
+                document.getElementById("commitmentModal")
+              );
+              secondModal.show();
+            },
+            { once: true }
+          );
+        });
+    </script>
     <script>
       document
         .getElementById("payCommitFee")
