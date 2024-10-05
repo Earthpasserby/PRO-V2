@@ -81,7 +81,9 @@
           </button>
         </div>
         <div class="gigs__btm__btn__cont__product">
-          <button class="gigs__view__details">View Gig details</button>
+          <a href="./gigDetails.html">
+            <button class="gigs__view__details">View Gig details</button></a
+          >
           <button
             class="gigs__recomm__milestone"
             data-bs-toggle="modal"
@@ -361,6 +363,186 @@
               <button class="talent__milestone__pay__button">
                 Make payment
               </button>
+            </div>
+          </div>
+          <div class="talent__milestone__card milestone__card">
+            <div class="milestone__title__cont">
+              <h5>
+                Design the landing page of the website complete with it’s
+                existing functionalities.
+              </h5>
+              <div
+                style="width: fit-content; height: fit-content"
+                class="btn-group dropstart"
+              >
+                <button
+                  class="milestone__more btn-toggle p-0"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img src="../img/more-vertical.svg" alt="more" />
+                </button>
+                <!-- <ul
+                  class="dropdown-menu milestone__drop__menu"
+                  style="
+                    padding: 0;
+                    overflow: hidden;
+                    border-radius: 10px;
+                    box-shadow: 0px 6px 20px 0px #09305e1a;
+                  "
+                >
+                  <li>
+                    <a class="" href="#">Edit milestone</a>
+                  </li>
+                  <li class="delete__milestone__cont">
+                    <button class="delete__milestone">Delete milestone</button>
+                  </li>
+                </ul> -->
+              </div>
+            </div>
+            <div class="talent__milestone__info__cont">
+              <div class="mile__info__text">
+                <p>Amount</p>
+                <h3>₦350,000.00</h3>
+              </div>
+              <div class="mile__info__text">
+                <p>Payment status</p>
+                <h6 class="milestone__status">Not yet paid for</h6>
+              </div>
+              <div class="mile__info__text">
+                <p>Talent status</p>
+                <h6 class="milestone__status">In progress</h6>
+              </div>
+            </div>
+            <div class="talent__milestone__info__cont">
+              <div class="mile__info__text">
+                <p>Start Date</p>
+                <h3>5/5/2023</h3>
+              </div>
+              <div class="mile__info__text">
+                <p>End Date</p>
+                <h3>5/5/2023</h3>
+              </div>
+            </div>
+
+            <div class="gig__time__wrapper">
+              <div class="gig__time__time">
+                <p>Milestone countdown</p>
+                <h4>01 day : 22 sec</h4>
+              </div>
+              <p class="milesone__time__link">
+                This milestone is yet to be completed and the project timeline
+                is nearing completion.
+                <span
+                  style="cursor: pointer"
+                  data-bs-toggle="modal"
+                  data-bs-target="#mileTimeModal"
+                  >Increase milestone timeline
+                  <img src="../img/time-arr.svg" alt=""
+                /></span>
+              </p>
+              <div
+                class="modal fade"
+                id="mileTimeModal"
+                tabindex="-1"
+                aria-labelledby="mileTimeModalLabel"
+                aria-hidden="true"
+              >
+                <div
+                  style="
+                    max-width: 650px !important;
+                    width: 95% !important;
+                    margin: 0px auto;
+                  "
+                  class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                >
+                  <div
+                    style="margin-top: 20px"
+                    class="modal-content create__mile__modal__cont"
+                  >
+                    <div class="modal-header">
+                      <h1
+                        style="
+                          color: #08121d;
+                          font-size: 16px;
+                          line-height: 20px;
+                          font-weight: 500;
+                        "
+                        class="modal-title"
+                        id="mileTimeModalLabel"
+                      >
+                        Increase milestone timeline
+                      </h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div style="margin-top: 5px" class="gig__time__wrapper">
+                        <div class="gig__time__time">
+                          <p>Milestone countdown</p>
+                          <h4>01 day : 22 sec</h4>
+                        </div>
+                        <div class="gig__time__time">
+                          <p>Previous start and end date</p>
+                          <h4>5/5/2023 : 5/6/2023</h4>
+                        </div>
+                      </div>
+                      <p
+                        style="
+                          color: #67737e;
+                          font-size: 16px;
+                          line-height: 22px;
+                          margin: 35px 0 15px;
+                        "
+                      >
+                        Increase start and end date of this milestone.
+                      </p>
+                      <div class="row">
+                        <div class="form-group col-md-6">
+                          <label for="inputGIG's" class="mb-2"
+                            >Start date
+                          </label>
+                          <div class="input-group mb-3">
+                            <input
+                              type="date"
+                              class="form-control mile__modal__form__input"
+                              placeholder=""
+                              aria-label="Example text with two button addons"
+                              aria-describedby="button-addon3"
+                            />
+                          </div>
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="inputgig's" class="mb-2">End date</label>
+                          <div class="input-group mb-3">
+                            <input
+                              type="date"
+                              class="form-control mile__modal__form__input"
+                              placeholder=""
+                              aria-label="Example text with two button addons"
+                              aria-describedby="button-addon3"
+                            />
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="payment__modal__nxt__cont">
+                        <a
+                          style="text-decoration: none; align-self: self-end"
+                          href="./Gigs.html"
+                          ><button class="payment__modal__pay">
+                            Increase timeline
+                          </button></a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
