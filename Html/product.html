@@ -36,7 +36,7 @@
             I need a product designer who is an expert in UX Research and Visual
             Design
           </h2>
-          <span class="gigs__pending__tag">Pending</span>
+          <span class="gigs__ongoing__tag">Ongoing</span>
         </div>
         <p class="gigs__type" style="color: #b8d2ee">Design</p>
         <div class="gigs__profile__info__wrapper">
@@ -80,12 +80,116 @@
             Speak with GIG’s manager
           </button>
         </div>
-        <div class="gigs__btm__btn__cont">
+        <div class="gigs__btm__btn__cont__product">
           <button class="gigs__view__details">View Gig details</button>
-          <button class="gigs__pay__milestone">Pay for milestone</button>
+          <button
+            class="gigs__recomm__milestone"
+            data-bs-toggle="modal"
+            data-bs-target="#ratingModal"
+          >
+            Give Karima a recommendation
+          </button>
+          <div
+            class="modal fade"
+            id="ratingModal"
+            tabindex="-1"
+            aria-labelledby="ratingModalLabel"
+            aria-hidden="true"
+          >
+            <div
+              style="
+                max-width: 582px !important;
+                width: 95% !important;
+                margin: 0px auto;
+              "
+              class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+            >
+              <div
+                style="margin-top: 20px"
+                class="modal-content create__mile__modal__cont"
+              >
+                <div
+                  class="modal-header"
+                  style="border: none !important; padding-bottom: 5px"
+                >
+                  <h1
+                    style="
+                      color: #08121d;
+                      font-size: 20px;
+                      line-height: 20px;
+                      font-weight: 700;
+                    "
+                    class="modal-title"
+                    id="ratingModalLabel"
+                  >
+                    Give recommendation
+                  </h1>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <div class="talent__rate__cont">
+                    <h3>Rate the job done by Karimat</h3>
+                    <div class="talent__starts__cont">
+                      <img src="../img/blank-star.svg" alt="star" />
+                      <img src="../img/blank-star.svg" alt="star" />
+                      <img src="../img/blank-star.svg" alt="star" />
+                      <img src="../img/blank-star.svg" alt="star" />
+                      <img src="../img/blank-star.svg" alt="star" />
+                    </div>
+                  </div>
+                  <form action="" class="rating__form" style="margin-top: 20px">
+                    <div class="">
+                      <label
+                        for="exampleFormControlTextarea1"
+                        class="form-label"
+                        style="color: #373d43"
+                        >GIG Description</label
+                      >
+                      <textarea
+                        style="color: #373d43; outline: none; box-shadow: none"
+                        placeholder="Karima is an exceptional designer who I have had the privilege to work with, we had a particular expectation on a project in mind and he met and even surpassed those expectations. I would recommend him on any project."
+                        class="form-control"
+                        id="exampleFormControlTextarea1"
+                        rows="5"
+                      ></textarea>
+                    </div>
+                    <p class="rating__note">
+                      This recommendation will be stored and other clients who
+                      Kiramat might work with in the future will be able to see
+                      this, kindly ensure the recommendations are true and
+                      sincere.
+                    </p>
+                    <div class="confirm__talent__modal__btn__cont">
+                      <button
+                        type="button"
+                        class="confirm__talent__no"
+                        data-bs-dismiss="modal"
+                      >
+                        Cancel
+                      </button>
+                      <a href=""
+                        ><button
+                          class="confirm__talent__yes"
+                          type="button"
+                          class="btn btn-primary"
+                        >
+                          Submit recommendation
+                        </button></a
+                      >
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="gigs__list__card" style="margin-top: 20px;">
+      <div class="gigs__list__card" style="margin-top: 20px">
         <div class="gigs__list__title__cont">
           <!-- Note i have two menu dropdown buttons they both do the same thing one is for mobile and the other for desktop -->
           <div class="gigs__list__avatar__wrapper">
@@ -120,6 +224,150 @@
           >
             <img src="../img/more-vertical.svg" alt="more" />
           </button>
+        </div>
+        <hr />
+        <div class="milestone__filter__cont">
+          <h3>Milestones deliverables</h3>
+          <button class="milestone__filter__btn">
+            <img src="../img/filter.svg" alt="filter" />
+            <p>All milestones</p>
+          </button>
+        </div>
+        <div class="talent__milestone__card__cont" style="margin-top: 20px">
+          <div class="talent__milestone__card milestone__card">
+            <div class="milestone__title__cont">
+              <h5>
+                Design the landing page of the website complete with it’s
+                existing functionalities.
+              </h5>
+              <div
+                style="width: fit-content; height: fit-content"
+                class="btn-group dropstart"
+              >
+                <button
+                  class="milestone__more btn-toggle p-0"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img src="../img/more-vertical.svg" alt="more" />
+                </button>
+                <!-- <ul
+                  class="dropdown-menu milestone__drop__menu"
+                  style="
+                    padding: 0;
+                    overflow: hidden;
+                    border-radius: 10px;
+                    box-shadow: 0px 6px 20px 0px #09305e1a;
+                  "
+                >
+                  <li>
+                    <a class="" href="#">Edit milestone</a>
+                  </li>
+                  <li class="delete__milestone__cont">
+                    <button class="delete__milestone">Delete milestone</button>
+                  </li>
+                </ul> -->
+              </div>
+            </div>
+            <div class="talent__milestone__info__cont">
+              <div class="mile__info__text">
+                <p>Amount</p>
+                <h3>₦500,000.00</h3>
+              </div>
+              <div class="mile__info__text">
+                <p>Payment status</p>
+                <h6 class="milestone__status milestone__status__made">
+                  Payment made
+                </h6>
+              </div>
+              <div class="mile__info__text">
+                <p>Talent status</p>
+                <h6 class="milestone__status milestone__status__complete">
+                  Completed
+                </h6>
+              </div>
+            </div>
+            <div class="talent__milestone__info__cont">
+              <div class="mile__info__text">
+                <p>Start Date</p>
+                <h3>5/5/2023</h3>
+              </div>
+              <div class="mile__info__text">
+                <p>End Date</p>
+                <h3>5/5/2023</h3>
+              </div>
+            </div>
+          </div>
+          <div class="talent__milestone__card milestone__card">
+            <div class="milestone__title__cont">
+              <h5>
+                Design the landing page of the website complete with it’s
+                existing functionalities.
+              </h5>
+              <div
+                style="width: fit-content; height: fit-content"
+                class="btn-group dropstart"
+              >
+                <button
+                  class="milestone__more btn-toggle p-0"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img src="../img/more-vertical.svg" alt="more" />
+                </button>
+                <!-- <ul
+                  class="dropdown-menu milestone__drop__menu"
+                  style="
+                    padding: 0;
+                    overflow: hidden;
+                    border-radius: 10px;
+                    box-shadow: 0px 6px 20px 0px #09305e1a;
+                  "
+                >
+                  <li>
+                    <a class="" href="#">Edit milestone</a>
+                  </li>
+                  <li class="delete__milestone__cont">
+                    <button class="delete__milestone">Delete milestone</button>
+                  </li>
+                </ul> -->
+              </div>
+            </div>
+            <div class="talent__milestone__info__cont">
+              <div class="mile__info__text">
+                <p>Amount</p>
+                <h3>₦350,000.00</h3>
+              </div>
+              <div class="mile__info__text">
+                <p>Payment status</p>
+                <h6 class="milestone__status">Not yet paid for</h6>
+              </div>
+              <div class="mile__info__text">
+                <p>Talent status</p>
+                <h6 class="milestone__status">In progress</h6>
+              </div>
+            </div>
+            <div class="talent__milestone__info__cont">
+              <div class="mile__info__text">
+                <p>Start Date</p>
+                <h3>5/5/2023</h3>
+              </div>
+              <div class="mile__info__text">
+                <p>End Date</p>
+                <h3>5/5/2023</h3>
+              </div>
+            </div>
+            <div class="talent__milestone__info__cont">
+              <button class="talent__milestone__pay__button">
+                Make payment
+              </button>
+            </div>
+          </div>
+        </div>
+        <hr class="card__hr mt-4" />
+        <div class="milestone__balances__cont mt-2">
+          <h2>Budget balance: ₦750,000.00</h2>
+          <h3>Paid: ₦350,000.00</h3>
         </div>
       </div>
     </div>

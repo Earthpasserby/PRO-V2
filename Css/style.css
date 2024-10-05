@@ -656,24 +656,56 @@ hr:after {
 }
 
 .mile__info__text h3 {
-  font-size: 12px;
+  font-size: 16px !important;
   font-weight: 500 !important;
-  line-height: 16px;
+  line-height: 20px !important;
   text-align: left;
   color: #08121d;
   margin: 7px 0 0;
 }
 
 .milestone__status {
-  font-size: 14px;
+  font-size: 13.5px;
   font-weight: 400;
-  line-height: 16px;
+  line-height: 15px;
   color: #d27409;
   margin: 7px 0 0;
   width: fit-content;
   background: #f7f2eb;
   border-radius: 50px;
   padding: 7px 16px;
+}
+
+.talent__milestone__card__cont {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  gap: 20px;
+}
+.talent__milestone__pay__button {
+  font-size: 13px;
+  line-height: 14px;
+  color: #0967d2;
+  background: transparent;
+  border: 0.5px solid #0967d2;
+  height: 38px;
+  width: 128px;
+  border-radius: 8px;
+  outline: 0;
+  margin: 0;
+}
+
+.milestone__status__complete {
+  background: #e8f2fc !important;
+  color: #0967d2 !important;
+}
+.milestone__status__made {
+  background: #ebf7ec !important;
+  color: #09d220 !important;
+}
+.milestone__status__progress {
+  background: #f7f2eb !important;
+  color: #d27409 !important;
 }
 
 .milestone__drop__menu li {
@@ -930,6 +962,12 @@ hr:after {
   gap: 10px;
   margin-top: 20px;
 }
+.gigs__btm__btn__cont__product {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 20px;
+}
 .gigs__view__details {
   border: 0.5px solid #ffffff;
   color: #ffffff;
@@ -941,7 +979,8 @@ hr:after {
   line-height: 14px;
   background: transparent;
 }
-.gigs__pay__milestone {
+.gigs__pay__milestone,
+.gigs__recomm__milestone {
   border: 0.5px solid #ffffff;
   background: #ffffff;
   color: #0967d2;
@@ -1168,8 +1207,9 @@ hr:after {
   gap: 20px;
 }
 .confirm__talent__modal__btn__cont {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: start;
   gap: 10px;
   margin-top: 30px;
 }
@@ -1179,7 +1219,7 @@ hr:after {
   margin: 0;
   height: 48px;
   text-align: center;
-  font-size: 14px;
+  font-size: 16px;
   width: 100%;
   border-radius: 8px;
 }
@@ -1316,9 +1356,43 @@ hr:after {
   border: none;
   outline: none;
 }
+.talent__rate__cont h3 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.49px;
+  color: #67737e;
+  margin: 0;
+}
+.talent__rate__cont {
+  border-top: 1px solid #f1f5fa;
+  border-bottom: 1px solid #f1f5fa;
+  padding: 20px 0;
+}
+.talent__starts__cont img {
+  width: 33px;
+  height: 33px;
+}
+.talent__starts__cont {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  margin-top: 8px;
+}
+.rating__note {
+  font-size: 12.5px;
+  font-weight: 400;
+  line-height: 16px;
+  margin: 12px 0 0;
+  color: #67737e;
+}
 @media screen and (min-width: 768px) {
   .mile__diclaimer__ul {
     margin-left: 24px;
+  }
+  .confirm__talent__modal__btn__cont {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .milestone__disclaimer__cont {
     border: 0.5px solid #b8d2ee;
@@ -1372,7 +1446,8 @@ hr:after {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 25px;
   }
-  .gigs__btm__btn__cont {
+  .gigs__btm__btn__cont,
+  .gigs__btm__btn__cont__product {
     display: flex;
     justify-content: start;
     align-items: center;
@@ -1383,6 +1458,10 @@ hr:after {
   }
   .gigs__pay__milestone {
     width: 131px;
+  }
+  .gigs__recomm__milestone {
+    width: fit-content;
+    padding: 0 14px;
   }
   .gigs__manager__wrapper,
   .gigs__profile__manager__wrapper {
@@ -1951,8 +2030,106 @@ label {
   color: white;
   margin: 0;
 }
+.milestone__filter__cont {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 8px;
+}
+
+.milestone__filter__cont h3 {
+  color: #67737e;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0;
+}
+.milestone__filter__btn {
+  height: 43px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  border-radius: 9px;
+  border: 0.5px solid #08121d;
+  outline: none;
+  background: none;
+  justify-content: start;
+  gap: 8px;
+  margin: 0;
+}
+
+.milestone__filter__btn p {
+  color: #08121d;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0;
+}
+.talent__milestone__card {
+  border-radius: 10px;
+}
+.talent__milestone__info__cont {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  border-top: 1px solid #f1f5fa;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+.milestone__balances__cont {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  gap: 8px;
+}
+.milestone__balances__cont h2 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  text-align: left;
+  color: #08121d;
+}
+.milestone__balances__cont h3 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  text-align: left;
+  color: #67737e;
+}
 
 @media screen and (min-width: 768px) {
+  .milestone__balances__cont {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .milestone__balances__cont h3 {
+    text-align: right;
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .milestone__balances__cont h2 {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .milestone__filter__cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+  .talent__milestone__info__cont {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .talent__milestone__card {
+    border-radius: 20px;
+    padding: 25px 30px;
+  }
+  .milestone__filter__btn {
+    justify-content: center;
+  }
+  .gigs__list__card {
+    padding: 28px;
+  }
+
   .previewGIG h6 {
     font-size: 16px;
     line-height: 20px;
