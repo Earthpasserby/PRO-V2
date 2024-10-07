@@ -2346,6 +2346,30 @@ label {
   cursor: pointer;
 } */
 
+.nofee__gig__desc__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.nofee__note__cont {
+  border: 0.5px solid #b8d2ee;
+  background: #e8f2fc;
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 8px;
+  margin: 30px 0;
+}
+.nofee__note__cont p {
+  color: #0967d2;
+  font-size: 13px;
+  line-height: 16px;
+  margin: 0;
+}
+
 @media screen and (min-width: 768px) {
   .payment__modal__nxt__cont {
     display: flex;
