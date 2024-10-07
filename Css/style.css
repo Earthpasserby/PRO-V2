@@ -2254,6 +2254,98 @@ label {
   color: #67737e;
 }
 
+.milestone__multiselect .selection {
+  min-height: 50px !important;
+  height: fit-content !important;
+  display: flex;
+  width: 100%;
+}
+.milestone__multiselect .select2-selection--multiple {
+  width: 100%;
+  border: 1px solid #dee2e6 !important;
+  border-radius: 8px !important;
+}
+
+.milestone__multiselect .select2-selection__rendered {
+  margin: 0;
+  padding: 0;
+}
+
+.milestone__multiselect .select2-selection__choice {
+  background: transparent !important;
+  border: 1px solid #67737e !important;
+  border-radius: 50px !important;
+  padding: 0 12px !important;
+  overflow: hidden !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: start !important;
+  height: 25px !important;
+  width: fit-content !important;
+  gap: 8px !important;
+  flex-direction: row-reverse !important;
+  margin: 6px 0 0 6px !important;
+}
+
+.milestone__multiselect .select2-selection__choice__remove {
+  position: relative !important;
+  border: none !important;
+  color: #67737e !important;
+  font-size: 19px !important;
+  line-height: 19px !important;
+  padding: 0 !important;
+  /* right: 0 !important;
+  left: -100% !important;
+  transform: translate(0% 0%) !important; */
+}
+
+.milestone__multiselect .select2-selection__choice__display {
+  color: #67737e !important;
+  padding: 0 !important;
+  font-size: 13px !important;
+  line-height: 13px !important;
+}
+/* .tags-input-wrapper {
+  background: transparent;
+  padding: 10px 10px;
+  border-radius: 8px;
+  min-height: 50px !important;
+  border: 1px solid #dee2e6;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.tags-input-wrapper input {
+  border: none;
+  background: transparent;
+  outline: none;
+  width: fit-content !important;
+  
+  margin-left: 4px;
+  height: fit-content !important;
+}
+.tags-input-wrapper .tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  background: transparent;
+  color: #67737e;
+  border: 1px solid #67737e;
+  font-size: 12px;
+  line-height: 12px !important;
+  border-radius: 40px;
+  padding: 5px 14px 4px;
+}
+.tags-input-wrapper .tag a {
+  margin: 0 7px 3px;
+  display: inline-block;
+  font-size: 22px;
+  cursor: pointer;
+} */
+
 @media screen and (min-width: 768px) {
   .payment__modal__nxt__cont {
     display: flex;
