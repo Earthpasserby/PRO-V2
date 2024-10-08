@@ -192,6 +192,14 @@
         </div>
       </div>
       <div class="gigs__list__card" style="margin-top: 20px">
+        <div class="general__note__cont mb-3">
+          <img src="../img/info-i.svg" alt="note" />
+          <p>
+            The talent has defined the milestone, it is left to you to define
+            the duration and the amount attached to the individual milestone
+            defined before project commences
+          </p>
+        </div>
         <div class="gigs__list__title__cont">
           <!-- Note i have two menu dropdown buttons they both do the same thing one is for mobile and the other for desktop -->
           <div class="gigs__list__avatar__wrapper">
@@ -202,11 +210,40 @@
                 class="talent__gigs__profile__card__img"
                 style="align-self: start"
               />
-              <button
-                class="milestone__more btn-toggle p-0 d-inline-block d-md-none"
+
+              <div
+                style="width: fit-content; height: fit-content"
+                class="btn-group dropstart"
               >
-                <img src="../img/more-vertical.svg" alt="more" />
-              </button>
+                <button
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  class="milestone__more btn-toggle p-0 d-inline-block d-md-none"
+                >
+                  <img src="../img/more-vertical.svg" alt="more" />
+                </button>
+                <ul
+                  class="dropdown-menu milestone__drop__menu"
+                  style="
+                    padding: 0;
+                    overflow: hidden;
+                    border-radius: 10px;
+                    box-shadow: 0px 6px 20px 0px #09305e1a;
+                  "
+                >
+                  <!-- NOTE: i only created the modals for the pause gig workflow because the modals is exactly the same, only the text changes -->
+
+                  <li data-bs-toggle="modal" data-bs-target="#pauseGig">
+                    <a class="" href="#">Pause GIG</a>
+                  </li>
+                  <li data-bs-toggle="modal" data-bs-target="#pauseGig">
+                    <a class="" href="#">Close GIG</a>
+                  </li>
+                  <li data-bs-toggle="modal" data-bs-target="#pauseGig">
+                    <a class="" href="#">Remove & replace talent</a>
+                  </li>
+                </ul>
+              </div>
             </div>
             <div class="talent__gigs__profile__title__cont">
               <h2>Karima S.</h2>
@@ -221,19 +258,202 @@
               </button>
             </div>
           </div>
-          <button
-            class="milestone__more btn-toggle p-0 d-none d-md-inline-block"
+
+          <div
+            style="width: fit-content; height: fit-content"
+            class="btn-group dropstart"
           >
-            <img src="../img/more-vertical.svg" alt="more" />
-          </button>
+            <button
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              class="milestone__more btn-toggle p-0 d-none d-md-inline-block"
+            >
+              <img src="../img/more-vertical.svg" alt="more" />
+            </button>
+            <ul
+              class="dropdown-menu milestone__drop__menu"
+              style="
+                padding: 0;
+                overflow: hidden;
+                border-radius: 10px;
+                box-shadow: 0px 6px 20px 0px #09305e1a;
+              "
+            >
+              <!-- NOTE: i only created the modals for the pause gig workflow because the modals is exactly the same, only the text changes -->
+              <li data-bs-toggle="modal" data-bs-target="#pauseGig">
+                <a class="" href="#">Pause GIG</a>
+              </li>
+              <li data-bs-toggle="modal" data-bs-target="#pauseGig">
+                <a class="" href="#">Close GIG</a>
+              </li>
+              <li data-bs-toggle="modal" data-bs-target="#pauseGig">
+                <a class="" href="#">Remove & replace talent</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="modal fade"
+          id="pauseGig"
+          tabindex="-1"
+          aria-labelledby="pauseGigLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1
+                  class="modal-title"
+                  style="color: #08121d; font-size: 20px; font-weight: 700"
+                  id="pauseGigLabel"
+                >
+                  Pause GIG
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <p
+                  style="
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #373d43;
+                    margin: 0;
+                  "
+                >
+                  You are about to pause this GIG, the talent will be notified
+                  of this and will be unable to interact with the GIG and they
+                  will have to stop working on the GIG at the moment. Are you
+                  sure?
+                </p>
+                <div class="confirm__talent__modal__btn__cont">
+                  <button
+                    type="button"
+                    class="confirm__talent__no"
+                    data-bs-dismiss="modal"
+                  >
+                    Cancel
+                  </button>
+
+                  <button
+                    class="confirm__talent__yes"
+                    type="button"
+                    class="btn btn-primary"
+                    id="pauseGigBtn"
+                  >
+                    Yes, pause
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="modal fade"
+          id="pauseReason"
+          tabindex="-1"
+          aria-labelledby="pauseReasonLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1
+                  class="modal-title"
+                  style="color: #08121d; font-size: 20px; font-weight: 700"
+                  id="pauseReasonLabel"
+                >
+                  Reason
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <p
+                  style="
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #67737e;
+                    margin: 5px 0 16px;
+                  "
+                >
+                  Kindly provide reason for pausing GIG
+                </p>
+                <textarea
+                  placeholder=""
+                  class="form-control shadow-none"
+                  id="exampleFormControlTextarea1"
+                  rows="4"
+                ></textarea>
+                <div class="confirm__talent__modal__btn__cont">
+                  <button
+                    type="button"
+                    class="confirm__talent__no"
+                    data-bs-dismiss="modal"
+                  >
+                    Cancel
+                  </button>
+
+                  <button
+                    class="confirm__talent__yes"
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-dismiss="modal"
+                  >
+                    Submit
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <hr />
         <div class="milestone__filter__cont">
           <h3>Milestones deliverables</h3>
-          <button class="milestone__filter__btn">
-            <img src="../img/filter.svg" alt="filter" />
-            <p>All milestones</p>
-          </button>
+
+          <div
+            style="width: fit-content; height: fit-content"
+            class="btn-group"
+          >
+            <button
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              class="milestone__filter__btn"
+            >
+              <img src="../img/filter.svg" alt="filter" />
+              <p>All milestones</p>
+            </button>
+            <ul
+              class="dropdown-menu milestone__drop__menu"
+              style="
+                padding: 0;
+                overflow: hidden;
+                border-radius: 10px;
+                box-shadow: 0px 6px 20px 0px #09305e1a;
+              "
+            >
+              <li class="active__dropdown">
+                <a href="#">All milestones</a>
+              </li>
+              <li>
+                <a class="" href="#">Ongoing milestones</a>
+              </li>
+              <li>
+                <a class="" href="#">Pending milestones</a>
+              </li>
+              <li>
+                <a class="" href="#">Ongoing milestones</a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="talent__milestone__card__cont" style="margin-top: 20px">
           <div class="talent__milestone__card milestone__card">
@@ -253,7 +473,7 @@
                 >
                   <img src="../img/more-vertical.svg" alt="more" />
                 </button>
-                <!-- <ul
+                <ul
                   class="dropdown-menu milestone__drop__menu"
                   style="
                     padding: 0;
@@ -266,9 +486,77 @@
                     <a class="" href="#">Edit milestone</a>
                   </li>
                   <li class="delete__milestone__cont">
-                    <button class="delete__milestone">Delete milestone</button>
+                    <button
+                      data-bs-toggle="modal"
+                      data-bs-target="#confirmDeleteMilestone"
+                      class="delete__milestone"
+                    >
+                      Delete milestone
+                    </button>
                   </li>
-                </ul> -->
+                </ul>
+                <div
+                  class="modal fade"
+                  id="confirmDeleteMilestone"
+                  tabindex="-1"
+                  aria-labelledby="confirmDeleteMilestoneLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1
+                          class="modal-title"
+                          style="
+                            color: #08121d;
+                            font-size: 20px;
+                            font-weight: 700;
+                          "
+                          id="confirmDeleteMilestoneLabel"
+                        >
+                          Delete milestone
+                        </h1>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <p
+                          style="
+                            font-size: 16px;
+                            line-height: 24px;
+                            color: #373d43;
+                            margin: 0;
+                          "
+                        >
+                          You are about to delete this milestone, you will lose
+                          all the information you have created. Are you sure?
+                        </p>
+                        <div class="confirm__talent__modal__btn__cont">
+                          <button
+                            type="button"
+                            class="confirm__talent__no"
+                            data-bs-dismiss="modal"
+                          >
+                            Cancel
+                          </button>
+                          <a href="./product.html"
+                            ><button
+                              class="confirm__talent__yes"
+                              type="button"
+                              class="btn btn-primary"
+                            >
+                              Delete milestone
+                            </button></a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="talent__milestone__info__cont">
@@ -366,39 +654,12 @@
             </div>
           </div>
           <div class="talent__milestone__card milestone__card">
-            <div class="milestone__title__cont">
+            <div class="milestone__title__cont2">
               <h5>
                 Design the landing page of the website complete with it’s
                 existing functionalities.
               </h5>
-              <div
-                style="width: fit-content; height: fit-content"
-                class="btn-group dropstart"
-              >
-                <button
-                  class="milestone__more btn-toggle p-0"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  <img src="../img/more-vertical.svg" alt="more" />
-                </button>
-                <!-- <ul
-                  class="dropdown-menu milestone__drop__menu"
-                  style="
-                    padding: 0;
-                    overflow: hidden;
-                    border-radius: 10px;
-                    box-shadow: 0px 6px 20px 0px #09305e1a;
-                  "
-                >
-                  <li>
-                    <a class="" href="#">Edit milestone</a>
-                  </li>
-                  <li class="delete__milestone__cont">
-                    <button class="delete__milestone">Delete milestone</button>
-                  </li>
-                </ul> -->
-              </div>
+              <button class="gig__finalize__mile">Finalize milestone</button>
             </div>
             <div class="talent__milestone__info__cont">
               <div class="mile__info__text">
@@ -552,9 +813,81 @@
           <h3>Paid: ₦350,000.00</h3>
         </div>
       </div>
+      <div class="gigs__list__card" style="margin-top: 20px">
+        <div class="gigs__list__title__cont">
+          <!-- Note i have two menu dropdown buttons they both do the same thing one is for mobile and the other for desktop -->
+          <div class="gigs__list__avatar__wrapper">
+            <div class="gigs__list__avatar__cont">
+              <img
+                src="../img/Avatar.png"
+                alt="avatar"
+                class="talent__gigs__profile__card__img"
+                style="align-self: start"
+              />
+              <button
+                class="milestone__more btn-toggle p-0 d-inline-block d-md-none"
+              >
+                <img src="../img/more-vertical.svg" alt="more" />
+              </button>
+            </div>
+            <div class="talent__gigs__profile__title__cont">
+              <h2>Karima S.</h2>
+              <img
+                src="../img/verify-tag.svg"
+                alt="verified"
+                class="talent__verified__tag"
+              />
+              <button class="talent__chat__btn">
+                <img src="../img/bubble-chat.svg" alt="chat" />
+                <p>Chat</p>
+              </button>
+            </div>
+          </div>
+          <button
+            class="milestone__more btn-toggle p-0 d-none d-md-inline-block"
+          >
+            <img src="../img/more-vertical.svg" alt="more" />
+          </button>
+        </div>
+        <hr />
+        <div class="milestone__filter__cont">
+          <h3>Milestones deliverables</h3>
+        </div>
+        <div class="no__milestone__cont">
+          <img src="../img/emptyMilestone.svg" alt="empty" />
+          <h3>
+            Milestone will be defined by the talent once that is done, you will
+            see the milestones here.
+          </h3>
+        </div>
+      </div>
     </div>
 
     <script src="../Js/script.js"></script>
+    <script>
+      document
+        .getElementById("pauseGigBtn")
+        .addEventListener("click", function () {
+          var firstModalEl = document.getElementById("pauseGig");
+          var firstModal = bootstrap.Modal.getInstance(firstModalEl); // Get the instance of the first modal
+
+          // Close the first modal
+          firstModal.hide();
+
+          // Listen for when the first modal is completely hidden
+          firstModalEl.addEventListener(
+            "hidden.bs.modal",
+            function () {
+              // Once hidden, open the second modal
+              var secondModal = new bootstrap.Modal(
+                document.getElementById("pauseReason")
+              );
+              secondModal.show();
+            },
+            { once: true }
+          );
+        });
+    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

@@ -613,8 +613,29 @@ hr:after {
   align-items: start;
   gap: 20px;
 }
+.milestone__title__cont2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 12px;
+}
 
-.milestone__title__cont h5 {
+.gig__finalize__mile {
+  width: 100%;
+  font-size: 13px;
+  line-height: 14px;
+  color: #0967d2;
+  background: transparent;
+  border: 0.5px solid #0967d2;
+  height: 38px;
+  padding: 0 15px;
+  border-radius: 8px;
+  outline: 0;
+  margin: 0;
+  text-wrap: nowrap;
+}
+.milestone__title__cont h5,
+.milestone__title__cont2 h5 {
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
@@ -631,6 +652,23 @@ hr:after {
   background: transparent;
   outline: none;
   border: none;
+}
+
+.no__milestone__cont {
+  margin: 30px 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  justify-content: start;
+}
+.no__milestone__cont h3 {
+  color: #08121d;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+  max-width: 400px;
 }
 
 .milestone__card hr {
@@ -710,10 +748,23 @@ hr:after {
 
 .milestone__drop__menu li {
   padding: 12px 16px !important;
+  text-wrap: nowrap;
+  font-weight: 500;
 }
 .milestone__drop__menu li a {
   color: #67737e;
   text-decoration: none;
+}
+.milestone__drop__menu li a:hover {
+  color: #0967d2 ;
+}
+.active__dropdown {
+  background: #f8fbff;
+  color: #0967d2;
+  font-weight: 500;
+}
+.active__dropdown {
+  color: #0967d2 !important;
   font-weight: 500;
 }
 .delete__milestone__cont {
@@ -1522,6 +1573,14 @@ hr:after {
   color: #0967d2;
 }
 @media screen and (min-width: 768px) {
+  .no__milestone__cont h3 {
+    color: #08121d;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    max-width: 400px;
+  }
   .gig__details__title__cont {
     display: flex;
     flex-direction: row;
@@ -1669,9 +1728,19 @@ hr:after {
   .milestone__card {
     padding: 20px;
   }
-  .milestone__title__cont h5 {
+  .milestone__title__cont h5,
+  .milestone__title__cont2 h5 {
     font-size: 20px;
     line-height: 26px;
+  }
+  .milestone__title__cont2 {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    gap: 20px;
+  }
+  .gig__finalize__mile {
+    width: fit-content;
   }
 }
 
@@ -2367,6 +2436,24 @@ label {
   color: #0967d2;
   font-size: 13px;
   line-height: 16px;
+  margin: 0;
+}
+
+.general__note__cont {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 6px;
+  border-radius: 7px;
+  padding: 10px;
+  background: #fffaeb;
+}
+.general__note__cont p {
+  color: #a27c1a;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  text-align: left;
   margin: 0;
 }
 
