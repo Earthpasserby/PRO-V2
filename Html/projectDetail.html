@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../Css/style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.js"></script>
+
+    <title>New PRODEV</title>
+  </head>
+  <body>
+    <nav class="navbar bg-primary">
+      <div class="container-fluid">
+        <span class="navbar-brand mb-0 h1">Navbar</span>
+      </div>
+    </nav>
+    <div class="gig__page__header">
+      <div>
+        <a href="./page2.html" class="backButton">
+          <i class="bi bi-chevron-left"></i>
+          Back
+        </a>
+      </div>
+      <hr />
+      <div class="mt-2 mb-4">
+        <div class="col-12 col-md-6 mb-3 mb-md-0">
+          <h2 style="margin-bottom: 4px" class="subHeader">Enter details</h2>
+          <p class="subText">Enter the details about this GIG.</p>
+        </div>
+
+        <div class="details__form">
+          <form>
+            <div class="row gap-3 gap-md-0">
+              <div class="form-group col-md-6">
+                <label for="inputGIG's" class="mb-2">Type of GIG’s</label>
+                <select id="inputState" class="form-select shadow-none">
+                  <option selected>Web development</option>
+                  <option>...</option>
+                </select>
+              </div>
+              <!-- i added this class to the multiselect container "milestone__multiselect" so the styling does'nt affect others in the codebase -->
+              <div class="form-group col-md-6 milestone__multiselect">
+                <label for="skills" class="mb-2">Technology & Skills</label>
+                <select
+                  class="js-example-basic-multiple form-select shadow-none"
+                  name="states[]"
+                  multiple="multiple"
+                  style="height: 50px"
+                >
+                  <option value="AL">Alabama</option>
+                  <option value="AL">New york</option>
+                  <option value="AL">los</option>
+                  <option value="AL">seatle</option>
+                  <option value="AL">dallas</option>
+                  ...
+                  <option value="WY">Wyoming</option>
+                </select>
+              </div>
+            </div>
+            <div class="row mt-3 gap-3 gap-md-0">
+              <div class="form-group">
+                <label for="inputGIG's" class="mb-2">Project type</label>
+                <select id="inputState" class="form-select shadow-none">
+                  <option selected>New project</option>
+                  <option>...</option>
+                </select>
+              </div>
+            </div>
+            <div class="mt-5">
+              <p
+                style="
+                  color: #373d43;
+                  font-size: 16px;
+                  line-height: 21px;
+                  margin: 0;
+                  font-weight: 500;
+                "
+              >
+                Select the talents you want on the project, the duration and the
+                budget.
+              </p>
+              <div class="project__date__budget__wrapper mt-4">
+                <div>
+                  <div class="project__date__budget__cont">
+                    <select id="inputState" class="form-select shadow-none">
+                      <option selected>UI/UX Deign</option>
+                      <option>...</option>
+                    </select>
+                    <input
+                      type="date"
+                      class="form-control shadow-none"
+                      placeholder="5/5/2023 - 5/ 5/2024"
+                    />
+                    <div>
+                      <input
+                        type="text"
+                        class="form-control shadow-none"
+                        placeholder="₦1,000,000"
+                      />
+                      <p
+                        style="
+                          color: #9da6af;
+                          font-size: 12px;
+                          line-height: 16px;
+                          margin: 8px 0 0;
+                        "
+                      >
+                        Minimum amount you can create for your budget is ₦60,000
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div style="display: flex; justify-content: end; width: 100%">
+                    <button class="pdb__remove">Remove</button>
+                  </div>
+                  <div class="project__date__budget__cont">
+                    <select id="inputState" class="form-select shadow-none">
+                      <option selected>UI/UX Deign</option>
+                      <option>...</option>
+                    </select>
+                    <input
+                      type="date"
+                      class="form-control shadow-none"
+                      placeholder="5/5/2023 - 5/ 5/2024"
+                    />
+                    <div>
+                      <input
+                        type="text"
+                        class="form-control shadow-none"
+                        placeholder="₦1,000,000"
+                      />
+                      <p
+                        style="
+                          color: #9da6af;
+                          font-size: 12px;
+                          line-height: 16px;
+                          margin: 8px 0 0;
+                        "
+                      >
+                        Minimum amount you can create for your budget is ₦60,000
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div style="display: flex; justify-content: end; width: 100%">
+                    <button class="pdb__remove">Remove</button>
+                  </div>
+                  <div class="project__date__budget__cont">
+                    <select id="inputState" class="form-select shadow-none">
+                      <option selected>UI/UX Deign</option>
+                      <option>...</option>
+                    </select>
+                    <input
+                      type="date"
+                      class="form-control shadow-none"
+                      placeholder="5/5/2023 - 5/ 5/2024"
+                    />
+                    <div>
+                      <input
+                        type="text"
+                        class="form-control shadow-none"
+                        placeholder="₦1,000,000"
+                      />
+                      <p
+                        style="
+                          color: #9da6af;
+                          font-size: 12px;
+                          line-height: 16px;
+                          margin: 8px 0 0;
+                        "
+                      >
+                        Minimum amount you can create for your budget is ₦60,000
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="pdb__add__btn">Add another talent</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <hr />
+      <div class="mt-4">
+        <div class="col-12 col-md-6 mb-3 mb-md-0">
+          <h3 class="subTxt">Describe GIG’s</h3>
+        </div>
+        <div style="margin-bottom: 25px">
+          <div id="summernote"></div>
+        </div>
+      </div>
+      <hr />
+
+      
+      <div style="margin: 25px 0" class="">
+        <div
+          style="box-shadow: 0px 6px 20px 0px #09305e0f"
+          class="card bg-white rounded"
+        >
+          <div class="toggle__cont p-3">
+            <div>
+              <div class="card-title toggleTxt">
+                Let talent create the milestone/deliverables
+              </div>
+              <div style="margin-top: 5px" class="card-text cardTxt">
+                By toggling, the talent will help define the
+                milestone/deliverables for this project.
+              </div>
+            </div>
+            <div class="form-check form-switch">
+              <input
+                style="width: 40px; height: 20px"
+                class="form-check-input"
+                type="checkbox"
+                role="switch"
+                id="flexSwitchCheckDefault"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+      <div class="mt-1">
+        <div class="btm__nav__cont">
+          <!-- Previous Button -->
+          <div class="prevBtn__cont">
+            <button href="#" class="prevBtn">Previous</button>
+          </div>
+
+          <!-- Next Button -->
+          <div class="nxtBtn__cont">
+            <a href="./projectPreview.html">
+              <button type="button" class="nxtBtn">Continue</button></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      $("#summernote").summernote({
+        placeholder:
+          "Introduction:<br> We are looking for a skilled UI/UX Designer to lead the redesign of our job platform, Singular. The project involves creating a payment portal that facilitates recurring payments to contractors using a structure that supports Agile Scrum methodologies. The platform redesign will be implemented using Flutter and Airtable. <br> Deliverables: <br> Design and develop a user-friendly payment portal interface. <br> Ensure the interface integrates seamlessly with Agile Scrum frameworks. <br> Collaborate with developers to implement designs in Flutter and Airtable. <br> Test user interface for usability and fix any issues that arise.",
+        tabsize: 2,
+        height: 200,
+        toolbar: [
+          // ["style", ["style"]],
+          ["font", ["bold", "underline", "clear"]],
+          // ["color", ["color"]],
+          ["para", ["ul", "ol", "paragraph"]],
+          // ["table", ["table"]],
+          ["insert", ["link", "picture", "video"]],
+        ],
+      });
+    </script>
+    <script src="../Js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".js-example-basic-multiple").select2();
+      });
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

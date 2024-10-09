@@ -756,7 +756,7 @@ hr:after {
   text-decoration: none;
 }
 .milestone__drop__menu li a:hover {
-  color: #0967d2 ;
+  color: #0967d2;
 }
 .active__dropdown {
   background: #f8fbff;
@@ -797,6 +797,12 @@ hr:after {
   justify-content: start;
   width: 100%;
   gap: 5px;
+}
+.gig__tab__cont2 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  width: 100%;
+  gap: 10px;
 }
 .gigs__tab {
   display: flex;
@@ -1572,7 +1578,129 @@ hr:after {
 .milesone__time__link span {
   color: #0967d2;
 }
+.create__gig__type__title {
+  color: #08121d;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21px;
+  text-align: left;
+}
+.type__work__card {
+  background: white;
+  box-shadow: 0px 6px 20px 0px #09305e0f;
+  border: 1px solid #f1f5fa;
+  border-radius: 10px;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+}
+.type__work__title h2 {
+  color: #08121d;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  text-align: left;
+  margin: 0;
+}
+.type__work__title p {
+  color: #67737e;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+  margin: 5px 0 0;
+}
+.gig__pathway__cont {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.project__date__budget__cont {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 15px;
+}
+.project__date__budget__wrapper {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 25px;
+}
+.pdb__remove {
+  background: transparent;
+  margin: 0 0 10px;
+  padding: 0;
+  color: #d20931;
+  font-size: 16px;
+  line-height: 20px;
+  border: none;
+  outline: none;
+  font-weight: 500;
+}
+.pdb__add__btn {
+  background: transparent;
+  margin: 22px 0 0;
+  padding: 0;
+  color: #0967d2;
+  font-size: 16px;
+  line-height: 20px;
+  border: none;
+  outline: none;
+  font-weight: 500;
+}
+.project__preview__desc__cont1 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+.project__preview__desc__cont2 {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 20px;
+}
+.project__mile__card__conts {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 20px;
+}
 @media screen and (min-width: 768px) {
+  .project__preview__desc__cont1 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .project__preview__desc__cont2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .project__mile__card__conts {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .gig__tab__cont2 {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 10px 5px;
+  }
+  .subHeader {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .project__date__budget__cont {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+  }
+  .type__work__title h2 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .type__work__card {
+    padding: 20px 30px;
+  }
+  .create__gig__type__title {
+    font-size: 18px;
+    line-height: 24px;
+  }
   .no__milestone__cont h3 {
     color: #08121d;
     font-size: 18px;
@@ -1990,6 +2118,10 @@ label {
   padding: 50px 20px;
   cursor: pointer;
 }
+.create__mile2 {
+  padding: 30px 20px;
+  cursor: pointer;
+}
 .create__mile__modal__cont {
   padding: 5px;
 }
@@ -2284,6 +2416,30 @@ label {
   gap: 8px;
   margin: 0;
 }
+.milestone__search__cont {
+  height: 43px;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  border-radius: 9px;
+  border: 0.5px solid #08121d;
+  justify-content: start;
+  gap: 8px;
+  margin: 0;
+}
+.milestone__search__cont input {
+  flex-grow: 1;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.project__preview__tabs__cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 20px;
+}
 
 .milestone__filter__btn p {
   color: #08121d;
@@ -2458,6 +2614,10 @@ label {
 }
 
 @media screen and (min-width: 768px) {
+  .milestone__search__cont {
+    width: 300px;
+  }
+
   .payment__modal__nxt__cont {
     display: flex;
     justify-content: end;
@@ -2565,6 +2725,15 @@ label {
 @media screen and (min-width: 1200px) {
   .create__mile {
     padding: 80px 50px;
+  }
+  .project__preview__tabs__cont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .project__preview__desc__cont2 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
