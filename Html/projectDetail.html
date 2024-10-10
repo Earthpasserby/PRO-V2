@@ -27,6 +27,12 @@
       href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css"
       rel="stylesheet"
     />
+    <!-- Include Flatpickr CSS and JS from CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
+
     <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.js"></script>
 
     <title>New PRODEV</title>
@@ -109,10 +115,13 @@
                       <option selected>UI/UX Deign</option>
                       <option>...</option>
                     </select>
+
                     <input
-                      type="date"
-                      class="form-control shadow-none"
-                      placeholder="5/5/2023 - 5/ 5/2024"
+                      type="text"
+                      class="date-range form-control shadow-none"
+                      id="date-range-1"
+                      name="date-range-1"
+                      placeholder="5-5-2023 to 5-5-2024"
                     />
                     <div>
                       <input
@@ -143,9 +152,11 @@
                       <option>...</option>
                     </select>
                     <input
-                      type="date"
-                      class="form-control shadow-none"
-                      placeholder="5/5/2023 - 5/ 5/2024"
+                      type="text"
+                      class="date-range form-control shadow-none"
+                      id="date-range-2"
+                      name="date-range-2"
+                      placeholder="5-5-2023 to 5-5-2024"
                     />
                     <div>
                       <input
@@ -176,9 +187,11 @@
                       <option>...</option>
                     </select>
                     <input
-                      type="date"
-                      class="form-control shadow-none"
-                      placeholder="5/5/2023 - 5/ 5/2024"
+                      type="text"
+                      class="date-range form-control shadow-none"
+                      id="date-range-3"
+                      name="date-range-3"
+                      placeholder="5-5-2023 to 5-5-2024"
                     />
                     <div>
                       <input
@@ -216,7 +229,6 @@
       </div>
       <hr />
 
-      
       <div style="margin: 25px 0" class="">
         <div
           style="box-shadow: 0px 6px 20px 0px #09305e0f"
@@ -291,5 +303,15 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <!-- Include Flatpickr CSS and JS from CDN -->
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script>
+      // Initialize Flatpickr for all elements with the "date-range" class
+      flatpickr(".date-range", {
+        mode: "range",
+        dateFormat: "Y-m-d", // Customize the date format
+      });
+    </script>
   </body>
 </html>
