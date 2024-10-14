@@ -2660,12 +2660,45 @@ label {
   grid-template-columns: repeat(1, minmax(0, 1fr));
   gap: 12px;
 }
-.intern__card {
+.intern__card,
+.intern__profile__card,
+.intern__link__wrapper {
   border: 0.5px solid #e9eaf2;
   box-shadow: 0px 0px 21.9px 0px #040a330d;
   background: #ffffff;
   border-radius: 10px;
   padding: 16px;
+}
+.intern__link__cont a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  text-decoration: none;
+}
+.intern__link__cont h2 {
+  font-size: 16px;
+  line-height: 20px;
+  color: #040a33;
+  margin: 0;
+}
+.intern__link__cont:last-child {
+  border-top: 0.5px solid #e9eaf2;
+  margin-top: 16px;
+  padding-top: 16px;
+}
+.talent__projects__card {
+  border: 0.5px solid #cbd2d9;
+  border-radius: 15px;
+  padding: 16px;
+}
+
+.talent__projects__card h2 {
+  color: black;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  margin: 16px 0 12px;
 }
 .intern__pic__cont {
   width: 60px;
@@ -2705,12 +2738,42 @@ label {
   margin-top: 20px;
   padding-top: 16px;
 }
+
+.intern__detail__cont {
+  border-top: 0.5px solid #e9eaf2;
+  margin-top: 16px;
+  padding-top: 16px;
+}
+
 .intern__skills__wrapper h4 {
   color: #555973;
   font-size: 13px;
   font-weight: 400;
   line-height: 16px;
   text-align: left;
+}
+.intern__detail__cont h4 {
+  color: #555973;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+  margin: 0;
+}
+.intern__detail__cont h3 {
+  color: #08121d;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+  margin-top: 6px 0 0;
+}
+.intern__skills__cont {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  gap: 6px;
+  flex-wrap: wrap;
 }
 .intern__skills__cont p {
   border: 0.5px solid #d5d6dc;
@@ -2719,12 +2782,17 @@ label {
   font-size: 12px;
   font-weight: 500;
   line-height: 14px;
-  padding: 5px 10px;
+  padding: 5px 12px;
   text-align: center;
   margin: 0 0;
-  overflow: hidden;
+  /* overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
+  white-space: nowrap; */
+}
+.project__image {
+  object-fit: contain;
+  object-position: top center;
+  max-width: 100%;
 }
 .view__intern__cont {
   border-top: 0.5px solid #e9eaf2;
@@ -2733,6 +2801,18 @@ label {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.intern__seeall {
+  border-top: 0.5px solid #e9eaf2;
+  margin-top: 20px;
+  padding-top: 20px;
+  text-align: right;
+}
+.intern__seeall h2 {
+  font-size: 13px;
+  line-height: 16px;
+  color: #0967d2;
+  font-weight: 700;
 }
 .view__intern__profile {
   text-decoration: none;
@@ -2749,8 +2829,109 @@ label {
   gap: 20px;
   margin-top: 30px;
 }
+.project__image__cont {
+  height: 170px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 8px;
+}
+.project__tags__cont {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  gap: 10px;
+}
+.intern__projects__grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+.intern__interview {
+  width: 100%;
+  height: 50px;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  background: #0967d2;
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+.intern__offer__btn {
+  width: 100%;
+  height: 50px;
+  border-radius: 8px;
+  color: #0967d2;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  background: transparent;
+  border: 0.5px solid #0967d2;
+  outline: none;
+  margin: 0;
+  padding: 0;
+}
+.intern__chat__btn {
+  width: 100%;
+  height: 50px;
+  border-radius: 8px;
+  text-align: center;
+  background: transparent;
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.intern__chat__btn p {
+  margin: 0;
+  color: #0967d2;
+  font-size: 16px;
+  line-height: 20px;
+}
+.intern__offer__btn__cont {
+  border-top: 0.5px solid #e9eaf2;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+.intern__profile__btn__group {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 0;
+}
+.intern__profile__cont {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 20px;
+}
 @media screen and (min-width: 768px) {
   .intern__card {
+    padding: 20px;
+  }
+  .intern__profile__btn__group {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+  }
+  .intern__offer__btn__cont {
+    border-top: none;
+    padding-top: 0;
+    margin-top: 0;
+  }
+  .intern__projects__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .intern__profile__card,
+  .intern__link__wrapper {
+    padding: 30px;
+  }
+  .talent__projects__card {
     padding: 20px;
   }
   .interns__card__wrapper {
@@ -2878,6 +3059,12 @@ label {
   }
 }
 
+@media screen and (min-width: 900px) {
+  .intern__projects__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
 @media screen and (min-width: 1000px) {
   .intern__card {
     padding: 20px;
@@ -2890,6 +3077,30 @@ label {
 @media screen and (min-width: 1200px) {
   .create__mile {
     padding: 80px 50px;
+  }
+  .talent__projects__card {
+    padding: 16px;
+  }
+  .intern__profile__cont {
+    display: grid;
+    grid-template-columns: 23.5% 50% 23.5%;
+    gap: 1.5%;
+  }
+  .intern__profile__btn__group {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 0;
+  }
+  .intern__offer__btn__cont {
+    border-top: 0.5px solid #e9eaf2;
+    padding-top: 20px;
+    margin-top: 20px;
+  }
+  .intern__projects__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .intern__profile__card,
+  .intern__link__wrapper {
+    padding: 20px;
   }
   .project__preview__tabs__cont {
     display: flex;
