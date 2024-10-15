@@ -365,79 +365,10 @@ body {
   color: #67737e;
 }
 hr {
-  height: 1px;
-  /* margin: 50px 0; */
-  background: -webkit-gradient(
-    linear,
-    0 0,
-    100% 0,
-    from(rgba(0, 0, 0, 0)),
-    color-stop(0.5, #333333),
-    to(rgba(0, 0, 0, 0))
-  );
-  background: -webkit-linear-gradient(
-    left,
-    rgba(0, 0, 0, 0),
-    #333333,
-    rgba(0, 0, 0, 0)
-  );
-  background: -moz-linear-gradient(
-    left,
-    rgba(0, 0, 0, 0),
-    #333333,
-    rgba(0, 0, 0, 0)
-  );
-  background: -o-linear-gradient(
-    left,
-    rgba(0, 0, 0, 0),
-    #333333,
-    rgba(0, 0, 0, 0)
-  );
-  background: linear-gradient(
-    left,
-    rgba(0, 0, 0, 0),
-    #333333,
-    rgba(0, 0, 0, 0)
-  );
-  border: 0;
+  height: 0.5px;
+  background: #f1f5fa;
 }
-hr:after {
-  display: block;
-  content: "";
-  height: 30px;
-  background-image: -webkit-gradient(
-    radial,
-    50% 0%,
-    0,
-    50% 0%,
-    116,
-    color-stop(0%, #cccccc),
-    color-stop(100%, rgba(255, 255, 255, 0))
-  );
-  background-image: -webkit-radial-gradient(
-    center top,
-    farthest-side,
-    #cccccc 0%,
-    rgba(255, 255, 255, 0) 100%
-  );
-  background-image: -moz-radial-gradient(
-    center top,
-    farthest-side,
-    #cccccc 0%,
-    rgba(255, 255, 255, 0) 100%
-  );
-  background-image: -o-radial-gradient(
-    center top,
-    farthest-side,
-    #cccccc 0%,
-    rgba(255, 255, 255, 0) 100%
-  );
-  background-image: radial-gradient(
-    farthest-side at center top,
-    #cccccc 0%,
-    rgba(255, 255, 255, 0) 100%
-  );
-}
+
 /** Page2 styling**/
 
 .page h2 {
@@ -2911,7 +2842,112 @@ label {
   grid-template-columns: repeat(1, minmax(0, 1fr));
   gap: 20px;
 }
+.public__modal__cont {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 20px;
+}
+.project__modal__title {
+  color: #1f2933;
+  margin: 0;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 30px;
+  text-align: left;
+}
+.project__date__tags__cont {
+  margin: 16px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px 20px;
+  flex-wrap: wrap;
+}
+.project__modal__info__cont {
+  border-top: 1px solid #e4e7eb;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+.project__modal__info__cont h3 {
+  color: #9aa5b1;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  margin: 0;
+}
+.project__modal__info__cont p {
+  color: #1f2933;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  margin: 12px 0 0;
+}
+
+.project__modal__info__cont ul {
+  margin: 12px 0 0;
+}
+.project__modal__info__cont li {
+  margin: 12px 0 0;
+  color: #1f2933;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+.project__modal__info__cont a {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  text-decoration: none;
+  color: #0967d2;
+  margin: 12px 0 0;
+}
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.date-arrow-btn {
+  border: 0.5px solid #1a77e0;
+  background: #0967d2;
+  outline: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+.calendar-title {
+  color: #08121d;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
+.schedule__date__cont {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 20px;
+}
 @media screen and (min-width: 768px) {
+  .schedule__date__cont {
+    margin-top: 50px;
+  }
+  .project__modal__info__cont p,
+  .project__modal__info__cont h3,
+  .project__modal__info__cont li,
+  .project__modal__info__cont a {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .project__modal__title {
+    font-size: 30px;
+    line-height: 36.54px;
+  }
   .intern__card {
     padding: 20px;
   }
@@ -3075,6 +3111,13 @@ label {
   }
 }
 @media screen and (min-width: 1200px) {
+  .schedule__date__cont {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .public__modal__cont {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 40px;
+  }
   .create__mile {
     padding: 80px 50px;
   }

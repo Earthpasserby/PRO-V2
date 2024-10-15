@@ -27,8 +27,76 @@
       href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 
     <title>New PRODEV</title>
+    <style>
+      .swiper {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        max-height: 600px;
+        overflow: hidden;
+        border-radius: 7px;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top center;
+      }
+
+      .mySwiper2 {
+        height: 80%;
+        width: 100%;
+      }
+
+      .mySwiper {
+        height: 20%;
+        box-sizing: border-box;
+        padding: 10px 0;
+      }
+
+      .mySwiper .swiper-slide {
+        width: 25%;
+        height: 70px;
+        opacity: 0.6;
+        border-radius: 6px;
+        overflow: hidden;
+      }
+
+      .mySwiper .swiper-slide-thumb-active {
+        opacity: 1;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        object-fit: cover;
+        object-position: top center;
+      }
+
+      @media screen and (min-width: 768px) {
+        .mySwiper .swiper-slide {
+          width: 25%;
+          height: 100px;
+        }
+      }
+    </style>
   </head>
   <body>
     <nav class="navbar bg-primary">
@@ -162,7 +230,12 @@
                   </div>
                 </div>
                 <div class="view__intern__cont">
-                  <a href="" class="view__intern__profile">
+                  <a
+                    href=""
+                    data-bs-toggle="modal"
+                    data-bs-target="#projectModal"
+                    class="view__intern__profile"
+                  >
                     Read more
                     <span class="view__arr">
                       <i class="bi bi-arrow-right"></i>
@@ -187,7 +260,12 @@
                   </div>
                 </div>
                 <div class="view__intern__cont">
-                  <a href="" class="view__intern__profile">
+                  <a
+                    href=""
+                    data-bs-toggle="modal"
+                    data-bs-target="#projectModal"
+                    class="view__intern__profile"
+                  >
                     Read more
                     <span class="view__arr">
                       <i class="bi bi-arrow-right"></i>
@@ -212,7 +290,12 @@
                   </div>
                 </div>
                 <div class="view__intern__cont">
-                  <a href="" class="view__intern__profile">
+                  <a
+                    href=""
+                    data-bs-toggle="modal"
+                    data-bs-target="#projectModal"
+                    class="view__intern__profile"
+                  >
                     Read more
                     <span class="view__arr">
                       <i class="bi bi-arrow-right"></i>
@@ -237,12 +320,176 @@
                   </div>
                 </div>
                 <div class="view__intern__cont">
-                  <a href="" class="view__intern__profile">
+                  <a
+                    href=""
+                    class="view__intern__profile"
+                    data-bs-toggle="modal"
+                    data-bs-target="#projectModal"
+                  >
                     Read more
                     <span class="view__arr">
                       <i class="bi bi-arrow-right"></i>
                     </span>
                   </a>
+                </div>
+              </div>
+
+              <!-- modal -->
+              <div
+                class="modal fade"
+                id="projectModal"
+                tabindex="-1"
+                aria-labelledby="projectModalLabel"
+                aria-hidden="true"
+              >
+                <div
+                  style="
+                    max-width: 1320px !important;
+                    width: 95% !important;
+                    margin: 0px auto;
+                  "
+                  class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+                >
+                  <div
+                    style="margin-top: 25px"
+                    class="modal-content create__mile__modal__cont"
+                  >
+                    <div
+                      class="modal-header pt-2 pt-md-0"
+                      style="margin-top: 0"
+                    >
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="public__modal__cont">
+                        <div style="align-self: self-start">
+                          <div
+                            style="
+                              --swiper-navigation-color: #fff;
+                              --swiper-pagination-color: #fff;
+                            "
+                            class="swiper mySwiper2"
+                          >
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                <img src="../img/testImage2.png" />
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="../img/project.jpg" />
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="../img/testImage2.png" />
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="../img/project.jpg" />
+                              </div>
+                            </div>
+                            <!-- <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div> -->
+                          </div>
+                          <div
+                            thumbsSlider=""
+                            class="swiper mySwiper thumb-swiper"
+                          >
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide">
+                                <img src="../img/testImage2.png" />
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="../img/project.jpg" />
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="../img/testImage2.png" />
+                              </div>
+                              <div class="swiper-slide">
+                                <img src="../img/project.jpg" />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div>
+                          <h2 class="project__modal__title">
+                            Banking savings app
+                          </h2>
+                          <div class="project__date__tags__cont">
+                            <p
+                              style="
+                                color: #1f2933;
+                                font-size: 15px;
+                                font-weight: 400;
+                                line-height: 18.27px;
+                                margin: 0;
+                              "
+                            >
+                              2020
+                            </p>
+                            <div class="intern__skills__cont">
+                              <p>Adobe XD</p>
+                              <p>UX Research</p>
+                              <p>Figma</p>
+                            </div>
+                          </div>
+                          <div class="project__modal__info__cont">
+                            <h3>Project description</h3>
+                            <p>
+                              Banking savings app is an app that helps users
+                              save a little for every transaction they carry
+                              out, this also helps them ensure they are aware of
+                              the requirements.
+                            </p>
+                          </div>
+                          <div class="project__modal__info__cont">
+                            <h3>Solution</h3>
+                            <p>
+                              We design a product that would ensure that users
+                              are able to save their funds directly from their
+                              account without any form of hassle while also
+                              investing in the process, this was a very
+                              strenuous process because users have a mind of
+                              their own with every new feature introduced into
+                              the project.
+                            </p>
+                          </div>
+                          <div class="project__modal__info__cont">
+                            <h3>Your contribution</h3>
+                            <p>
+                              I was the lead product designer on the project and
+                              I focused more on ensuring that the product
+                              follows trough with the necessary requirements.
+                            </p>
+                          </div>
+                          <div class="project__modal__info__cont">
+                            <h3>Key results</h3>
+                            <ul>
+                              <li>
+                                We were able to identify that 35% of the people
+                                who interacted with the product are students and
+                                working class.
+                              </li>
+                              <li>
+                                The solution really took a whole new turn when
+                                we launched some of the features are rarely
+                                used.
+                              </li>
+                              <li>
+                                40% of new users joined the product for the
+                                first time.
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="project__modal__info__cont">
+                            <h3>Project link</h3>
+                            <a href="">www.bsapp.com</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -268,6 +515,30 @@
         </div>
       </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        spaceBetween: 10,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesProgress: true,
+      });
+      var swiper2 = new Swiper(".mySwiper2", {
+        loop: true,
+        spaceBetween: 10,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+          swiper: swiper,
+        },
+      });
+    </script>
 
     <script src="../Js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
