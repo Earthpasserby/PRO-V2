@@ -3358,3 +3358,10 @@ label {
   gap: 8px;
   margin-top: 8px;
 }
+
+.status-switch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
