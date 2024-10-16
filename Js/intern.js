@@ -1,7 +1,8 @@
 // Variables to keep track of the current date
 let currentMonth = moment().month(); // Current month
 let currentYear = moment().year(); // Current year
-let selectedDate = null; // To store the selected date
+
+let selectedDate = null; // To store the selected date it can also be set form the backend once the page loads
 
 // DOM Elements
 const calendarBody = document.getElementById("calendar-body");
@@ -24,16 +25,16 @@ function renderCalendar(month, year) {
   const daysInMonth = currentMoment.daysInMonth();
 
   // Create empty slots for days before the 1st (based on which day it falls on)
-  for (let i = 0; i < firstDay; i++) {
-    const emptyDiv = document.createElement("div");
-    emptyDiv.classList.add("day");
-    calendarBody.appendChild(emptyDiv);
-  }
+  // for (let i = 0; i < firstDay; i++) {
+  //   const emptyDiv = document.createElement("div");
+  //   emptyDiv.classList.add("day");
+  //   calendarBody.appendChild(emptyDiv);
+  // }
 
   // Generate the days of the month
   for (let day = 1; day <= daysInMonth; day++) {
     const dayDiv = document.createElement("div");
-    dayDiv.classList.add("day");
+    dayDiv.classList.add("calendar__day");
 
     // Create a moment object for the current day
     const currentDayMoment = moment([year, month, day]);
@@ -57,12 +58,13 @@ function renderCalendar(month, year) {
     dayDiv.appendChild(dayNumberTag);
 
     // Check if the day is the selected day
-    if (selectedDate && selectedDate.isSame(currentDayMoment, "day")) {
-      dayDiv.classList.add("selected");
-      const checkmark = document.createElement("span");
-      checkmark.classList.add("checkmark");
-      checkmark.innerHTML = "&#10004;";
-      dayDiv.appendChild(checkmark);
+    if (
+      selectedDate &&
+      selectedDate.isSame(currentDayMoment, "calendar__day")
+    ) {
+      dayDiv.style.background = "#1a77e0";
+      dayNumberTag.style.color = "#ffffff";
+      dayOfWeekTag.style.color = "#7AAEE9";
     }
 
     // Add click event to select the day
@@ -75,12 +77,24 @@ function renderCalendar(month, year) {
 
 // Select a date and store it
 function selectDate(day, month, year) {
-  // Store the selected date using Moment.js
-  selectedDate = moment([year, month, day]);
-  localStorage.setItem("selectedDate", selectedDate.format());
+  // Get the selected date using Moment.js
+  const selectedMoment = moment([year, month, day]);
 
-  // Re-render the calendar to reflect the selected date
-  renderCalendar(month, year);
+  // Get the current date
+  const currentMoment = moment();
+
+  // Check if the selected date is in the future
+  if (selectedMoment.isAfter(currentMoment, "day")) {
+    // If it's in the future, store it and proceed
+    selectedDate = selectedMoment;
+    // localStorage.setItem("selectedDate", selectedDate.format());
+
+    // Re-render the calendar to reflect the selected date
+    renderCalendar(month, year);
+  } else {
+    // If the selected date is not in the future, alert the user
+    alert("Please select a future date.");
+  }
 }
 
 // Handle month navigation
@@ -103,13 +117,13 @@ document.getElementById("next-month").addEventListener("click", () => {
 });
 
 // Load any previously selected date from localStorage
-function loadSelectedDate() {
-  const storedDate = localStorage.getItem("selectedDate");
-  if (storedDate) {
-    selectedDate = moment(storedDate);
-  }
-}
+// function loadSelectedDate() {
+//   const storedDate = localStorage.getItem("selectedDate");
+//   if (storedDate) {
+//     selectedDate = moment(storedDate);
+//   }
+// }
 
 // Initial setup
-loadSelectedDate();
+// loadSelectedDate();
 renderCalendar(currentMonth, currentYear);

@@ -500,9 +500,73 @@
             class="intern__profile__card intern__btn__wrapper"
           >
             <div class="intern__profile__btn__group">
-              <button class="intern__interview">Schedule an interview</button>
+              <a href="./internSchedule.html">
+                <button class="intern__interview">
+                  Schedule an interview
+                </button></a
+              >
               <div class="intern__offer__btn__cont">
-                <button class="intern__offer__btn">Make an offer</button>
+                <button
+                  data-bs-toggle="modal"
+                  data-bs-target="#makeOffer"
+                  class="intern__offer__btn"
+                >
+                  Make an offer
+                </button>
+                <div
+                  class="modal fade"
+                  id="makeOffer"
+                  tabindex="-1"
+                  aria-labelledby="makeOfferLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="makeOfferLabel">
+                          Make an offer
+                        </h1>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="offer__form mt-2">
+                          <div class="form-group">
+                            <label class="mb-2" for="intern-pay"
+                              >How much do you wish to pay this intern?</label
+                            >
+                            <input
+                              class="form-control shadow-none"
+                              type="text"
+                              id="intern-pay"
+                              name="intern-pay"
+                              placeholder="₦ 50,000"
+                            />
+                          </div>
+                          <div class="form-group" style="margin-top: 20px;">
+                            <label for="intern-duration" class="mb-2"
+                              >How long do you need the intern for?
+                            </label>
+                            <select
+                              id="inputState"
+                              class="form-select shadow-none"
+                            >
+                              <option selected>6 Months</option>
+                              <option>...</option>
+                            </select>
+                          </div>
+                        </div>
+                        <button class="make__offer__btn">
+                          Make offer
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="intern__offer__btn__cont">
                 <button class="intern__chat__btn">

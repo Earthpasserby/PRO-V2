@@ -365,8 +365,10 @@ body {
   color: #67737e;
 }
 hr {
-  height: 0.5px;
-  background: #f1f5fa;
+  height: 1px;
+  border: none;
+  background: #e9eaf2;
+  opacity: 1;
 }
 
 /** Page2 styling**/
@@ -2061,7 +2063,9 @@ label {
   height: 48px;
 }
 .details__form input,
-.details__form select {
+.details__form select,
+.offer__form input,
+.offer__form select {
   height: 50px;
   border-radius: 8px;
 }
@@ -2931,11 +2935,264 @@ label {
   margin-top: 30px;
   display: grid;
   grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 40px;
+}
+.calendar-body {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(67px, 1fr));
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 25px;
+}
+.calendar__day {
+  box-shadow: 0px 6px 20px 0px #09305e0f;
+  border: 0.5px solid #f1f5fa;
+  background: #ffffff;
+  height: 56px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  cursor: pointer !important;
+}
+.calendar__day p {
+  font-size: 12px;
+  color: #9da6af;
+  line-height: 12px;
+  margin: 0 0 4px;
+}
+.calendar__day h3 {
+  font-size: 16px;
+  color: #1f2933;
+  line-height: 16px;
+  margin: 0;
+  font-weight: 500;
+}
+.selected__day__cont {
+  background: #1a77e0;
+}
+.selected__day {
+  color: #fff;
+}
+.attendees__title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24.36px;
+  text-align: left;
+  color: #08121d;
+  margin: 0;
+}
+.attendee__cont {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  border-top: 0.5px solid #e9eaf2;
+  margin-top: 20px;
+  padding-top: 20px;
+  gap: 12px;
+}
+.attendee__cont:first-child {
+  border: none;
+  margin-top: 0;
+}
+.attendee__img__cont img {
+  width: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+.attendee__img__cont {
+  width: 45px;
+  height: 45px;
+  overflow: hidden;
+  border-radius: 100%;
+}
+.attendees__p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.49px;
+  text-align: left;
+  color: #67737e;
+  margin: 5px 0 0;
+}
+.attendee__details h3 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #08121d;
+  margin: 0;
+}
+.attendee__details p {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 14px;
+  color: #67737e;
+  margin: 4px 0 0;
+}
+.interview__attendees__wrapper {
+  padding: 0 4px;
+}
+.interview__schedule__card {
+  box-shadow: 0px 6px 21.9px 0px #040a330d;
+  border: 0.5px solid #1a77e0;
+  background: #0967d2;
+  border-radius: 10px;
+  padding: 16px;
+  margin-bottom: 25px;
+}
+.inter__first__cont {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+.time__icon__cont {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 5px;
+}
+.time__icon__cont p {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29.23px;
+  margin: 0;
+}
+.applicant__wrapper {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+.applicant__cont {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+}
+.applicant__img__cont {
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  overflow: hidden;
+}
+.applicant__img__cont img {
+  min-height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+.inter__date__cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.applicant__details h3,
+.inter__date__cont h3 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24.36px;
+  color: #fff;
+  margin: 0;
+}
+.applicant__details p,
+.inter__date__cont p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #7aaee9;
+  margin: 0 0;
+}
+.personnel__attend__Cont {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.inter__prof__img {
+  margin-left: -22.5px; /* This creates the overlap */
+  z-index: 1;
+  border: 0.5px solid #e9eaf2;
+}
+
+.inter__prof__img:first-child {
+  margin-left: 0; /* Ensure the first image is fully visible */
+}
+.inter__second__cont {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  flex-wrap: wrap;
   gap: 20px;
 }
+.inter__buttons__cont {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 12px;
+}
+.move__interview {
+  background: #1a77e0;
+  border-radius: 8px;
+  border: none;
+  height: 50px;
+  text-align: center;
+  outline: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.49px;
+  color: #fff;
+}
+.cancel__interview {
+  background: transparent;
+  border-radius: 8px;
+  border: none;
+  height: 50px;
+  text-align: center;
+  outline: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.49px;
+  color: #fff;
+}
+.make__offer__btn {
+  background: #0967d2;
+  width: 100%;
+  height: 50px;
+  margin-top: 30px;
+  margin-bottom: 0;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  border-radius: 8px;
+}
+.make__offer__btn:disabled {
+  background: #7aaee9;
+}
 @media screen and (min-width: 768px) {
+  .interview__schedule__card {
+    padding: 30px;
+  }
+  .inter__buttons__cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+  }
+  .inter__buttons__cont button {
+    width: 160px;
+  }
+  .applicant__wrapper {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .inter__second__cont {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
   .schedule__date__cont {
     margin-top: 50px;
+    gap: 0;
   }
   .project__modal__info__cont p,
   .project__modal__info__cont h3,
@@ -3111,8 +3368,16 @@ label {
   }
 }
 @media screen and (min-width: 1200px) {
+  .inter__first__cont {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
   .schedule__date__cont {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .interview__attendees__wrapper {
+    border-left: 0.5px solid #e9eaf2;
+    margin-left: 25px;
+    padding: 0 0 0 25px;
   }
   .public__modal__cont {
     grid-template-columns: repeat(2, minmax(0, 1fr));
