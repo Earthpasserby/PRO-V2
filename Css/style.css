@@ -3333,6 +3333,22 @@ label {
   border-radius: 10px;
 
 }
+.disclaimer__page__header {
+  width: 95%;
+  max-width: 1320px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 35px;
+  padding: 20px 16px;
+  margin-bottom: 40px;
+}
+
+.disclaimer__header{
+  padding: 30px;
+}
+.disclaimer__header h2{
+  text-wrap: wrap !important;
+}
 
 .disclaimer__skills__cont {
   display: flex;
