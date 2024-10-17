@@ -3327,7 +3327,7 @@ label {
 }
 .disclaimer__skill__btn {
   background-color: #1a77e0;
-  color: #fff;
+  color: #fff !important;
   cursor: not-allowed;
   padding: 6px 14px 6px 14px;
   border-radius: 10px;
@@ -3374,6 +3374,7 @@ label {
 .Milestone__page__card {
   padding: 20px 16px;
   border-radius: 0.375rem;
+  height: 100%;
 }
 
 .Milestone__cont p {
