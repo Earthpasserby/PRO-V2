@@ -3389,3 +3389,26 @@ label {
   text-align: left;
   color: #08121d;
 }
+.note__cont {
+  top: 634px;
+  left: 752px;
+  padding: 15px;
+  gap: 2px;
+  border-radius: 10px;
+  border: 0.5px;
+  background-color: #b8d2ee;
+}
+.note__cont h4 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19.49px;
+  text-align: left;
+  color: #000000;
+}
+.note__cont p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14.62px;
+  text-align: left;
+  color: #67737e;
+}
