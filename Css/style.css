@@ -2542,17 +2542,17 @@ label {
   gap: 5px;
   border-radius: 7px;
   padding: 15px;
-  background: #E8F2FC;
+  background: #e8f2fc;
 }
 .general__note__cont2 p {
-  color: #0967D2;
+  color: #0967d2;
   font-size: 10px;
   font-weight: 400;
   line-height: 12.18px;
   text-align: left;
   margin: 0;
 }
-.general__note__cont2 img{
+.general__note__cont2 img {
   width: 13.5px;
 }
 .general__note__cont p {
@@ -3432,19 +3432,19 @@ label {
   text-align: left;
   color: #67737e;
 }
-.create__mile1{
+.create__mile1 {
   padding: 50px 40px;
 }
-.gigMilestone{
-  padding: 20px ;
+.gigMilestone {
+  padding: 20px;
 }
-.addTxt{
-font-size: 16px;
-font-weight: 400;
-line-height: 20px;
-text-align: left;
-color: #0967d2;
-margin-top: 10px;
+.addTxt {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  color: #0967d2;
+  margin-top: 10px;
 }
 .submit__milestone__button {
   height: 48px;
@@ -3458,4 +3458,65 @@ margin-top: 10px;
   background: #0967d2;
   width: 90%;
   margin-top: 20px;
+}
+
+.position-relative {
+  position: relative; /* Ensures the overlay is positioned relative to this container */
+}
+
+.over__lay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  color: white; /* Text color */
+}
+.closed__cont {
+  position: relative;
+}
+.over__lay img {
+  width: 46.27px;
+  margin-bottom: 10px;
+}
+.over__lay h5 {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14.62px;
+  text-align: center;
+  color: #08121D;
+  width: 249px;
+
+}
+.over-lay-Txt {
+  padding: 15px;
+  gap: 10px;
+  border-radius: 10px;
+  border: 0.5px;
+  background-color: #b8d2ee;
+  width: 249px;
+}
+.over-lay-Txt p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+  color: #08121d;
+}
+.over-lay-Txt span {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: center;
+  color: #67737e;
+}
+
+.content-fade {
+  opacity: 0.5; /* Slightly fade the content */
+  z-index: 0; /* Make sure this sits behind the overlay */
 }
