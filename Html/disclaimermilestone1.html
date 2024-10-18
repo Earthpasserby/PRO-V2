@@ -118,17 +118,83 @@
                         class="form-check form-switch status-switch text-center col-md-2 col-2"
                       >
                         <!-- Modal -->
-
+                        <div
+                          class="modal fade"
+                          id="confirmTalent"
+                          tabindex="-1"
+                          aria-labelledby="confirmTalentLabel"
+                          aria-hidden="true"
+                        >
+                          <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button
+                                  type="button"
+                                  class="btn-close"
+                                  data-bs-dismiss="modal"
+                                  aria-label="Close"
+                                ></button>
+                              </div>
+                              <div class="modal-body p-4">
+                                <p
+                                  style="
+                                    font-size: 16px;
+                                    line-height: 24px;
+                                    color: #373d43;
+                                    margin: 0;
+                                  "
+                                >
+                                  By turning this button on, you confirm that
+                                  you have completed this milestone, the client
+                                  will have to approve before disbursement
+                                  occurs.
+                                </p>
+                                <br />
+                                <p
+                                  style="
+                                    font-size: 18px;
+                                    line-height: 24px;
+                                    color: #000;
+                                    margin: 0;
+                                  "
+                                >
+                                  Are you sure this milestone has been
+                                  completed?
+                                </p>
+                                <div class="confirm__talent__modal__btn__cont">
+                                  <button
+                                    type="button"
+                                    class="confirm__talent__no"
+                                    data-bs-dismiss="modal"
+                                  >
+                                    Cancel
+                                  </button>
+                                  <a href="./disclaimer.html"
+                                    ><button
+                                      class="confirm__talent__yes"
+                                      type="button"
+                                      class="btn btn-primary"
+                                    >
+                                      Yes, milestone completed
+                                    </button></a
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                         <input
                           class="form-check-input"
                           type="checkbox"
                           role="switch"
                           id="flexSwitchCheckChecked"
+                          data-bs-toggle="modal"
+                          data-bs-target="#confirmTalent"
                           checked
                         />
                         <label
                           class="form-check-label"
-                          for="flexSwitchCheckDefault"
+                          for="flexSwitchCheckChecked"
                           >Completed</label
                         >
                       </div>
@@ -154,7 +220,7 @@
                         />
                         <label
                           class="form-check-label"
-                          for="flexSwitchCheckDefault"
+                          for="flexSwitchCheckChecked"
                           >Completed</label
                         >
                       </div>
@@ -190,21 +256,30 @@
                       <p class="mx-3">Deadline: 10/08/2024</p>
                     </div>
                   </div>
-                  <div class="note__cont mt-3">
-                    <h4>Ask for a recommendation</h4>
-
-                    <div>
-                      <div
-                        class="d-flex justify-content-between align-items-center"
-                      >
-                        <p class="mb-0">
-                          You can ask the client to write you a feedback on this
-                          job on the job you did
-                        </p>
-                        <a href="./disclaimermilestone1.html" style="color: #000; font-size: 20px">
-                          <i class="bi bi-chevron-right"></i>
-                        </a>
+                  <div class="talent__recom__card">
+                    <img
+                      src="../img/Image.png"
+                      alt="avatar"
+                      class="recom__avatar"
+                    />
+                    <div class="recom__text__cont">
+                      <div class="recom__name__cont">
+                        <h2>Sanusi Ganiyu</h2>
+                        <p>26/9/2024</p>
                       </div>
+                      <div class="recom__rating__cont">
+                        <img src="../img/full-star.svg" alt="star" />
+                        <img src="../img/full-star.svg" alt="star" />
+                        <img src="../img/full-star.svg" alt="star" />
+                        <img src="../img/full-star.svg" alt="star" />
+                        <img src="../img/blank-star.svg" alt="star" />
+                      </div>
+                      <p class="recom__statement">
+                        Chinedu is an exceptional designer who I have had the
+                        privilege to work with, we had a particular expectation
+                        on a project in mind and he met and even surpassed those
+                        expectations. I would recommend him on any project.
+                      </p>
                     </div>
                   </div>
                 </div>
