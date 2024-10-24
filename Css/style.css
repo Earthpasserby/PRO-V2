@@ -3316,7 +3316,65 @@ label {
   align-items: center;
 }
 
+.complete__status {
+  color: #08121d;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 600;
+}
+
+.mile__fin__cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.5px solid #cbd2d9;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.mile__fin__cont:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.mile__fin__title {
+  color: #08121d;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0;
+}
+
+.mile__fin__budget {
+  color: #08121d;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.mile__fin__date {
+  color: #67737e;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0;
+}
+
+.mile__date__spn {
+  font-weight: 700;
+}
+
+.mile__fin__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 8px;
+}
+
 @media screen and (min-width: 768px) {
+  .complete__status {
+    font-size: 20px;
+    line-height: 24px;
+  }
   .interview__schedule__card {
     padding: 30px;
   }
@@ -3776,12 +3834,12 @@ label {
   align-items: center;
 }
 .form-check-label {
-  margin-right: 40px;
   text-align: center;
-  font-size: 8px;
+  font-size: 12.5px;
   font-weight: 400;
-  line-height: 9.74px;
+  line-height: 14px;
   color: #08121d;
+  margin-top: 5px;
 }
 .Milestone__page__card {
   padding: 20px 16px;
@@ -3802,13 +3860,18 @@ label {
   color: #08121d;
 }
 .note__cont {
-  top: 634px;
-  left: 752px;
   padding: 15px;
   gap: 2px;
   border-radius: 10px;
   border: 0.5px;
-  background-color: #b8d2ee;
+  background: #e8f2fc;
+  border: 0.5px solid #b8d2ee;
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  text-decoration: none;
 }
 .note__cont h4 {
   font-size: 16px;
@@ -3816,13 +3879,15 @@ label {
   line-height: 19.49px;
   text-align: left;
   color: #000000;
+  margin: 0;
 }
 .note__cont p {
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 400;
-  line-height: 14.62px;
+  line-height: 18px;
   text-align: left;
   color: #67737e;
+  margin: 5px 0 0;
 }
 .create__mile1 {
   padding: 50px 40px;

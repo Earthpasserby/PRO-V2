@@ -96,117 +96,262 @@
 
             <!-- Second Card -->
             <div class="col-12 col-md-6 equal-height">
-              <div class="Milestone__page__card card__shadow bg-white rounded">
+              <div class="gig__page__card card__shadow bg-white rounded">
                 <div class="">
-                  <div class="row">
-                    <div class="col-md-9 col-9">
-                      <h5 class="card-title">Milestone</h5>
+                  <div
+                    style="
+                      display: flex;
+                      justify-content: space-between;
+                      align-items: center;
+                    "
+                    class=""
+                  >
+                    <div class="">
+                      <h5 class="complete__status">Milestone</h5>
                     </div>
-                    <div class="col-md-2 col-2">
-                      <h5>Status</h5>
+                    <div class="">
+                      <h5 style="text-align: right" class="complete__status">
+                        Status
+                      </h5>
                     </div>
                   </div>
-                  <div class="Milestone__cont">
-                    <p>
-                      Design the landing page of the website complete with it’s
-                      <br />
-                      existing functionalities.
-                    </p>
-                    <div class="row">
-                      <span class="col-md-9 col-9">Budget: ₦100,000.00</span>
+                  <div class="mile__fin__wrapper" style="margin-top: 20px">
+                    <div class="mile__fin__cont">
+                      <div style="width: 75%" class="mile__fin__info">
+                        <p class="mile__fin__title">
+                          Design the landing page of the website complete with
+                          it’s existing functionalities.
+                        </p>
+
+                        <span class="mile__fin__budget"
+                          ><strong>Budget: </strong> ₦100,000.00</span
+                        >
+
+                        <div
+                          style="
+                            display: flex;
+                            justify-content: start;
+                            align-items: center;
+                            flex-wrap: wrap;
+                            gap: 12px;
+                          "
+                          class="mile__prj__date"
+                        >
+                          <p class="mile__fin__date">
+                            <span class="mile__date__spn"
+                              >Proposed start date:</span
+                            >
+                            10/08/2024
+                          </p>
+                          <p class="mile__fin__date">
+                            <span class="mile__date__spn">Deadline:</span>
+                            10/08/2024
+                          </p>
+                        </div>
+                      </div>
                       <div
-                        class="form-check form-switch status-switch text-center col-md-2 col-2"
+                        class="form-check form-switch status-switch text-center p-0"
                       >
                         <!-- Modal -->
-
+                        <div
+                          class="modal fade"
+                          id="confirmTalent"
+                          tabindex="-1"
+                          aria-labelledby="confirmTalentLabel"
+                          aria-hidden="true"
+                        >
+                          <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <button
+                                  style="font-size: 14px"
+                                  type="button"
+                                  class="btn-close"
+                                  data-bs-dismiss="modal"
+                                  aria-label="Close"
+                                ></button>
+                              </div>
+                              <div class="modal-body p-4">
+                                <p
+                                  style="
+                                    font-size: 16px;
+                                    line-height: 24px;
+                                    color: #373d43;
+                                    margin: 0;
+                                  "
+                                >
+                                  By turning this button on, you confirm that
+                                  you have completed this milestone, the client
+                                  will have to approve before disbursement
+                                  occurs.
+                                </p>
+                                <br />
+                                <p
+                                  style="
+                                    font-size: 18px;
+                                    line-height: 24px;
+                                    color: #000;
+                                    margin: 0;
+                                  "
+                                >
+                                  Are you sure this milestone has been
+                                  completed?
+                                </p>
+                                <div class="confirm__talent__modal__btn__cont">
+                                  <button
+                                    type="button"
+                                    class="confirm__talent__no"
+                                    data-bs-dismiss="modal"
+                                  >
+                                    Cancel
+                                  </button>
+                                  <a href="./disclaimer.html"
+                                    ><button
+                                      class="confirm__talent__yes"
+                                      type="button"
+                                      class="btn btn-primary"
+                                    >
+                                      Yes, milestone completed
+                                    </button></a
+                                  >
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                         <input
                           class="form-check-input"
                           type="checkbox"
                           role="switch"
-                          id="flexSwitchCheckChecked"
-                          checked
+                          id="flexSwitchCheckDefault"
+                          data-bs-toggle="modal"
+                          data-bs-target="#confirmTalent"
+                          style="margin: 0"
                         />
                         <label
-                          class="form-check-label"
+                          class="form-check-label mx-0"
                           for="flexSwitchCheckDefault"
-                          >Completed</label
+                          >Pending</label
                         >
                       </div>
                     </div>
-                    <div class="d-flex">
-                      <p>Proposed start date: 10/08/2024</p>
-                      <p class="mx-3">Deadline: 10/08/2024</p>
-                    </div>
-                  </div>
-                  <div class="Milestone__cont">
-                    <p>Design the about us page of the paralex website.</p>
-                    <div class="row">
-                      <span class="col-md-9 col-9">Budget: ₦100,000.00</span>
-                      <div
-                        class="form-check form-switch status-switch text-center col-md-2 col-2"
-                      >
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          role="switch"
-                          id="flexSwitchCheckChecked"
-                          checked
-                        />
-                        <label
-                          class="form-check-label"
-                          for="flexSwitchCheckDefault"
-                          >Completed</label
-                        >
-                      </div>
-                    </div>
-                    <div class="d-flex">
-                      <p>Proposed start date: 10/08/2024</p>
-                      <p class="mx-3">Deadline: 10/08/2024</p>
-                    </div>
-                  </div>
-                  <div class="Milestone__cont">
-                    <p>Design the contact us page of the paralex website</p>
-                    <div class="row">
-                      <span class="col-md-9 col-9">Budget: ₦100,000.00</span>
-                      <div
-                        class="form-check form-switch status-switch text-center col-md-2 col-2"
-                      >
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          role="switch"
-                          id="flexSwitchCheckedChecked"
-                          checked
-                        />
-                        <label
-                          class="form-check-label"
-                          for="flexSwitchCheckChecked"
-                          >Completed</label
-                        >
-                      </div>
-                    </div>
-                    <div class="d-flex">
-                      <p>Proposed start date: 10/08/2024</p>
-                      <p class="mx-3">Deadline: 10/08/2024</p>
-                    </div>
-                  </div>
-                  <div class="note__cont mt-3">
-                    <h4>Ask for a recommendation</h4>
-
-                    <div>
-                      <div
-                        class="d-flex justify-content-between align-items-center"
-                      >
-                        <p class="mb-0">
-                          You can ask the client to write you a feedback on this
-                          job on the job you did
+                    <div class="mile__fin__cont">
+                      <div style="width: 75%" class="mile__fin__info">
+                        <p class="mile__fin__title">
+                          Design the landing page of the website complete with
+                          it’s existing functionalities.
                         </p>
-                        <a href="./disclaimermilestone1.html" style="color: #000; font-size: 20px">
-                          <i class="bi bi-chevron-right"></i>
-                        </a>
+
+                        <span class="mile__fin__budget"
+                          ><strong>Budget: </strong> ₦100,000.00</span
+                        >
+
+                        <div
+                          style="
+                            display: flex;
+                            justify-content: start;
+                            align-items: center;
+                            flex-wrap: wrap;
+                            gap: 12px;
+                          "
+                          class="mile__prj__date"
+                        >
+                          <p class="mile__fin__date">
+                            <span class="mile__date__spn"
+                              >Proposed start date:</span
+                            >
+                            10/08/2024
+                          </p>
+                          <p class="mile__fin__date">
+                            <span class="mile__date__spn">Deadline:</span>
+                            10/08/2024
+                          </p>
+                        </div>
+                      </div>
+                      <div
+                        class="form-check form-switch status-switch text-center p-0"
+                      >
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          role="switch"
+                          id="flexSwitchCheckDefault"
+                          data-bs-toggle="modal"
+                          data-bs-target="#confirmTalent"
+                          style="margin: 0"
+                        />
+                        <label
+                          class="form-check-label mx-0"
+                          for="flexSwitchCheckDefault"
+                          >Pending</label
+                        >
+                      </div>
+                    </div>
+                    <div class="mile__fin__cont">
+                      <div style="width: 75%" class="mile__fin__info">
+                        <p class="mile__fin__title">
+                          Design the landing page of the website complete with
+                          it’s existing functionalities.
+                        </p>
+
+                        <span class="mile__fin__budget"
+                          ><strong>Budget: </strong> ₦100,000.00</span
+                        >
+
+                        <div
+                          style="
+                            display: flex;
+                            justify-content: start;
+                            align-items: center;
+                            flex-wrap: wrap;
+                            gap: 12px;
+                          "
+                          class="mile__prj__date"
+                        >
+                          <p class="mile__fin__date">
+                            <span class="mile__date__spn"
+                              >Proposed start date:</span
+                            >
+                            10/08/2024
+                          </p>
+                          <p class="mile__fin__date">
+                            <span class="mile__date__spn">Deadline:</span>
+                            10/08/2024
+                          </p>
+                        </div>
+                      </div>
+                      <div
+                        class="form-check form-switch status-switch text-center p-0"
+                      >
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          role="switch"
+                          id="flexSwitchCheckDefault"
+                          data-bs-toggle="modal"
+                          data-bs-target="#confirmTalent"
+                          style="margin: 0"
+                        />
+                        <label
+                          class="form-check-label mx-0"
+                          for="flexSwitchCheckDefault"
+                          >Pending</label
+                        >
                       </div>
                     </div>
                   </div>
+                  <a href="./disclaimermilestone1.html" class="note__cont">
+                    <div>
+                      <h4>Ask for a recommendation</h4>
+                      <p class="mb-0">
+                        You can ask the client to write you a feedback on this
+                        job on the job you did
+                      </p>
+                    </div>
+                    <span style="color: #000; font-size: 17px">
+                      <i class="bi bi-chevron-right"></i>
+                    </span>
+                  </a>
                 </div>
               </div>
             </div>
